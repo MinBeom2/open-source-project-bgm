@@ -278,53 +278,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4527989}
   m_CullTransparentMesh: 1
---- !u!1 &30106353
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 30106355}
-  - component: {fileID: 30106356}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &30106355
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30106353}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &30106356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30106353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e88b1076c0836e459d53fe2cc2be209, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  email: {fileID: 1078225610}
-  password: {fileID: 1733494072}
-  confirmPassword: {fileID: 803365285}
 --- !u!1 &96739294
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,7 +455,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &335379027
 GameObject:
@@ -651,6 +604,7 @@ GameObject:
   - component: {fileID: 401231954}
   - component: {fileID: 401231953}
   - component: {fileID: 401231952}
+  - component: {fileID: 401231956}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -746,6 +700,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &401231956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401231951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a110efdfac7b2d143ae0201e190a710d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  email: {fileID: 1078225610}
+  password: {fileID: 1733494072}
+  confirmPassword: {fileID: 803365285}
+  outputText: {fileID: 0}
 --- !u!1 &528798829
 GameObject:
   m_ObjectHideFlags: 0
@@ -1123,7 +1093,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &928159319
 GameObject:
@@ -2077,8 +2047,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 30106356}
-        m_TargetAssemblyTypeName: FirebaseAuthManager, Assembly-CSharp
+      - m_Target: {fileID: 401231956}
+        m_TargetAssemblyTypeName: LoginSystem, Assembly-CSharp
         m_MethodName: Create
         m_Mode: 1
         m_Arguments:

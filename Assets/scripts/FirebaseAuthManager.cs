@@ -2,36 +2,64 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Firebase.Auth;
-using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using PimDeWitte.UnityMainThreadDispatcher;
+using Unity.VisualScripting;
+using System;
 
-public class FirebaseAuthManager : MonoBehaviour
+public class FirebaseAuthManager
 {
-    private FirebaseAuth auth;
-    private FirebaseUser user;
-    public TMP_InputField email;
-    public TMP_InputField password;
-    public TMP_InputField confirmPassword;
-
-    // Start is called before the first frame update
-    void Start()
+    private static FirebaseAuthManager instance = null;
+    public static FirebaseAuthManager Instance
     {
-        auth = FirebaseAuth.DefaultInstance;
+        get
+        {
+            if (instance == null)
+            {
+                instance = new FirebaseAuthManager();
+            }
+            return instance;
+        }
     }
 
-    public void Create()
+    private FirebaseAuth auth;
+    private FirebaseUser user;
+
+    public void Init()
+    {
+        auth = FirebaseAuth.DefaultInstance;
+        if (auth.CurrentUser != null)
+        {
+            LogOut();
+        }
+        auth.StateChanged += OnChanged;
+    }
+
+    private void OnChanged(object sender, EventArgs e)
+    {
+        if (auth.CurrentUser != user)
+        {
+            bool signed = (auth.CurrentUser != user && auth.CurrentUser != null);
+
+            user = auth.CurrentUser;
+            if (signed)
+            {
+                Debug.Log("로그인");
+            }
+        }
+    }
+    public void Create(string email, string password, string confirmPassword)
     {
 
-        if (password.text != confirmPassword.text)
+        if (password != confirmPassword)
         {
             Debug.LogError("비밀번호가 일치하지 않습니다.");
             return; // 일치하지 않으면 회원가입 진행하지 않음
         }
 
 
-        auth.CreateUserWithEmailAndPasswordAsync(email.text, password.text).ContinueWith(task =>
+        auth.CreateUserWithEmailAndPasswordAsync(email, password).ContinueWith(task =>
         {
             if (task.IsCanceled)
             {
@@ -51,9 +79,9 @@ public class FirebaseAuthManager : MonoBehaviour
         });
     }
 
-    public void Login()
+    public void Login(string email, string password)
     {
-        auth.SignInWithEmailAndPasswordAsync(email.text, password.text).ContinueWith(task =>
+        auth.SignInWithEmailAndPasswordAsync(email, password).ContinueWith(task =>
         {
             if (task.IsCanceled)
             {
@@ -72,8 +100,10 @@ public class FirebaseAuthManager : MonoBehaviour
             UnityMainThreadDispatcher.Instance().Enqueue(() => SceneManager.LoadScene("MAIN"));
         });
     }
-    public void LoadCreate()
+
+    public void LogOut()
     {
-        SceneManager.LoadScene("CREATE");
+        auth.SignOut();
+        Debug.Log("로그아웃");
     }
 }
