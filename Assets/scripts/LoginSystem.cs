@@ -4,16 +4,12 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
 public class LoginSystem : MonoBehaviour
 {
     public TMP_InputField email;
     public TMP_InputField password;
     public TMP_InputField confirmPassword;
 
-    public Text outputText;
-
-    // Start is called before the first frame update
     void Start()
     {
         FirebaseAuthManager.Instance.Init();

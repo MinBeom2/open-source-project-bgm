@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using Google.MiniJSON;
+using Firebase;
+using Firebase.Database;
+using Firebase.Extensions;
 
 public class PlayerData
 {
@@ -19,6 +22,7 @@ public class DataManager : MonoBehaviour
     public PlayerData nowPlayer = new PlayerData();
     public string path;
     public int nowSlot;
+    private DatabaseReference reference;
 
     private void Awake()
     {
@@ -31,8 +35,12 @@ public class DataManager : MonoBehaviour
             Destroy(instance.gameObject);
         }
         DontDestroyOnLoad(this.gameObject);
-
-        path = Application.persistentDataPath + "/save/save";
+        FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task =>
+        {
+            FirebaseApp app = FirebaseApp.DefaultInstance;
+            reference = FirebaseDatabase.DefaultInstance.RootReference;
+            FirebaseDatabase.DefaultInstance.SetPersistenceEnabled(true);  // 오프라인 캐시 활성화
+        });
     }
     void Start()
     {
@@ -41,14 +49,29 @@ public class DataManager : MonoBehaviour
 
     public void Save()
     {
-        string data = JsonUtility.ToJson(nowPlayer);
-        File.WriteAllText(path + DataManager.instance.nowPlayer.slot.ToString(), data);
+        string json = JsonUtility.ToJson(nowPlayer);
+        reference.Child("users").Child(FirebaseAuthManager.Instance.GetUserID()).Child("slots").Child(nowPlayer.slot.ToString()).SetRawJsonValueAsync(json);
     }
 
     public void Load()
     {
-        string data = File.ReadAllText(path + nowSlot.ToString());
-        nowPlayer = JsonUtility.FromJson<PlayerData>(data);
+        reference.Child("users").Child(FirebaseAuthManager.Instance.GetUserID()).Child("slots").Child(nowSlot.ToString()).GetValueAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsFaulted)
+            {
+                Debug.LogError("Firebase에서 데이터를 불러오는데 오류 발생");
+            }
+            else if (task.IsCompleted)
+            {
+                DataSnapshot snapshot = task.Result;
+                if (snapshot.Exists)
+                {
+                    string json = snapshot.GetRawJsonValue();
+                    nowPlayer = JsonUtility.FromJson<PlayerData>(json);
+                    Debug.Log("Firebase에서 데이터 불러오기 완료");
+                }
+            }
+        });
     }
 
     public void DataClear()

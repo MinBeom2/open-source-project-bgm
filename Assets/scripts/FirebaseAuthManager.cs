@@ -92,7 +92,7 @@ public class FirebaseAuthManager
 
             AuthResult authResult = task.Result;
             FirebaseUser user = authResult.User;
-            Debug.LogError("로그인 성공");
+            Debug.Log("로그인 성공");
             UnityMainThreadDispatcher.Instance().Enqueue(() => SceneManager.LoadScene("MAIN"));
         });
     }
