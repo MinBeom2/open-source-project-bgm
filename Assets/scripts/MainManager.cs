@@ -11,9 +11,9 @@ public class MainManager : MonoBehaviour
         Application.Quit();
 
         // 에디터에서 테스트 중일 경우 에디터도 종료
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#endif
+    #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+    #endif
     }
 
     // Load Game 버튼이 눌리면 호출될 함수
@@ -21,5 +21,11 @@ public class MainManager : MonoBehaviour
     {
         // "aisle1" 씬을 로드
         SceneManager.LoadScene("LOAD_SCENE");
+    }
+
+    public void NewGame()
+    {
+        // "aisle1" 씬을 로드
+        SceneManager.LoadScene("AISLE1");
     }
 }

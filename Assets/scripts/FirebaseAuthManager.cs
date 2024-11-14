@@ -29,10 +29,6 @@ public class FirebaseAuthManager
     public void Init()
     {
         auth = FirebaseAuth.DefaultInstance;
-        if (auth.CurrentUser != null)
-        {
-            LogOut();
-        }
         auth.StateChanged += OnChanged;
     }
 
@@ -55,7 +51,7 @@ public class FirebaseAuthManager
         if (password != confirmPassword)
         {
             Debug.LogError("비밀번호가 일치하지 않습니다.");
-            return; // 일치하지 않으면 회원가입 진행하지 않음
+            return;
         }
 
 
@@ -105,5 +101,10 @@ public class FirebaseAuthManager
     {
         auth.SignOut();
         Debug.Log("로그아웃");
+    }
+
+    public string GetUserID()
+    {
+        return auth.CurrentUser != null ? auth.CurrentUser.UserId : "";
     }
 }
