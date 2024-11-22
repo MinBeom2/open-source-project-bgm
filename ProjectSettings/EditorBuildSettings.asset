@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Backrooms_Scenes/Backrooms_Scene.unity
+    guid: 078211d02be65f04c91e230c5e4b8a14
   m_configObjects: {}

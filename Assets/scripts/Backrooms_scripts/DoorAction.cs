@@ -24,7 +24,10 @@ public class DoorAction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Ray ray = new Ray(transform.position, transform.forward);
+        doorOpenText.SetActive(false);
+        doorCloseText.SetActive(false);
+
+    Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
 
         if(Physics.Raycast(ray, out hit, interactionDistance))

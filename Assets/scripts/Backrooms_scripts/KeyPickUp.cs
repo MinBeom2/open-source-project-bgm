@@ -9,6 +9,8 @@ public class KeyPickUp : MonoBehaviour
     public ClearDoorAction clearDoorAction;
     public GameObject haskeyImage;
 
+    public GameObject keyPickupText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,14 +21,18 @@ public class KeyPickUp : MonoBehaviour
 
     void Update()
     {
+        keyPickupText.SetActive(false);
+
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, interactionDistance))
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (hit.transform.gameObject.tag == "Key")
             {
-                if (hit.transform.gameObject.tag == "Key")
+                keyPickupText.SetActive(true);
+
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     hit.transform.gameObject.SetActive(false);  // 키를 숨기고
                     doorAction.haskey = true;  // DoorAction의 hasKey를 true로 설정

@@ -5,8 +5,8 @@ using UnityEngine;
 public class ChestAction : MonoBehaviour
 {
     public float interactionDistance;
-    public GameObject doorOpenText;
-    public GameObject doorCloseText;
+    public GameObject chestOpenText;
+    public GameObject chestCloseText;
     public string chestOpenAnimName, chestCloseAnimName;
 
     // Start is called before the first frame update
@@ -18,6 +18,9 @@ public class ChestAction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        chestOpenText.SetActive(false);
+        chestCloseText.SetActive(false);
+
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
 
@@ -30,8 +33,8 @@ public class ChestAction : MonoBehaviour
 
                 if (chestAnim.GetCurrentAnimatorStateInfo(0).IsName(chestCloseAnimName))
                 {
-                    doorCloseText.SetActive(false);
-                    doorOpenText.SetActive(true);
+                    chestCloseText.SetActive(false);
+                    chestOpenText.SetActive(true);
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         chestAnim.ResetTrigger("Close");
@@ -41,8 +44,8 @@ public class ChestAction : MonoBehaviour
 
                 if (chestAnim.GetCurrentAnimatorStateInfo(0).IsName(chestOpenAnimName))
                 {
-                    doorOpenText.SetActive(false);
-                    doorCloseText.SetActive(true);
+                    chestOpenText.SetActive(false);
+                    chestCloseText.SetActive(true);
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         chestAnim.ResetTrigger("Open");
@@ -52,8 +55,8 @@ public class ChestAction : MonoBehaviour
             }
             else
             {
-                doorOpenText.SetActive(false);
-                doorCloseText.SetActive(false);
+                chestOpenText.SetActive(false);
+                chestCloseText.SetActive(false);
             }
         }
     }
