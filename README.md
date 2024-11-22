@@ -1,3 +1,5 @@
+![BGM노션커버](https://github.com/user-attachments/assets/a39806ad-93a8-40ac-aac8-1ab2c23f0a2e)
+
 # 패치노트
 
 ## 2024.11.20
