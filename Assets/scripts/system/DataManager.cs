@@ -9,7 +9,6 @@ using Firebase.Extensions;
 
 public class PlayerData
 {
-    public string id;
     public int slot;
     public string stage;
     public string time;
@@ -23,44 +22,44 @@ public class DataManager : MonoBehaviour
     public string path;
     public int nowSlot;
     private DatabaseReference reference;
+    public string id;
 
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(this.gameObject);
         }
+
         else if (instance != this)
         {
-            Destroy(instance.gameObject);
+            return;
         }
-        DontDestroyOnLoad(this.gameObject);
+        
         FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task =>
         {
             FirebaseApp app = FirebaseApp.DefaultInstance;
             reference = FirebaseDatabase.DefaultInstance.RootReference;
-            FirebaseDatabase.DefaultInstance.SetPersistenceEnabled(true);  // 오프라인 캐시 활성화
+            FirebaseDatabase.DefaultInstance.SetPersistenceEnabled(true);
         });
-    }
-    void Start()
-    {
-        FirebaseAuthManager.Instance.Init();
     }
 
     public void Save()
     {
         string json = JsonUtility.ToJson(nowPlayer);
-        reference.Child("users").Child(FirebaseAuthManager.Instance.GetUserID()).Child("slots").Child(nowPlayer.slot.ToString()).SetRawJsonValueAsync(json);
+        reference.Child("users").Child(id).Child("slots").Child(nowPlayer.slot.ToString()).SetRawJsonValueAsync(json);
     }
 
-    public void Load()
+    public void Load(System.Action callback)
     {
-        reference.Child("users").Child(FirebaseAuthManager.Instance.GetUserID()).Child("slots").Child(nowSlot.ToString()).GetValueAsync().ContinueWithOnMainThread(task =>
+        reference.Child("users").Child(id).Child("slots").Child(nowSlot.ToString()).GetValueAsync().ContinueWithOnMainThread(task =>
         {
             if (task.IsFaulted)
             {
                 Debug.LogError("Firebase에서 데이터를 불러오는데 오류 발생");
             }
+
             else if (task.IsCompleted)
             {
                 DataSnapshot snapshot = task.Result;
@@ -70,9 +69,11 @@ public class DataManager : MonoBehaviour
                     nowPlayer = JsonUtility.FromJson<PlayerData>(json);
                     Debug.Log("Firebase에서 데이터 불러오기 완료");
                 }
+                callback?.Invoke();
             }
         });
     }
+
 
     public void DataClear()
     {

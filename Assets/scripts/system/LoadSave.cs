@@ -15,36 +15,34 @@ public class LoadSave : MonoBehaviour
 
     void Start()
     {
-        for (int i = 0; i < 3; i++)
-        {
-            savefile[i] = false;  //todo
-            LoadFromFirebase(i + 1);
-        }
+        //TODO
+        Debug.Log("datamanager id" + DataManager.instance.id);
+
     }
     private void LoadFromFirebase(int slot)
     {
         DataManager.instance.nowSlot = slot;
-        DataManager.instance.Load();
+        //DataManager.instance.Load();
     }
 
     public void Slot(int number)
     {
+        Debug.Log(DataManager.instance.id);
         DataManager.instance.nowSlot = number;
-        DataManager.instance.Load();  // Firebase에서 데이터 로드
 
-        // 데이터가 있으면 게임을 로드
-        if (DataManager.instance.nowPlayer != null)
+        DataManager.instance.Load(() =>
         {
-            Debug.Log(DataManager.instance.nowPlayer.stage);
-            SceneManager.LoadScene(DataManager.instance.nowPlayer.stage);
-        }
-        else
-        {
-            // 세이브가 없다면 새로운 게임 시작
-            SceneManager.LoadScene("AISLE1");
-        }
+            if (DataManager.instance.nowPlayer.stage != null)
+            {
+                SceneManager.LoadScene(DataManager.instance.nowPlayer.stage);
+            }
+            else
+            {
+                Debug.Log("1");
+                SceneManager.LoadScene("AISLE1");
+            }
+        });
     }
-
     public void BackToMain()
     {
         SceneManager.LoadScene("MAIN");

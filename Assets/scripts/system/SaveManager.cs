@@ -16,28 +16,28 @@ public class SaveManager : MonoBehaviour
     {
         for (int i = 0; i < 3; i++)
         {
+            //TODO: 로컬에서 파이어베이스로 바꾸기
             if (File.Exists(DataManager.instance.path + $"{i+1}"))
             {
                 savefile[i] = true;
                 DataManager.instance.nowSlot = i+1;
-                DataManager.instance.Load();
+                //DataManager.instance.Load();
             }
         }
         DataManager.instance.DataClear();
     }
+
+    
     public void Slot(int number)
     {
-        DataManager.instance.nowPlayer.id = FirebaseAuthManager.Instance.GetUserID(); // 사용자 ID 저장
-        DataManager.instance.nowPlayer.slot = number; // 슬롯 번호 저장
-        DataManager.instance.nowPlayer.stage = DataManager.instance.previousScene; // 현재 스테이지 번호 저장
-        DataManager.instance.nowPlayer.time = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"); // 저장 시간 기록
-
+        DataManager.instance.nowPlayer.slot = number; 
+        DataManager.instance.nowPlayer.stage = DataManager.instance.previousScene; 
+        DataManager.instance.nowPlayer.time = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
         DataManager.instance.Save();
     }
 
     public void BackToPreviousScene()
     {
-        string previousScene = DataManager.instance.previousScene;
-        SceneManager.LoadScene(previousScene);
+        SceneManager.LoadScene(DataManager.instance.previousScene);
     }
 }
