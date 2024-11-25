@@ -75,5 +75,5 @@ Assets/BOKI/LowPolyNature/Terrain/data/TerrainData_f3b311aa-fb5e-44f1-9205-35ded
 .pytest_cache
 .vscode
 
-Assets/Firebase/Plugins/x86_64/FirebaseCppApp-12_4_0.bundle
-Assets/Firebase/Plugins/x86_64/FirebaseCppApp-12_4_0.so
+/Assets/Firebase/Plugins/x86_64/FirebaseCppApp-12_4_0.bundle
+/Assets/Firebase/Plugins/x86_64/FirebaseCppApp-12_4_0.so
