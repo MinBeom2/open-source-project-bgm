@@ -7,9 +7,16 @@ using Firebase;
 using Firebase.Database;
 using Firebase.Extensions;
 
+public class PlayerPos
+{
+    public float positionX;
+    public float positionY;
+    public float positionZ;
+    public float rotationY;
+}
+
 public class PlayerData
 {
-    public int slot;
     public string stage;
     public string time;
 }
@@ -19,10 +26,13 @@ public class DataManager : MonoBehaviour
     public static DataManager instance;
     public string previousScene;
     public PlayerData nowPlayer = new PlayerData();
+    public PlayerPos nowPos = new PlayerPos();
+
     public string path;
     public int nowSlot;
     private DatabaseReference reference;
     public string id;
+    public Vector3 playerPosition;
 
     private void Awake()
     {
@@ -47,8 +57,33 @@ public class DataManager : MonoBehaviour
 
     public void Save()
     {
-        string json = JsonUtility.ToJson(nowPlayer);
-        reference.Child("users").Child(id).Child("slots").Child(nowPlayer.slot.ToString()).SetRawJsonValueAsync(json);
+        string json1 = JsonUtility.ToJson(nowPlayer);
+        reference.Child("users").Child(id).Child("slots").Child(nowSlot.ToString()).Child("PlayerData").SetRawJsonValueAsync(json1)
+            .ContinueWith(task =>
+            {
+                if (task.IsCompleted)
+                {
+                    Debug.Log("슬롯 데이터가 Firebase에 저장되었습니다.");
+                }
+                else
+                {
+                    Debug.LogError("슬롯 데이터 저장 실패: " + task.Exception?.Message);
+                }
+            });
+
+        string json2 = JsonUtility.ToJson(nowPos);
+        reference.Child("users").Child(id).Child("slots").Child(nowSlot.ToString()).Child("PlayerPos").SetRawJsonValueAsync(json2)
+            .ContinueWith(task =>
+            {
+                if (task.IsCompleted)
+                {
+                    Debug.Log("슬롯 위치 데이터가 Firebase에 저장되었습니다.");
+                }
+                else
+                {
+                    Debug.LogError("슬롯 위치 데이터 저장 실패: " + task.Exception?.Message);
+                }
+            });
     }
 
     public void Load(System.Action callback)
@@ -73,7 +108,6 @@ public class DataManager : MonoBehaviour
             }
         });
     }
-
 
     public void DataClear()
     {

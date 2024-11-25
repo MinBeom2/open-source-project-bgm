@@ -14,25 +14,34 @@ public class SaveManager : MonoBehaviour
     bool[] savefile = new bool[3];
     void Start()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         for (int i = 0; i < 3; i++)
         {
             //TODO: 로컬에서 파이어베이스로 바꾸기
-            if (File.Exists(DataManager.instance.path + $"{i+1}"))
+            if (File.Exists(DataManager.instance.path + $"{i + 1}"))
             {
                 savefile[i] = true;
-                DataManager.instance.nowSlot = i+1;
+                DataManager.instance.nowSlot = i + 1;
                 //DataManager.instance.Load();
             }
         }
         DataManager.instance.DataClear();
     }
 
-    
+
     public void Slot(int number)
     {
-        DataManager.instance.nowPlayer.slot = number; 
-        DataManager.instance.nowPlayer.stage = DataManager.instance.previousScene; 
+        DataManager.instance.nowSlot = number;
+
+        DataManager.instance.nowPlayer.stage = DataManager.instance.previousScene;
         DataManager.instance.nowPlayer.time = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+        // 저장된 위치 및 회전 정보 로그 출력
+        PlayerPos savedPosition = DataManager.instance.nowPos;
+        Debug.Log($"슬롯 {number}에 데이터 저장: 스테이지 {DataManager.instance.nowPlayer.stage}, 시간 {DataManager.instance.nowPlayer.time}, 위치 ({savedPosition.positionX}, {savedPosition.positionY}, {savedPosition.positionZ}), 회전 Y: {savedPosition.rotationY}");
+
+        // Firebase에 저장
         DataManager.instance.Save();
     }
 
