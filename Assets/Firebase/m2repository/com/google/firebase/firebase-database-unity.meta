@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/system.meta
+guid: 6a48592a999024f4eaa37f168838e862
+========
+guid: 803dead734df96d48ab05765e6e35988
+>>>>>>>> feature/save-load:Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity.meta
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

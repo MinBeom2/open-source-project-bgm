@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 6a48592a999024f4eaa37f168838e862
+<<<<<<<< HEAD:Assets/scripts/system.meta
+guid: d70533c0975229c4ba1ebd9c5c815798
+========
+guid: 07e3f2c79c07f1e4b8ec8fa619fd75a8
+>>>>>>>> feature/save-load:Assets/Scenes/system.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
