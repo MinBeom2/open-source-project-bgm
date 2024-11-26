@@ -19,11 +19,6 @@ public class LoadSave : MonoBehaviour
         Debug.Log("datamanager id" + DataManager.instance.id);
 
     }
-    private void LoadFromFirebase(int slot)
-    {
-        DataManager.instance.nowSlot = slot;
-        //DataManager.instance.Load();
-    }
 
     public void Slot(int number)
     {
@@ -34,7 +29,11 @@ public class LoadSave : MonoBehaviour
         {
             if (DataManager.instance.nowPlayer.stage != null)
             {
+                // 로드된 스테이지로 이동
                 SceneManager.LoadScene(DataManager.instance.nowPlayer.stage);
+
+                // 씬이 로드된 이후 위치와 회전을 복원
+                SceneManager.sceneLoaded += OnSceneLoaded;
             }
             else
             {
@@ -43,6 +42,21 @@ public class LoadSave : MonoBehaviour
             }
         });
     }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            DataManager.instance.RestorePlayerPosition(player);
+        }
+
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+
+
+
     public void BackToMain()
     {
         SceneManager.LoadScene("MAIN");

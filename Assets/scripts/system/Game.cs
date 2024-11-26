@@ -1,12 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
-using JetBrains.Annotations;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+
 public class Game : MonoBehaviour
 {
-    public GameObject player; // 플레이어 GameObject
+    public GameObject player;
 
     private void Start()
     {
@@ -18,12 +17,10 @@ public class Game : MonoBehaviour
 
     public void SceneToSave()
     {
-        // 현재 씬 이름 저장
         DataManager.instance.previousScene = SceneManager.GetActiveScene().name;
 
         if (player != null)
         {
-            // 플레이어 위치 및 회전 정보를 PlayerPos에 저장
             Vector3 currentPosition = player.transform.position;
             DataManager.instance.nowPos.positionX = currentPosition.x;
             DataManager.instance.nowPos.positionY = currentPosition.y;
@@ -32,19 +29,36 @@ public class Game : MonoBehaviour
             float currentRotationY = player.transform.eulerAngles.y;
             DataManager.instance.nowPos.rotationY = currentRotationY;
 
-            Debug.Log($"플레이어 위치 저장: {currentPosition}, 회전 Y: {currentRotationY}");
-        }
-        else
-        {
-            Debug.LogWarning("플레이어 오브젝트가 없습니다!");
+            Debug.Log($"플레이어 위치 {currentPosition} 회전 Y: {currentRotationY}");
         }
 
-        // SAVE_SCENE으로 이동
         SceneManager.LoadScene("SAVE_SCENE");
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == DataManager.instance.previousScene) // Save Scene에서 Game Scene으로 돌아왔을 때만 실행
+        {
+            DataManager.instance.RestorePlayerPosition(player);
+        }
     }
 
     public void SceneToNext()
     {
+        DataManager.instance.nowPos.positionX = 1.1f;
+        DataManager.instance.nowPos.positionY = 0;
+        DataManager.instance.nowPos.positionZ = 11.13f;
+        DataManager.instance.nowPos.rotationY = 0;
         SceneManager.LoadScene("AISLE2");
     }
 }

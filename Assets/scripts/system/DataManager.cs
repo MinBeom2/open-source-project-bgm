@@ -13,6 +13,15 @@ public class PlayerPos
     public float positionY;
     public float positionZ;
     public float rotationY;
+
+    public PlayerPos(float x, float y, float z, float rotY)
+    {
+        positionX = x;
+        positionY = y;
+        positionZ = z;
+        rotationY = rotY;
+    }
+
 }
 
 public class PlayerData
@@ -26,7 +35,7 @@ public class DataManager : MonoBehaviour
     public static DataManager instance;
     public string previousScene;
     public PlayerData nowPlayer = new PlayerData();
-    public PlayerPos nowPos = new PlayerPos();
+    public PlayerPos nowPos = new PlayerPos(1.1f, 0f, 11.13f, 0f);
 
     public string path;
     public int nowSlot;
@@ -94,19 +103,36 @@ public class DataManager : MonoBehaviour
             {
                 Debug.LogError("Firebase에서 데이터를 불러오는데 오류 발생");
             }
-
             else if (task.IsCompleted)
             {
                 DataSnapshot snapshot = task.Result;
                 if (snapshot.Exists)
                 {
-                    string json = snapshot.GetRawJsonValue();
-                    nowPlayer = JsonUtility.FromJson<PlayerData>(json);
+                    string playerDataJson = snapshot.Child("PlayerData").GetRawJsonValue();
+                    if (!string.IsNullOrEmpty(playerDataJson))
+                    {
+                        nowPlayer = JsonUtility.FromJson<PlayerData>(playerDataJson);
+                    }
+
+                    string playerPosJson = snapshot.Child("PlayerPos").GetRawJsonValue();
+                    if (!string.IsNullOrEmpty(playerPosJson))
+                    {
+                        nowPos = JsonUtility.FromJson<PlayerPos>(playerPosJson);
+                    }
+
                     Debug.Log("Firebase에서 데이터 불러오기 완료");
                 }
                 callback?.Invoke();
             }
         });
+    }
+
+    public void RestorePlayerPosition(GameObject player)
+    {
+        if (player != null)
+        {
+            player.transform.position = new Vector3(nowPos.positionX, nowPos.positionY, nowPos.positionZ);
+        }
     }
 
     public void DataClear()

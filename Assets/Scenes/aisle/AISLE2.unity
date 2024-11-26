@@ -127,6 +127,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c3a2e9c7a879b7d41b29957e6f9ed6c0, type: 3}
   m_PrefabInstance: {fileID: 585621526}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &15470817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 15470819}
+  - component: {fileID: 15470818}
+  m_Layer: 0
+  m_Name: aisleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &15470818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15470817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5b2518d05b00cd488da032d81b62852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 626914304}
+--- !u!4 &15470819
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15470817}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.628865, y: 8.509012, z: -1.3200336}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &141784549 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1379040271657172, guid: 22ec81d5835603742a7e83cb28420b15, type: 3}
@@ -158,6 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5b2518d05b00cd488da032d81b62852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!1001 &219119722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -333,6 +379,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 130125747015760071, guid: 787d0bcf58be53a4ebde93a0068903dc, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 130125747015760071, guid: 787d0bcf58be53a4ebde93a0068903dc, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 130125747015760088, guid: 787d0bcf58be53a4ebde93a0068903dc, type: 3}
@@ -768,6 +818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5b2518d05b00cd488da032d81b62852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!1 &791749747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,6 +1159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5b2518d05b00cd488da032d81b62852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!1 &1166067261
 GameObject:
   m_ObjectHideFlags: 0

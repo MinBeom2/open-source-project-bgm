@@ -45,10 +45,12 @@ public class InteractionSystem : MonoBehaviour
                 {
                     if (currentTarget.CompareTag("Book"))
                     {
+                        Debug.Log("1");
                         gameScript.SceneToSave();
                     }
                     else if (currentTarget.CompareTag("Door"))
                     {
+                        Debug.Log("1");
                         gameScript.SceneToNext();
                     }
                 }
