@@ -42,8 +42,21 @@ public class Movement : MonoBehaviour
     {
         charcc = GetComponent<CharacterController>();
         Look.x = DataManager.instance.nowPos.rotationY;
-        Cursor.visible = false; //커서 숨기기
-        Cursor.lockState = CursorLockMode.Locked; //커서 잠금
+        if (DataManager.instance == null)
+        {
+            Debug.LogError("DataManager가 초기화되지 않았습니다!");
+            return;
+        }
+
+
+        charcc.enabled = false;
+        transform.position = new Vector3(DataManager.instance.nowPos.positionX,
+                                         DataManager.instance.nowPos.positionY,
+                                         DataManager.instance.nowPos.positionZ);
+        charcc.enabled = true; 
+
+        Cursor.visible = false; 
+        Cursor.lockState = CursorLockMode.Locked; 
     }
 
     private void Update()

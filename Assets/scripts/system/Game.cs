@@ -35,23 +35,7 @@ public class Game : MonoBehaviour
         SceneManager.LoadScene("SAVE_SCENE");
     }
 
-    private void OnEnable()
-    {
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
 
-    private void OnDisable()
-    {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (scene.name == DataManager.instance.previousScene) // Save Scene에서 Game Scene으로 돌아왔을 때만 실행
-        {
-            DataManager.instance.RestorePlayerPosition(player);
-        }
-    }
 
     public void SceneToNext()
     {
@@ -59,6 +43,7 @@ public class Game : MonoBehaviour
         DataManager.instance.nowPos.positionY = 0;
         DataManager.instance.nowPos.positionZ = 11.13f;
         DataManager.instance.nowPos.rotationY = 0;
+
         SceneManager.LoadScene("AISLE2");
     }
 }

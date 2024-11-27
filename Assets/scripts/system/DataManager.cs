@@ -4,8 +4,10 @@ using UnityEngine;
 using System.IO;
 using Google.MiniJSON;
 using Firebase;
+using PimDeWitte.UnityMainThreadDispatcher;
 using Firebase.Database;
 using Firebase.Extensions;
+using UnityEngine.SceneManagement;
 
 public class PlayerPos
 {
@@ -13,7 +15,6 @@ public class PlayerPos
     public float positionY;
     public float positionZ;
     public float rotationY;
-
     public PlayerPos(float x, float y, float z, float rotY)
     {
         positionX = x;
@@ -95,7 +96,7 @@ public class DataManager : MonoBehaviour
             });
     }
 
-    public void Load(System.Action callback)
+    public void Load()
     {
         reference.Child("users").Child(id).Child("slots").Child(nowSlot.ToString()).GetValueAsync().ContinueWithOnMainThread(task =>
         {
@@ -121,19 +122,27 @@ public class DataManager : MonoBehaviour
                     }
 
                     Debug.Log("Firebase에서 데이터 불러오기 완료");
+                    Debug.Log("1");
+
                 }
-                callback?.Invoke();
+
+                // 메인 스레드에서 바로 처리
+                UnityMainThreadDispatcher.Instance().Enqueue(() =>
+                {
+                    if (nowPlayer?.stage != null)
+                    {
+                        SceneManager.LoadScene(nowPlayer.stage);
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene("AISLE1");
+                    }
+                });
             }
         });
     }
 
-    public void RestorePlayerPosition(GameObject player)
-    {
-        if (player != null)
-        {
-            player.transform.position = new Vector3(nowPos.positionX, nowPos.positionY, nowPos.positionZ);
-        }
-    }
+
 
     public void DataClear()
     {

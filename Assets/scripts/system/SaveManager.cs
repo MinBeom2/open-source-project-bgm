@@ -36,16 +36,15 @@ public class SaveManager : MonoBehaviour
         DataManager.instance.nowPlayer.stage = DataManager.instance.previousScene;
         DataManager.instance.nowPlayer.time = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
-        // 저장된 위치 및 회전 정보 로그 출력
         PlayerPos savedPosition = DataManager.instance.nowPos;
         Debug.Log($"슬롯 {number}에 데이터 저장: 스테이지 {DataManager.instance.nowPlayer.stage}, 시간 {DataManager.instance.nowPlayer.time}, 위치 ({savedPosition.positionX}, {savedPosition.positionY}, {savedPosition.positionZ}), 회전 Y: {savedPosition.rotationY}");
 
-        // Firebase에 저장
         DataManager.instance.Save();
     }
 
     public void BackToPreviousScene()
     {
+        Debug.Log("1");
         SceneManager.LoadScene(DataManager.instance.previousScene);
     }
 }
