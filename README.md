@@ -1,5 +1,5 @@
 ![BGM노션커버](https://github.com/user-attachments/assets/a39806ad-93a8-40ac-aac8-1ab2c23f0a2e)
-
+![header](https://capsule-render.vercel.app/api?type=venom&color=0:32CD32,50:8DB600,75:228B22,100:7FFF00&height=300&section=header&text=I'm%20GreenAppleSoda&fontSize=80&stroke=32CD32)
 # 패치노트
 
 ## 2024.11.20
