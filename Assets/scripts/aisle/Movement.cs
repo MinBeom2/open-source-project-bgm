@@ -37,7 +37,6 @@ public class Movement : MonoBehaviour
 
     private float currentWeightCrouch, speed, requirementMoveZRun;
 
-
     private void Start()
     {
         charcc = GetComponent<CharacterController>();
@@ -53,21 +52,25 @@ public class Movement : MonoBehaviour
         transform.position = new Vector3(DataManager.instance.nowPos.positionX,
                                          DataManager.instance.nowPos.positionY,
                                          DataManager.instance.nowPos.positionZ);
-        charcc.enabled = true; 
+        charcc.enabled = true;
 
-        Cursor.visible = false; 
-        Cursor.lockState = CursorLockMode.Locked; 
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void Update()
     {
+        if (Time.timeScale == 0f) return;
         Inputed();
     }
 
     private void LateUpdate()
     {
+        if (Time.timeScale == 0f) return;
         Output();
     }
+
+
 
     private void Output()
     {
