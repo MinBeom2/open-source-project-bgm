@@ -121,7 +121,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 35237a8e9dc88e44094dd7a455c91c65, type: 2}
 --- !u!1 &1529299
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,6 +253,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &3642635 stripped
@@ -270,6 +274,10 @@ PrefabInstance:
     - target: {fileID: 185821883814675544, guid: 323dc1b99292a4d4c8fa1d97493f15be, type: 3}
       propertyPath: m_Name
       value: Tiles_TCorner_04_C
+      objectReference: {fileID: 0}
+    - target: {fileID: 185821883814675544, guid: 323dc1b99292a4d4c8fa1d97493f15be, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 6557398162799758095, guid: 323dc1b99292a4d4c8fa1d97493f15be, type: 3}
       propertyPath: m_RootOrder
@@ -333,6 +341,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Props_Table2
       objectReference: {fileID: 0}
+    - target: {fileID: 4008232780602927279, guid: ea4fda82b181c284f84b42b153ee1222, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     - target: {fileID: 5853095854949626807, guid: ea4fda82b181c284f84b42b153ee1222, type: 3}
       propertyPath: m_RootOrder
       value: 135
@@ -394,6 +406,14 @@ PrefabInstance:
     - target: {fileID: 4114826657480262611, guid: fd4ab0bde46686149a8239c5469fbc69, type: 3}
       propertyPath: m_Name
       value: Tiles_+Side_01_A (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114826657480262611, guid: fd4ab0bde46686149a8239c5469fbc69, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114826657480262611, guid: fd4ab0bde46686149a8239c5469fbc69, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8437238636572333556, guid: fd4ab0bde46686149a8239c5469fbc69, type: 3}
       propertyPath: m_RootOrder
@@ -459,7 +479,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3500114019131177854, guid: 16d3b976106d561488ee6fef0113cc77, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3500114019131177854, guid: 16d3b976106d561488ee6fef0113cc77, type: 3}
       propertyPath: m_LocalPosition.x
@@ -566,6 +586,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_BasicCorner_01_B
       objectReference: {fileID: 0}
+    - target: {fileID: 5696469081921127099, guid: 194433cb7c10c944f8826fa04f42a9a7, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 194433cb7c10c944f8826fa04f42a9a7, type: 3}
 --- !u!4 &10556537 stripped
@@ -628,6 +652,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Halls_01_B (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7215668370463329880, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
 --- !u!4 &13527624 stripped
@@ -644,7 +672,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6715013224082303479, guid: 2c3d69bce3c868d44a89134faa13c8f4, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6715013224082303479, guid: 2c3d69bce3c868d44a89134faa13c8f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -771,7 +799,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 289932133147362299, guid: 248ab3f988ea00e4c8ae716c86563034, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 289932133147362299, guid: 248ab3f988ea00e4c8ae716c86563034, type: 3}
       propertyPath: m_LocalPosition.x
@@ -874,6 +902,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!1001 &25778076
@@ -931,6 +963,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_BasicSide_02_A (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2324065046096941204, guid: 72bbd19fca6ed534495fbd9fe0c0ec08, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72bbd19fca6ed534495fbd9fe0c0ec08, type: 3}
 --- !u!4 &25778077 stripped
@@ -948,6 +984,10 @@ PrefabInstance:
     - target: {fileID: 1301734923160800248, guid: 6ee634e2590933e47bcc961877b7427b, type: 3}
       propertyPath: m_Name
       value: Tiles_TCorner_04_A (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301734923160800248, guid: 6ee634e2590933e47bcc961877b7427b, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 4858847835706388123, guid: 6ee634e2590933e47bcc961877b7427b, type: 3}
       propertyPath: m_RootOrder
@@ -1010,6 +1050,10 @@ PrefabInstance:
     - target: {fileID: 3432221960977212034, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_01_A (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432221960977212034, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 4285619879872649237, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
       propertyPath: m_RootOrder
@@ -1075,7 +1119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
-      value: 57
+      value: 58
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_LocalScale.x
@@ -1136,7 +1180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
-      value: 64
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_LocalScale.x
@@ -1239,6 +1283,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_01_C (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3825253392015743747, guid: 763497c78e4320841a962b213d133e7c, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 763497c78e4320841a962b213d133e7c, type: 3}
 --- !u!4 &53993596 stripped
@@ -1256,6 +1304,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -1321,7 +1373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
-      value: 61
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_LocalScale.x
@@ -1429,6 +1481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+RoomEnd_01_D (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8533345014617622417, guid: 6bb77e66e4dc9a840bb4b7be7bf7c039, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bb77e66e4dc9a840bb4b7be7bf7c039, type: 3}
 --- !u!4 &92533142 stripped
@@ -1491,6 +1547,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_01_A (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5915083222161689782, guid: 756e88de6194f89469f53747fe14df87, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 756e88de6194f89469f53747fe14df87, type: 3}
 --- !u!4 &126045160 stripped
@@ -1511,7 +1571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
-      value: 54
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_LocalScale.x
@@ -1671,6 +1731,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_01_C (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3825253392015743747, guid: 763497c78e4320841a962b213d133e7c, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 763497c78e4320841a962b213d133e7c, type: 3}
 --- !u!4 &134446639 stripped
@@ -1733,6 +1797,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 6509076431519654990, guid: 75d2407752895f4418864182ff7eb836, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75d2407752895f4418864182ff7eb836, type: 3}
 --- !u!4 &134707447 stripped
@@ -1749,7 +1817,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5127832777302424669, guid: 9c7ddbd4e1e420e499a374e4556b2c71, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5127832777302424669, guid: 9c7ddbd4e1e420e499a374e4556b2c71, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2142,7 +2210,7 @@ RectTransform:
   - {fileID: 373442199}
   - {fileID: 654044257}
   m_Father: {fileID: 0}
-  m_RootOrder: 49
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2274,6 +2342,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &161858361 stripped
@@ -2335,6 +2407,14 @@ PrefabInstance:
     - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
       propertyPath: m_Name
       value: Tiles_+Cross (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
@@ -2403,6 +2483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_01_B
       objectReference: {fileID: 0}
+    - target: {fileID: 8457216198856617368, guid: 9e035c055a4d74f4f85477a73227a785, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e035c055a4d74f4f85477a73227a785, type: 3}
 --- !u!4 &181207046 stripped
@@ -2420,6 +2504,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -2522,6 +2610,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &183747178 stripped
@@ -2539,6 +2635,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -2641,6 +2741,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_2m_Window
       objectReference: {fileID: 0}
+    - target: {fileID: 8418782711366342651, guid: c7a231c23ac0ca242a97060777e25d97, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7a231c23ac0ca242a97060777e25d97, type: 3}
 --- !u!4 &194076760 stripped
@@ -2703,6 +2807,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!1001 &195926229
@@ -2715,6 +2823,10 @@ PrefabInstance:
     - target: {fileID: 2611862036590456993, guid: 278e9bcfd6a9f3244bb5f194fa518d50, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicCorner_02_D (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611862036590456993, guid: 278e9bcfd6a9f3244bb5f194fa518d50, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 4533907623697156525, guid: 278e9bcfd6a9f3244bb5f194fa518d50, type: 3}
       propertyPath: m_RootOrder
@@ -2871,7 +2983,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_RootOrder
-      value: 60
+      value: 61
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2970,6 +3082,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_BasicCorner_01_C
       objectReference: {fileID: 0}
+    - target: {fileID: 5187291392240287640, guid: eefe460f4eb17084787837fc4b22fb34, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eefe460f4eb17084787837fc4b22fb34, type: 3}
 --- !u!4 &238301648 stripped
@@ -3032,6 +3148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6509076431519654990, guid: 75d2407752895f4418864182ff7eb836, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75d2407752895f4418864182ff7eb836, type: 3}
 --- !u!4 &241632420 stripped
@@ -3049,6 +3169,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -3111,6 +3235,10 @@ PrefabInstance:
     - target: {fileID: 3432221960977212034, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_01_A (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432221960977212034, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 4285619879872649237, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
       propertyPath: m_RootOrder
@@ -3213,6 +3341,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_BasicSide_01_B (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5719218672445270108, guid: d8dacebeb29609c4db6ba7425113a1ec, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8dacebeb29609c4db6ba7425113a1ec, type: 3}
 --- !u!1001 &266855524
@@ -3270,6 +3402,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallDoor_B (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8141954545842876586, guid: 2945ee05d21776c4ea20337d39044807, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2945ee05d21776c4ea20337d39044807, type: 3}
 --- !u!4 &266855525 stripped
@@ -3290,7 +3426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
-      value: 47
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_LocalScale.x
@@ -3393,6 +3529,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &272587892 stripped
@@ -3455,6 +3599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!1001 &276987537
@@ -3511,6 +3659,10 @@ PrefabInstance:
     - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
       propertyPath: m_Name
       value: Tiles_01_Fill (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
@@ -3574,6 +3726,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &285257115 stripped
@@ -3635,6 +3795,10 @@ PrefabInstance:
     - target: {fileID: 8418782711366342651, guid: c7a231c23ac0ca242a97060777e25d97, type: 3}
       propertyPath: m_Name
       value: Wall_2m_Window (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418782711366342651, guid: c7a231c23ac0ca242a97060777e25d97, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7a231c23ac0ca242a97060777e25d97, type: 3}
@@ -3698,6 +3862,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Side_01_D
       objectReference: {fileID: 0}
+    - target: {fileID: 5618858478286434005, guid: 8804a719b3c745c4cbc2fd672d92ac5d, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618858478286434005, guid: 8804a719b3c745c4cbc2fd672d92ac5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8804a719b3c745c4cbc2fd672d92ac5d, type: 3}
 --- !u!4 &301565334 stripped
@@ -3760,6 +3932,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &302723425 stripped
@@ -3780,7 +3956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5716564053579780907, guid: 40c2e3fae13fb7c4a95134f9b198b91f, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5716564053579780907, guid: 40c2e3fae13fb7c4a95134f9b198b91f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3954,6 +4130,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &313191338 stripped
@@ -3971,6 +4151,10 @@ PrefabInstance:
     - target: {fileID: 1576863837626924101, guid: 25c12ab16ba5d404192d32c7ff026a1f, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_01_C (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576863837626924101, guid: 25c12ab16ba5d404192d32c7ff026a1f, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 3095204289068681342, guid: 25c12ab16ba5d404192d32c7ff026a1f, type: 3}
       propertyPath: m_RootOrder
@@ -4169,6 +4353,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_2m (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
       value: 204
@@ -4275,6 +4463,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_01_A (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5915083222161689782, guid: 756e88de6194f89469f53747fe14df87, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 756e88de6194f89469f53747fe14df87, type: 3}
 --- !u!4 &338670822 stripped
@@ -4337,6 +4529,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &339049176 stripped
@@ -4354,6 +4554,10 @@ PrefabInstance:
     - target: {fileID: 375814585393374981, guid: 61d75f8b26f9485459f5a25bdfd62e8c, type: 3}
       propertyPath: m_Name
       value: WallDoor_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 375814585393374981, guid: 61d75f8b26f9485459f5a25bdfd62e8c, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 6189250755239232729, guid: 61d75f8b26f9485459f5a25bdfd62e8c, type: 3}
       propertyPath: m_RootOrder
@@ -4421,6 +4625,10 @@ PrefabInstance:
     - target: {fileID: 4114826657480262611, guid: fd4ab0bde46686149a8239c5469fbc69, type: 3}
       propertyPath: m_Name
       value: Tiles_+Side_01_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114826657480262611, guid: fd4ab0bde46686149a8239c5469fbc69, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 8437238636572333556, guid: fd4ab0bde46686149a8239c5469fbc69, type: 3}
       propertyPath: m_RootOrder
@@ -4505,7 +4713,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6970137111617633132, guid: 385aff8a0cfab61479f946de511fd592, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6970137111617633132, guid: 385aff8a0cfab61479f946de511fd592, type: 3}
       propertyPath: m_LocalScale.x
@@ -4624,6 +4832,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &351819629 stripped
@@ -4686,6 +4902,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &352637628 stripped
@@ -4703,6 +4927,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -4809,6 +5037,10 @@ PrefabInstance:
     - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
       propertyPath: m_Name
       value: Tiles_+Cross (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
@@ -4965,7 +5197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5716564053579780907, guid: 40c2e3fae13fb7c4a95134f9b198b91f, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5716564053579780907, guid: 40c2e3fae13fb7c4a95134f9b198b91f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5064,6 +5296,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &383600442 stripped
@@ -5081,6 +5317,10 @@ PrefabInstance:
     - target: {fileID: 1022461356690816187, guid: a9d17aa2e1c8d684db0d8b211e846b11, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicCorner_01_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022461356690816187, guid: a9d17aa2e1c8d684db0d8b211e846b11, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 7662511761995036546, guid: a9d17aa2e1c8d684db0d8b211e846b11, type: 3}
       propertyPath: m_RootOrder
@@ -5183,6 +5423,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &387169645 stripped
@@ -5244,6 +5488,10 @@ PrefabInstance:
     - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
       propertyPath: m_Name
       value: Tiles_01_Fill (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
@@ -5307,6 +5555,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &391257973 stripped
@@ -5368,6 +5620,10 @@ PrefabInstance:
     - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
       propertyPath: m_Name
       value: Tiles_+Cross (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
@@ -5456,6 +5712,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -5668,7 +5928,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 130125747015760090, guid: 787d0bcf58be53a4ebde93a0068903dc, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 130125747015760090, guid: 787d0bcf58be53a4ebde93a0068903dc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5771,6 +6031,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_01_D
       objectReference: {fileID: 0}
+    - target: {fileID: 3483558929264476047, guid: d9075f40aceae6c4dbbff497066fd151, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9075f40aceae6c4dbbff497066fd151, type: 3}
 --- !u!4 &417340743 stripped
@@ -5788,6 +6052,10 @@ PrefabInstance:
     - target: {fileID: 34265707496654826, guid: d747ed6ba5f70954bbdb7dfb4d21758a, type: 3}
       propertyPath: m_Name
       value: Tiles_+Room_HoleCeiling_01_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 34265707496654826, guid: d747ed6ba5f70954bbdb7dfb4d21758a, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 2549670181962636441, guid: d747ed6ba5f70954bbdb7dfb4d21758a, type: 3}
       propertyPath: m_Materials.Array.data[1]
@@ -5876,7 +6144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_RootOrder
-      value: 53
+      value: 54
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5933,7 +6201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2122128515190524096, guid: 6b90958a986bf934f9b62f33bfe2a358, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2122128515190524096, guid: 6b90958a986bf934f9b62f33bfe2a358, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5987,6 +6255,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -6048,7 +6320,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 639006250107334805, guid: 75d2407752895f4418864182ff7eb836, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 639006250107334805, guid: 75d2407752895f4418864182ff7eb836, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6151,6 +6423,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!1001 &458204158
@@ -6207,6 +6487,14 @@ PrefabInstance:
     - target: {fileID: 8457216198856617368, guid: 9e035c055a4d74f4f85477a73227a785, type: 3}
       propertyPath: m_Name
       value: Tiles_+Corner_01_B
+      objectReference: {fileID: 0}
+    - target: {fileID: 8457216198856617368, guid: 9e035c055a4d74f4f85477a73227a785, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 8457216198856617368, guid: 9e035c055a4d74f4f85477a73227a785, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e035c055a4d74f4f85477a73227a785, type: 3}
@@ -6265,12 +6553,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_01_D (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3483558929264476047, guid: d9075f40aceae6c4dbbff497066fd151, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9075f40aceae6c4dbbff497066fd151, type: 3}
 --- !u!4 &466391557 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2799428964560997563, guid: d9075f40aceae6c4dbbff497066fd151, type: 3}
   m_PrefabInstance: {fileID: 466391556}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &501828725 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f309fde27635db945a24489d6047354b, type: 3}
+  m_PrefabInstance: {fileID: 1603606820}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &501828726 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: f309fde27635db945a24489d6047354b, type: 3}
+  m_PrefabInstance: {fileID: 1603606820}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &502741468
 PrefabInstance:
@@ -6326,6 +6628,10 @@ PrefabInstance:
     - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
       propertyPath: m_Name
       value: Tiles_01_Fill (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
@@ -6416,7 +6722,7 @@ Transform:
   m_Children:
   - {fileID: 1283777433}
   m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &511706235
 PrefabInstance:
@@ -6473,6 +6779,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!1001 &513084555
@@ -6485,6 +6795,14 @@ PrefabInstance:
     - target: {fileID: 4114826657480262611, guid: fd4ab0bde46686149a8239c5469fbc69, type: 3}
       propertyPath: m_Name
       value: Tiles_+Side_01_A (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114826657480262611, guid: fd4ab0bde46686149a8239c5469fbc69, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114826657480262611, guid: fd4ab0bde46686149a8239c5469fbc69, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8437238636572333556, guid: fd4ab0bde46686149a8239c5469fbc69, type: 3}
       propertyPath: m_RootOrder
@@ -6597,6 +6915,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_01_D (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3483558929264476047, guid: d9075f40aceae6c4dbbff497066fd151, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483558929264476047, guid: d9075f40aceae6c4dbbff497066fd151, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9075f40aceae6c4dbbff497066fd151, type: 3}
 --- !u!4 &526128159 stripped
@@ -6614,6 +6940,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -6716,6 +7046,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_BasicSide_01_B (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5719218672445270108, guid: d8dacebeb29609c4db6ba7425113a1ec, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8dacebeb29609c4db6ba7425113a1ec, type: 3}
 --- !u!4 &537242303 stripped
@@ -6782,6 +7116,10 @@ PrefabInstance:
     - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
       propertyPath: m_Name
       value: Tiles_+Cross (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
@@ -6858,7 +7196,7 @@ Transform:
   - {fileID: 1913908642}
   - {fileID: 1038356211}
   m_Father: {fileID: 0}
-  m_RootOrder: 67
+  m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &543058147
 PrefabInstance:
@@ -6914,6 +7252,14 @@ PrefabInstance:
     - target: {fileID: 8457216198856617368, guid: 9e035c055a4d74f4f85477a73227a785, type: 3}
       propertyPath: m_Name
       value: Tiles_+Corner_01_B (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8457216198856617368, guid: 9e035c055a4d74f4f85477a73227a785, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 8457216198856617368, guid: 9e035c055a4d74f4f85477a73227a785, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e035c055a4d74f4f85477a73227a785, type: 3}
@@ -6977,6 +7323,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_01_B
       objectReference: {fileID: 0}
+    - target: {fileID: 8457216198856617368, guid: 9e035c055a4d74f4f85477a73227a785, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e035c055a4d74f4f85477a73227a785, type: 3}
 --- !u!1001 &551897033
@@ -6989,6 +7339,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -7104,7 +7458,7 @@ Transform:
   - {fileID: 1958979387}
   - {fileID: 1654207606}
   m_Father: {fileID: 0}
-  m_RootOrder: 62
+  m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &561109333 stripped
 Transform:
@@ -7166,6 +7520,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+RoomEnd_01_D (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8533345014617622417, guid: 6bb77e66e4dc9a840bb4b7be7bf7c039, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bb77e66e4dc9a840bb4b7be7bf7c039, type: 3}
 --- !u!4 &563545533 stripped
@@ -7183,6 +7541,10 @@ PrefabInstance:
     - target: {fileID: 1022461356690816187, guid: a9d17aa2e1c8d684db0d8b211e846b11, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicCorner_01_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022461356690816187, guid: a9d17aa2e1c8d684db0d8b211e846b11, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 7662511761995036546, guid: a9d17aa2e1c8d684db0d8b211e846b11, type: 3}
       propertyPath: m_RootOrder
@@ -7290,6 +7652,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &570297349 stripped
@@ -7352,6 +7718,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_BasicSide_01_B (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5719218672445270108, guid: d8dacebeb29609c4db6ba7425113a1ec, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8dacebeb29609c4db6ba7425113a1ec, type: 3}
 --- !u!4 &573920980 stripped
@@ -7369,6 +7739,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -7497,6 +7871,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_THalls_01_C
       objectReference: {fileID: 0}
+    - target: {fileID: 1009967193127303327, guid: 588ab5954570c19409d7816612d0569d, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     - target: {fileID: 6304824698769524024, guid: 588ab5954570c19409d7816612d0569d, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -7603,6 +7981,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &607353411 stripped
@@ -7665,6 +8047,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &608911376 stripped
@@ -7706,7 +8096,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_RootOrder
-      value: 63
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7805,6 +8195,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &635703955 stripped
@@ -7866,6 +8260,10 @@ PrefabInstance:
     - target: {fileID: 3483558929264476047, guid: d9075f40aceae6c4dbbff497066fd151, type: 3}
       propertyPath: m_Name
       value: Tiles_+Corner_01_D (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483558929264476047, guid: d9075f40aceae6c4dbbff497066fd151, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9075f40aceae6c4dbbff497066fd151, type: 3}
@@ -8064,6 +8462,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Side_01_D (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5618858478286434005, guid: 8804a719b3c745c4cbc2fd672d92ac5d, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618858478286434005, guid: 8804a719b3c745c4cbc2fd672d92ac5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8804a719b3c745c4cbc2fd672d92ac5d, type: 3}
 --- !u!4 &655409618 stripped
@@ -8080,7 +8486,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8156060859095105769, guid: b68b6982d1e1a3d46a400c0b1d48b994, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8156060859095105769, guid: b68b6982d1e1a3d46a400c0b1d48b994, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8248,6 +8654,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &659404437 stripped
@@ -8310,6 +8724,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_01_B (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8457216198856617368, guid: 9e035c055a4d74f4f85477a73227a785, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e035c055a4d74f4f85477a73227a785, type: 3}
 --- !u!4 &659579227 stripped
@@ -8327,6 +8745,10 @@ PrefabInstance:
     - target: {fileID: 1576863837626924101, guid: 25c12ab16ba5d404192d32c7ff026a1f, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_01_C (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576863837626924101, guid: 25c12ab16ba5d404192d32c7ff026a1f, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 3095204289068681342, guid: 25c12ab16ba5d404192d32c7ff026a1f, type: 3}
       propertyPath: m_RootOrder
@@ -8389,6 +8811,10 @@ PrefabInstance:
     - target: {fileID: 3090398171231153560, guid: 47ed96f758df88b40a1e44a8b4b5809d, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_01_D (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090398171231153560, guid: 47ed96f758df88b40a1e44a8b4b5809d, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9023073754691082354, guid: 47ed96f758df88b40a1e44a8b4b5809d, type: 3}
       propertyPath: m_RootOrder
@@ -8491,6 +8917,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &672533374 stripped
@@ -8508,6 +8942,10 @@ PrefabInstance:
     - target: {fileID: 3090398171231153560, guid: 47ed96f758df88b40a1e44a8b4b5809d, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_01_D (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090398171231153560, guid: 47ed96f758df88b40a1e44a8b4b5809d, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9023073754691082354, guid: 47ed96f758df88b40a1e44a8b4b5809d, type: 3}
       propertyPath: m_RootOrder
@@ -8615,6 +9053,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_01_B (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8457216198856617368, guid: 9e035c055a4d74f4f85477a73227a785, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e035c055a4d74f4f85477a73227a785, type: 3}
 --- !u!4 &679866443 stripped
@@ -8676,7 +9118,7 @@ Transform:
   - {fileID: 2106035158}
   - {fileID: 1626257764}
   m_Father: {fileID: 0}
-  m_RootOrder: 46
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &685946734
 PrefabInstance:
@@ -8733,6 +9175,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &685946735 stripped
@@ -8750,6 +9200,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -8852,6 +9306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_01_B (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8457216198856617368, guid: 9e035c055a4d74f4f85477a73227a785, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e035c055a4d74f4f85477a73227a785, type: 3}
 --- !u!4 &700988509 stripped
@@ -8913,6 +9371,10 @@ PrefabInstance:
     - target: {fileID: 7215668370463329880, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
       propertyPath: m_Name
       value: Tiles_+Halls_01_B (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7215668370463329880, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
@@ -9013,7 +9475,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &711479236
 PrefabInstance:
@@ -9069,6 +9531,10 @@ PrefabInstance:
     - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
       propertyPath: m_Name
       value: Tiles_01_Fill (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
@@ -9132,6 +9598,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Halls_01_B (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7215668370463329880, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
 --- !u!1001 &719811080
@@ -9189,6 +9659,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_01_D
       objectReference: {fileID: 0}
+    - target: {fileID: 3483558929264476047, guid: d9075f40aceae6c4dbbff497066fd151, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483558929264476047, guid: d9075f40aceae6c4dbbff497066fd151, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9075f40aceae6c4dbbff497066fd151, type: 3}
 --- !u!1001 &722257612
@@ -9201,6 +9679,10 @@ PrefabInstance:
     - target: {fileID: 3432221960977212034, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_01_A (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432221960977212034, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 4285619879872649237, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
       propertyPath: m_RootOrder
@@ -9308,6 +9790,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_BasicSide_01_B (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5719218672445270108, guid: d8dacebeb29609c4db6ba7425113a1ec, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8dacebeb29609c4db6ba7425113a1ec, type: 3}
 --- !u!4 &722628716 stripped
@@ -9325,6 +9811,10 @@ PrefabInstance:
     - target: {fileID: 5661006924635116994, guid: 8115b72153b9bd545a1deeb93c8b3afb, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicCorner_01_D
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661006924635116994, guid: 8115b72153b9bd545a1deeb93c8b3afb, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 8074558722124912977, guid: 8115b72153b9bd545a1deeb93c8b3afb, type: 3}
       propertyPath: m_RootOrder
@@ -9387,6 +9877,10 @@ PrefabInstance:
     - target: {fileID: 2427294762709047757, guid: 2a7a4d1c004c83d49afef1a2f844f0c2, type: 3}
       propertyPath: m_Name
       value: Tiles_+RoomStairs_01_A (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2427294762709047757, guid: 2a7a4d1c004c83d49afef1a2f844f0c2, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 3757899112272078328, guid: 2a7a4d1c004c83d49afef1a2f844f0c2, type: 3}
       propertyPath: m_RootOrder
@@ -9497,6 +9991,10 @@ PrefabInstance:
     - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
       propertyPath: m_Name
       value: Tiles_+Cross (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
@@ -9635,6 +10133,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &756668902 stripped
@@ -9655,7 +10157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3500114019131177854, guid: 16d3b976106d561488ee6fef0113cc77, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 3500114019131177854, guid: 16d3b976106d561488ee6fef0113cc77, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9831,6 +10333,10 @@ PrefabInstance:
     - target: {fileID: 5915083222161689782, guid: 756e88de6194f89469f53747fe14df87, type: 3}
       propertyPath: m_Name
       value: Tiles_+Corner_01_A (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5915083222161689782, guid: 756e88de6194f89469f53747fe14df87, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 756e88de6194f89469f53747fe14df87, type: 3}
@@ -10060,6 +10566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_BasicSide_02_A (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2324065046096941204, guid: 72bbd19fca6ed534495fbd9fe0c0ec08, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72bbd19fca6ed534495fbd9fe0c0ec08, type: 3}
 --- !u!4 &776745426 stripped
@@ -10087,6 +10597,10 @@ PrefabInstance:
     - target: {fileID: 2427294762709047757, guid: 2a7a4d1c004c83d49afef1a2f844f0c2, type: 3}
       propertyPath: m_Name
       value: Tiles_+RoomStairs_01_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 2427294762709047757, guid: 2a7a4d1c004c83d49afef1a2f844f0c2, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 3757899112272078328, guid: 2a7a4d1c004c83d49afef1a2f844f0c2, type: 3}
       propertyPath: m_RootOrder
@@ -10164,6 +10678,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_2m (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
       value: 115
@@ -10230,6 +10748,10 @@ PrefabInstance:
     - target: {fileID: 1313136051536613882, guid: a3f97c84b9c482241a557d3615491865, type: 3}
       propertyPath: m_Name
       value: Tiles_+Corner_02_D
+      objectReference: {fileID: 0}
+    - target: {fileID: 1313136051536613882, guid: a3f97c84b9c482241a557d3615491865, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 2311882217731630554, guid: a3f97c84b9c482241a557d3615491865, type: 3}
       propertyPath: m_RootOrder
@@ -10337,6 +10859,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &825477885 stripped
@@ -10403,6 +10933,10 @@ PrefabInstance:
     - target: {fileID: 5915083222161689782, guid: 756e88de6194f89469f53747fe14df87, type: 3}
       propertyPath: m_Name
       value: Tiles_+Corner_01_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 5915083222161689782, guid: 756e88de6194f89469f53747fe14df87, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 756e88de6194f89469f53747fe14df87, type: 3}
@@ -10562,6 +11096,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &854364364 stripped
@@ -10579,6 +11117,10 @@ PrefabInstance:
     - target: {fileID: 4008232780602927279, guid: ea4fda82b181c284f84b42b153ee1222, type: 3}
       propertyPath: m_Name
       value: Props_Table2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4008232780602927279, guid: ea4fda82b181c284f84b42b153ee1222, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 5853095854949626807, guid: ea4fda82b181c284f84b42b153ee1222, type: 3}
       propertyPath: m_RootOrder
@@ -10691,6 +11233,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Halls_01_B (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7215668370463329880, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
 --- !u!4 &883337549 stripped
@@ -10708,6 +11254,10 @@ PrefabInstance:
     - target: {fileID: 792912839975087788, guid: 08c2ff31d1e64d049b4ca297897283c0, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicCorner_03_B
+      objectReference: {fileID: 0}
+    - target: {fileID: 792912839975087788, guid: 08c2ff31d1e64d049b4ca297897283c0, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 4350399651581138829, guid: 08c2ff31d1e64d049b4ca297897283c0, type: 3}
       propertyPath: m_RootOrder
@@ -10810,6 +11360,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &897952632 stripped
@@ -10871,6 +11425,10 @@ PrefabInstance:
     - target: {fileID: 5719218672445270108, guid: d8dacebeb29609c4db6ba7425113a1ec, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_01_B (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5719218672445270108, guid: d8dacebeb29609c4db6ba7425113a1ec, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8dacebeb29609c4db6ba7425113a1ec, type: 3}
@@ -10934,6 +11492,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &914054880 stripped
@@ -10995,6 +11557,10 @@ PrefabInstance:
     - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
       propertyPath: m_Name
       value: Tiles_+Cross
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
@@ -11063,6 +11629,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &942656137 stripped
@@ -11124,6 +11698,10 @@ PrefabInstance:
     - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
       propertyPath: m_Name
       value: Tiles_01_Fill (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
@@ -11187,6 +11765,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_01_C (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3825253392015743747, guid: 763497c78e4320841a962b213d133e7c, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 763497c78e4320841a962b213d133e7c, type: 3}
 --- !u!4 &948801342 stripped
@@ -11204,6 +11786,10 @@ PrefabInstance:
     - target: {fileID: 2611862036590456993, guid: 278e9bcfd6a9f3244bb5f194fa518d50, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicCorner_02_D (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611862036590456993, guid: 278e9bcfd6a9f3244bb5f194fa518d50, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 4533907623697156525, guid: 278e9bcfd6a9f3244bb5f194fa518d50, type: 3}
       propertyPath: m_RootOrder
@@ -11311,6 +11897,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &959349416 stripped
@@ -11327,7 +11917,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 183704246762007467, guid: 4c5e2ed93e1657e48987e24141fce4d9, type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 183704246762007467, guid: 4c5e2ed93e1657e48987e24141fce4d9, type: 3}
       propertyPath: m_LocalScale.x
@@ -11568,7 +12158,7 @@ Transform:
   - {fileID: 1992672762}
   - {fileID: 766929402}
   m_Father: {fileID: 0}
-  m_RootOrder: 66
+  m_RootOrder: 67
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &991465887
 PrefabInstance:
@@ -11599,7 +12189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_RootOrder
-      value: 50
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11698,6 +12288,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &996011834 stripped
@@ -11734,7 +12332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_RootOrder
-      value: 40
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11833,6 +12431,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!1001 &1017047298
@@ -11889,6 +12491,14 @@ PrefabInstance:
     - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
       propertyPath: m_Name
       value: Tiles_+Cross (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
@@ -11952,6 +12562,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &1021388647 stripped
@@ -11969,6 +12583,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -12071,6 +12689,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &1024214801 stripped
@@ -12095,7 +12721,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8726842391954533938, guid: d98c793a3c8517144a0477b447235ad8, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8726842391954533938, guid: d98c793a3c8517144a0477b447235ad8, type: 3}
       propertyPath: m_LocalScale.x
@@ -12303,6 +12929,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &1047361284 stripped
@@ -12320,6 +12950,14 @@ PrefabInstance:
     - target: {fileID: 4114826657480262611, guid: fd4ab0bde46686149a8239c5469fbc69, type: 3}
       propertyPath: m_Name
       value: Tiles_+Side_01_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114826657480262611, guid: fd4ab0bde46686149a8239c5469fbc69, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114826657480262611, guid: fd4ab0bde46686149a8239c5469fbc69, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8437238636572333556, guid: fd4ab0bde46686149a8239c5469fbc69, type: 3}
       propertyPath: m_RootOrder
@@ -12382,6 +13020,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -12462,7 +13104,7 @@ Transform:
   - {fileID: 1314423815}
   - {fileID: 843119097}
   m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1056091802
 MonoBehaviour:
@@ -12553,6 +13195,10 @@ PrefabInstance:
     - target: {fileID: 3170249309077905503, guid: 872e675da07ca6d4c9a552e9dc531f82, type: 3}
       propertyPath: m_Name
       value: Wall_2m_Door_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170249309077905503, guid: 872e675da07ca6d4c9a552e9dc531f82, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 872e675da07ca6d4c9a552e9dc531f82, type: 3}
@@ -12685,6 +13331,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Side_01_D (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5618858478286434005, guid: 8804a719b3c745c4cbc2fd672d92ac5d, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618858478286434005, guid: 8804a719b3c745c4cbc2fd672d92ac5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8804a719b3c745c4cbc2fd672d92ac5d, type: 3}
 --- !u!4 &1077742285 stripped
@@ -12747,6 +13401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_01_C
       objectReference: {fileID: 0}
+    - target: {fileID: 3825253392015743747, guid: 763497c78e4320841a962b213d133e7c, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 763497c78e4320841a962b213d133e7c, type: 3}
 --- !u!1001 &1086381356
@@ -12759,6 +13417,10 @@ PrefabInstance:
     - target: {fileID: 5661006924635116994, guid: 8115b72153b9bd545a1deeb93c8b3afb, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicCorner_01_D (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661006924635116994, guid: 8115b72153b9bd545a1deeb93c8b3afb, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 8074558722124912977, guid: 8115b72153b9bd545a1deeb93c8b3afb, type: 3}
       propertyPath: m_RootOrder
@@ -12824,7 +13486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
-      value: 55
+      value: 56
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_LocalScale.x
@@ -12927,6 +13589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &1087293730 stripped
@@ -12988,6 +13654,14 @@ PrefabInstance:
     - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
       propertyPath: m_Name
       value: Tiles_+Cross (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
@@ -13051,6 +13725,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &1089238808 stripped
@@ -13087,7 +13765,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_RootOrder
-      value: 52
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13256,6 +13934,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_01_B (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8457216198856617368, guid: 9e035c055a4d74f4f85477a73227a785, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 8457216198856617368, guid: 9e035c055a4d74f4f85477a73227a785, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e035c055a4d74f4f85477a73227a785, type: 3}
 --- !u!4 &1109399241 stripped
@@ -13318,6 +14004,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &1109907254 stripped
@@ -13335,6 +14025,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -13397,6 +14091,10 @@ PrefabInstance:
     - target: {fileID: 3432221960977212034, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_01_A (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432221960977212034, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 4285619879872649237, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
       propertyPath: m_RootOrder
@@ -13478,7 +14176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_RootOrder
-      value: 43
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13577,6 +14275,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &1136925253 stripped
@@ -13595,7 +14297,7 @@ GameObject:
   - component: {fileID: 1139395909}
   m_Layer: 0
   m_Name: Tiles
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13876,7 +14578,7 @@ Transform:
   - {fileID: 1283240706}
   - {fileID: 1658516671}
   m_Father: {fileID: 0}
-  m_RootOrder: 44
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1142764361
 PrefabInstance:
@@ -13891,7 +14593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3500114019131177854, guid: 16d3b976106d561488ee6fef0113cc77, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 3500114019131177854, guid: 16d3b976106d561488ee6fef0113cc77, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13990,6 +14692,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Halls_01_B (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7215668370463329880, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
 --- !u!4 &1147489987 stripped
@@ -14015,7 +14721,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8682021173169176230, guid: abfe3acd0ab10dc44be436bc2b13d8d6, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8682021173169176230, guid: abfe3acd0ab10dc44be436bc2b13d8d6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14069,6 +14775,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -14175,6 +14885,10 @@ PrefabInstance:
     - target: {fileID: 1271063593300665762, guid: 722ca2f5650088f46b0bf95645d4bcda, type: 3}
       propertyPath: m_Name
       value: Tiles_+Corner_02_B
+      objectReference: {fileID: 0}
+    - target: {fileID: 1271063593300665762, guid: 722ca2f5650088f46b0bf95645d4bcda, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 722ca2f5650088f46b0bf95645d4bcda, type: 3}
@@ -14287,7 +15001,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_RootOrder
-      value: 51
+      value: 52
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14397,7 +15111,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 48
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1188991089
 PrefabInstance:
@@ -14453,6 +15167,10 @@ PrefabInstance:
     - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
       propertyPath: m_Name
       value: Tiles_01_Fill (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
@@ -14516,6 +15234,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &1212990937 stripped
@@ -14577,6 +15299,10 @@ PrefabInstance:
     - target: {fileID: 8533345014617622417, guid: 6bb77e66e4dc9a840bb4b7be7bf7c039, type: 3}
       propertyPath: m_Name
       value: Tiles_+RoomEnd_01_D (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8533345014617622417, guid: 6bb77e66e4dc9a840bb4b7be7bf7c039, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bb77e66e4dc9a840bb4b7be7bf7c039, type: 3}
@@ -14670,6 +15396,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_BasicSide_01_A
       objectReference: {fileID: 0}
+    - target: {fileID: 3432221960977212034, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     - target: {fileID: 4285619879872649237, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
       propertyPath: m_RootOrder
       value: 196
@@ -14726,6 +15456,10 @@ PrefabInstance:
     - target: {fileID: 3432221960977212034, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_01_A (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432221960977212034, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 4285619879872649237, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
       propertyPath: m_RootOrder
@@ -14787,7 +15521,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 183704246762007467, guid: 4c5e2ed93e1657e48987e24141fce4d9, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 183704246762007467, guid: 4c5e2ed93e1657e48987e24141fce4d9, type: 3}
       propertyPath: m_LocalScale.x
@@ -14910,6 +15644,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &1250678357 stripped
@@ -14972,6 +15714,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &1252273128 stripped
@@ -14989,6 +15735,10 @@ PrefabInstance:
     - target: {fileID: 1576863837626924101, guid: 25c12ab16ba5d404192d32c7ff026a1f, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_01_C (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576863837626924101, guid: 25c12ab16ba5d404192d32c7ff026a1f, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 3095204289068681342, guid: 25c12ab16ba5d404192d32c7ff026a1f, type: 3}
       propertyPath: m_RootOrder
@@ -15301,6 +16051,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!1001 &1261125590
@@ -15357,6 +16111,10 @@ PrefabInstance:
     - target: {fileID: 5696469081921127099, guid: 194433cb7c10c944f8826fa04f42a9a7, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicCorner_01_B (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696469081921127099, guid: 194433cb7c10c944f8826fa04f42a9a7, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 194433cb7c10c944f8826fa04f42a9a7, type: 3}
@@ -15420,6 +16178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_01_C (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3825253392015743747, guid: 763497c78e4320841a962b213d133e7c, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 763497c78e4320841a962b213d133e7c, type: 3}
 --- !u!4 &1264735802 stripped
@@ -15482,6 +16244,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Halls_01_A (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5582715524507360538, guid: b47ad29467ca091478d6e3d903e9a1d3, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b47ad29467ca091478d6e3d903e9a1d3, type: 3}
 --- !u!1001 &1271591155
@@ -15543,6 +16309,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Room_HoleFloor_01_C
       objectReference: {fileID: 0}
+    - target: {fileID: 3992243209498074693, guid: bfef5f314d21d394eaa76e1bf803f661, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfef5f314d21d394eaa76e1bf803f661, type: 3}
 --- !u!1001 &1271591793
@@ -15599,6 +16369,14 @@ PrefabInstance:
     - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
       propertyPath: m_Name
       value: Tiles_+Cross (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
@@ -15661,6 +16439,10 @@ PrefabInstance:
     - target: {fileID: 5582715524507360538, guid: b47ad29467ca091478d6e3d903e9a1d3, type: 3}
       propertyPath: m_Name
       value: Tiles_+Halls_01_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 5582715524507360538, guid: b47ad29467ca091478d6e3d903e9a1d3, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b47ad29467ca091478d6e3d903e9a1d3, type: 3}
@@ -15750,6 +16532,10 @@ PrefabInstance:
     - target: {fileID: 5661006924635116994, guid: 8115b72153b9bd545a1deeb93c8b3afb, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicCorner_01_D (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661006924635116994, guid: 8115b72153b9bd545a1deeb93c8b3afb, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 8074558722124912977, guid: 8115b72153b9bd545a1deeb93c8b3afb, type: 3}
       propertyPath: m_RootOrder
@@ -15857,6 +16643,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+RoomEnd_01_D (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8533345014617622417, guid: 6bb77e66e4dc9a840bb4b7be7bf7c039, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bb77e66e4dc9a840bb4b7be7bf7c039, type: 3}
 --- !u!4 &1280130646 stripped
@@ -15919,6 +16709,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &1281559565 stripped
@@ -15980,6 +16774,10 @@ PrefabInstance:
     - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
       propertyPath: m_Name
       value: Tiles_01_Fill (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
@@ -16068,6 +16866,10 @@ PrefabInstance:
     - target: {fileID: 1009967193127303327, guid: 588ab5954570c19409d7816612d0569d, type: 3}
       propertyPath: m_Name
       value: Tiles_THalls_01_C (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009967193127303327, guid: 588ab5954570c19409d7816612d0569d, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 6304824698769524024, guid: 588ab5954570c19409d7816612d0569d, type: 3}
       propertyPath: m_RootOrder
@@ -16175,6 +16977,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &1295236133 stripped
@@ -16204,7 +17014,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8726842391954533938, guid: d98c793a3c8517144a0477b447235ad8, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 8726842391954533938, guid: d98c793a3c8517144a0477b447235ad8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16303,6 +17113,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_BasicSide_02_A
       objectReference: {fileID: 0}
+    - target: {fileID: 2324065046096941204, guid: 72bbd19fca6ed534495fbd9fe0c0ec08, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72bbd19fca6ed534495fbd9fe0c0ec08, type: 3}
 --- !u!4 &1309050753 stripped
@@ -16364,6 +17178,10 @@ PrefabInstance:
     - target: {fileID: 3483558929264476047, guid: d9075f40aceae6c4dbbff497066fd151, type: 3}
       propertyPath: m_Name
       value: Tiles_+Corner_01_D (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483558929264476047, guid: d9075f40aceae6c4dbbff497066fd151, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9075f40aceae6c4dbbff497066fd151, type: 3}
@@ -16467,6 +17285,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Side_01_A (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4114826657480262611, guid: fd4ab0bde46686149a8239c5469fbc69, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 4114826657480262611, guid: fd4ab0bde46686149a8239c5469fbc69, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8437238636572333556, guid: fd4ab0bde46686149a8239c5469fbc69, type: 3}
       propertyPath: m_RootOrder
       value: 120
@@ -16528,6 +17354,10 @@ PrefabInstance:
     - target: {fileID: 955980826378467878, guid: ecffc8a132c037d43855f4d6d4e53b00, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_02_D
+      objectReference: {fileID: 0}
+    - target: {fileID: 955980826378467878, guid: ecffc8a132c037d43855f4d6d4e53b00, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 3704151226785125949, guid: ecffc8a132c037d43855f4d6d4e53b00, type: 3}
       propertyPath: m_RootOrder
@@ -16653,7 +17483,7 @@ Transform:
   - {fileID: 1227381663}
   - {fileID: 1709490189}
   m_Father: {fileID: 0}
-  m_RootOrder: 56
+  m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1341302770 stripped
 Transform:
@@ -16785,6 +17615,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_BasicSide_02_A (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2324065046096941204, guid: 72bbd19fca6ed534495fbd9fe0c0ec08, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72bbd19fca6ed534495fbd9fe0c0ec08, type: 3}
 --- !u!4 &1343761343 stripped
@@ -16810,7 +17644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2122128515190524096, guid: 6b90958a986bf934f9b62f33bfe2a358, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2122128515190524096, guid: 6b90958a986bf934f9b62f33bfe2a358, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16864,6 +17698,10 @@ PrefabInstance:
     - target: {fileID: 955980826378467878, guid: ecffc8a132c037d43855f4d6d4e53b00, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_02_D (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 955980826378467878, guid: ecffc8a132c037d43855f4d6d4e53b00, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 3704151226785125949, guid: ecffc8a132c037d43855f4d6d4e53b00, type: 3}
       propertyPath: m_RootOrder
@@ -16925,7 +17763,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 183704246762007467, guid: 4c5e2ed93e1657e48987e24141fce4d9, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 183704246762007467, guid: 4c5e2ed93e1657e48987e24141fce4d9, type: 3}
       propertyPath: m_LocalScale.x
@@ -17069,6 +17907,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_BasicCorner_01_C (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5187291392240287640, guid: eefe460f4eb17084787837fc4b22fb34, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eefe460f4eb17084787837fc4b22fb34, type: 3}
 --- !u!4 &1384615790 stripped
@@ -17105,7 +17947,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_RootOrder
-      value: 65
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17204,6 +18046,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &1393976243 stripped
@@ -17224,7 +18070,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_LocalScale.x
@@ -17327,6 +18173,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Side_01_D (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5618858478286434005, guid: 8804a719b3c745c4cbc2fd672d92ac5d, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618858478286434005, guid: 8804a719b3c745c4cbc2fd672d92ac5d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8804a719b3c745c4cbc2fd672d92ac5d, type: 3}
 --- !u!4 &1413780004 stripped
@@ -17421,7 +18275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8726842391954533938, guid: d98c793a3c8517144a0477b447235ad8, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 8726842391954533938, guid: d98c793a3c8517144a0477b447235ad8, type: 3}
       propertyPath: m_LocalScale.x
@@ -17528,6 +18382,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_BasicCorner_01_C (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5187291392240287640, guid: eefe460f4eb17084787837fc4b22fb34, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eefe460f4eb17084787837fc4b22fb34, type: 3}
 --- !u!4 &1436137287 stripped
@@ -17589,6 +18447,14 @@ PrefabInstance:
     - target: {fileID: 5915083222161689782, guid: 756e88de6194f89469f53747fe14df87, type: 3}
       propertyPath: m_Name
       value: Tiles_+Corner_01_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 5915083222161689782, guid: 756e88de6194f89469f53747fe14df87, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 5915083222161689782, guid: 756e88de6194f89469f53747fe14df87, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 756e88de6194f89469f53747fe14df87, type: 3}
@@ -17727,6 +18593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &1449846169 stripped
@@ -17744,6 +18614,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -17801,6 +18675,147 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1873638743398513915, guid: 4c5e2ed93e1657e48987e24141fce4d9, type: 3}
   m_PrefabInstance: {fileID: 1776157998}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1467486921 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 130125747015760071, guid: 787d0bcf58be53a4ebde93a0068903dc, type: 3}
+  m_PrefabInstance: {fileID: 415715834}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1467486922 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 130125747015760088, guid: 787d0bcf58be53a4ebde93a0068903dc, type: 3}
+  m_PrefabInstance: {fileID: 415715834}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467486921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dee2c3a00de6ed468c8567c1bd9f64a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1467486925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467486921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe342ee81ed15046ba960533c5abbc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 1467486926}
+  DefaultSounds:
+  - {fileID: 8300000, guid: b993df4a93c1d304ab19d8b2eb88c9a5, type: 3}
+  - {fileID: 8300000, guid: 5c9bdbce37b06a24fa6ea793bcfd1907, type: 3}
+  - {fileID: 8300000, guid: 0909de896e9029541b92ae05fe15e4b6, type: 3}
+  - {fileID: 8300000, guid: 6ad0cf00f050bee41a2dee098475dc78, type: 3}
+  - {fileID: 8300000, guid: 7ca5a9710db4327439c9f8cb8204615e, type: 3}
+  - {fileID: 8300000, guid: 14ae706fef2303e4cb71112dbd5d250b, type: 3}
+  - {fileID: 8300000, guid: b995bc1775ea83b4b8f861763e9a1424, type: 3}
+  - {fileID: 8300000, guid: d15f7338d693f0343843a6b9096d27f6, type: 3}
+  RunSounds: []
+  DirtSounds: []
+  pitchMin: 0.9
+  pitchMax: 1.1
+  movement: {fileID: 1467486922}
+  walkStepInterval: 0.5
+  runStepInterval: 0.3
+--- !u!82 &1467486926
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467486921}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1469316499
 GameObject:
   m_ObjectHideFlags: 0
@@ -17848,7 +18863,7 @@ Transform:
   m_Children:
   - {fileID: 1744123274}
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1469316502
 Animator:
@@ -17953,7 +18968,7 @@ Transform:
   - {fileID: 1775887296}
   - {fileID: 1895489248}
   m_Father: {fileID: 0}
-  m_RootOrder: 68
+  m_RootOrder: 69
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1488149868 stripped
 GameObject:
@@ -17970,6 +18985,10 @@ PrefabInstance:
     - target: {fileID: 3369274554035409592, guid: ca5df1f94b0ea9c4f9e2f72ddfcf6473, type: 3}
       propertyPath: m_Name
       value: Wall_2m_Door_B
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369274554035409592, guid: ca5df1f94b0ea9c4f9e2f72ddfcf6473, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 7712028727743036828, guid: ca5df1f94b0ea9c4f9e2f72ddfcf6473, type: 3}
       propertyPath: m_RootOrder
@@ -18077,6 +19096,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &1503587621 stripped
@@ -18138,6 +19165,14 @@ PrefabInstance:
     - target: {fileID: 3483558929264476047, guid: d9075f40aceae6c4dbbff497066fd151, type: 3}
       propertyPath: m_Name
       value: Tiles_+Corner_01_D (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483558929264476047, guid: d9075f40aceae6c4dbbff497066fd151, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483558929264476047, guid: d9075f40aceae6c4dbbff497066fd151, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9075f40aceae6c4dbbff497066fd151, type: 3}
@@ -18290,7 +19325,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 183704246762007467, guid: 4c5e2ed93e1657e48987e24141fce4d9, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 183704246762007467, guid: 4c5e2ed93e1657e48987e24141fce4d9, type: 3}
       propertyPath: m_LocalScale.x
@@ -18390,6 +19425,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_DoorSnapper (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1449436718070440489, guid: 16d3b976106d561488ee6fef0113cc77, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     - target: {fileID: 3500114019131177854, guid: 16d3b976106d561488ee6fef0113cc77, type: 3}
       propertyPath: m_RootOrder
       value: 75
@@ -18454,6 +19493,10 @@ PrefabInstance:
     - target: {fileID: 3369274554035409592, guid: ca5df1f94b0ea9c4f9e2f72ddfcf6473, type: 3}
       propertyPath: m_Name
       value: Wall_2m_Door_B (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3369274554035409592, guid: ca5df1f94b0ea9c4f9e2f72ddfcf6473, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 7712028727743036828, guid: ca5df1f94b0ea9c4f9e2f72ddfcf6473, type: 3}
       propertyPath: m_RootOrder
@@ -18657,6 +19700,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_01_C
       objectReference: {fileID: 0}
+    - target: {fileID: 3825253392015743747, guid: 763497c78e4320841a962b213d133e7c, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 763497c78e4320841a962b213d133e7c, type: 3}
 --- !u!4 &1558127860 stripped
@@ -18674,6 +19721,10 @@ PrefabInstance:
     - target: {fileID: 375814585393374981, guid: 61d75f8b26f9485459f5a25bdfd62e8c, type: 3}
       propertyPath: m_Name
       value: WallDoor_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 375814585393374981, guid: 61d75f8b26f9485459f5a25bdfd62e8c, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 6189250755239232729, guid: 61d75f8b26f9485459f5a25bdfd62e8c, type: 3}
       propertyPath: m_RootOrder
@@ -18776,6 +19827,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &1562179310 stripped
@@ -18837,6 +19892,10 @@ PrefabInstance:
     - target: {fileID: 5719218672445270108, guid: d8dacebeb29609c4db6ba7425113a1ec, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_01_B (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5719218672445270108, guid: d8dacebeb29609c4db6ba7425113a1ec, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8dacebeb29609c4db6ba7425113a1ec, type: 3}
@@ -18900,6 +19959,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallWindow
       objectReference: {fileID: 0}
+    - target: {fileID: 6389135983835010159, guid: 093b2c3294ecd334ba4774620f5e050b, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 093b2c3294ecd334ba4774620f5e050b, type: 3}
 --- !u!4 &1563284263 stripped
@@ -18917,6 +19980,10 @@ PrefabInstance:
     - target: {fileID: 5661006924635116994, guid: 8115b72153b9bd545a1deeb93c8b3afb, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicCorner_01_D (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661006924635116994, guid: 8115b72153b9bd545a1deeb93c8b3afb, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 8074558722124912977, guid: 8115b72153b9bd545a1deeb93c8b3afb, type: 3}
       propertyPath: m_RootOrder
@@ -19060,6 +20127,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_THalls_01_C (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1009967193127303327, guid: 588ab5954570c19409d7816612d0569d, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     - target: {fileID: 6304824698769524024, guid: 588ab5954570c19409d7816612d0569d, type: 3}
       propertyPath: m_RootOrder
       value: 163
@@ -19121,6 +20192,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3500114019131177854, guid: 16d3b976106d561488ee6fef0113cc77, type: 3}
   m_PrefabInstance: {fileID: 659015019}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1603606820
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1941233573}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f309fde27635db945a24489d6047354b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f309fde27635db945a24489d6047354b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f309fde27635db945a24489d6047354b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f309fde27635db945a24489d6047354b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f309fde27635db945a24489d6047354b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f309fde27635db945a24489d6047354b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f309fde27635db945a24489d6047354b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f309fde27635db945a24489d6047354b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f309fde27635db945a24489d6047354b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f309fde27635db945a24489d6047354b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f309fde27635db945a24489d6047354b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3480699329000672020, guid: f309fde27635db945a24489d6047354b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.044217024
+      objectReference: {fileID: 0}
+    - target: {fileID: -3480699329000672020, guid: f309fde27635db945a24489d6047354b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0018831342
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f309fde27635db945a24489d6047354b, type: 3}
+      propertyPath: m_Name
+      value: X Bot@Slow Run
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: f309fde27635db945a24489d6047354b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ac94979fd6a06b94f84db9fe6f693bfd, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f309fde27635db945a24489d6047354b, type: 3}
 --- !u!1 &1615830749
 GameObject:
   m_ObjectHideFlags: 0
@@ -19189,7 +20329,7 @@ Transform:
   m_Children:
   - {fileID: 1601635746}
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1615830753
 MonoBehaviour:
@@ -19283,6 +20423,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallDoor_A (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 375814585393374981, guid: 61d75f8b26f9485459f5a25bdfd62e8c, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     - target: {fileID: 6189250755239232729, guid: 61d75f8b26f9485459f5a25bdfd62e8c, type: 3}
       propertyPath: m_RootOrder
       value: 167
@@ -19344,6 +20488,10 @@ PrefabInstance:
     - target: {fileID: 3090398171231153560, guid: 47ed96f758df88b40a1e44a8b4b5809d, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_01_D (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090398171231153560, guid: 47ed96f758df88b40a1e44a8b4b5809d, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9023073754691082354, guid: 47ed96f758df88b40a1e44a8b4b5809d, type: 3}
       propertyPath: m_RootOrder
@@ -19552,6 +20700,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_02_B
       objectReference: {fileID: 0}
+    - target: {fileID: 1271063593300665762, guid: 722ca2f5650088f46b0bf95645d4bcda, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 722ca2f5650088f46b0bf95645d4bcda, type: 3}
 --- !u!4 &1674077118 stripped
@@ -19569,6 +20721,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -19681,6 +20837,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallWindow (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6389135983835010159, guid: 093b2c3294ecd334ba4774620f5e050b, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 093b2c3294ecd334ba4774620f5e050b, type: 3}
 --- !u!4 &1684710892 stripped
@@ -19703,6 +20863,10 @@ PrefabInstance:
     - target: {fileID: 1009967193127303327, guid: 588ab5954570c19409d7816612d0569d, type: 3}
       propertyPath: m_Name
       value: Tiles_THalls_01_C (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009967193127303327, guid: 588ab5954570c19409d7816612d0569d, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 6304824698769524024, guid: 588ab5954570c19409d7816612d0569d, type: 3}
       propertyPath: m_RootOrder
@@ -19810,6 +20974,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &1696814489 stripped
@@ -19871,6 +21039,10 @@ PrefabInstance:
     - target: {fileID: 5696469081921127099, guid: 194433cb7c10c944f8826fa04f42a9a7, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicCorner_01_B (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696469081921127099, guid: 194433cb7c10c944f8826fa04f42a9a7, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 194433cb7c10c944f8826fa04f42a9a7, type: 3}
@@ -20074,7 +21246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_RootOrder
-      value: 38
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20173,6 +21345,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &1713345561 stripped
@@ -20190,6 +21370,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -20292,6 +21476,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_01_C
       objectReference: {fileID: 0}
+    - target: {fileID: 3825253392015743747, guid: 763497c78e4320841a962b213d133e7c, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 3825253392015743747, guid: 763497c78e4320841a962b213d133e7c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 763497c78e4320841a962b213d133e7c, type: 3}
 --- !u!4 &1724413279 stripped
@@ -20354,6 +21546,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Halls_01_B (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7215668370463329880, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
 --- !u!1001 &1729898802
@@ -20410,6 +21606,14 @@ PrefabInstance:
     - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
       propertyPath: m_Name
       value: Tiles_+Cross (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
@@ -20472,6 +21676,10 @@ PrefabInstance:
     - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
       propertyPath: m_Name
       value: Tiles_01_Fill (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
@@ -20613,6 +21821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Halls_01_A (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5582715524507360538, guid: b47ad29467ca091478d6e3d903e9a1d3, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b47ad29467ca091478d6e3d903e9a1d3, type: 3}
 --- !u!1001 &1751278913
@@ -20625,6 +21837,10 @@ PrefabInstance:
     - target: {fileID: 3090398171231153560, guid: 47ed96f758df88b40a1e44a8b4b5809d, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_01_D (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090398171231153560, guid: 47ed96f758df88b40a1e44a8b4b5809d, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9023073754691082354, guid: 47ed96f758df88b40a1e44a8b4b5809d, type: 3}
       propertyPath: m_RootOrder
@@ -20732,6 +21948,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_BasicSide_01_B
       objectReference: {fileID: 0}
+    - target: {fileID: 5719218672445270108, guid: d8dacebeb29609c4db6ba7425113a1ec, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8dacebeb29609c4db6ba7425113a1ec, type: 3}
 --- !u!1001 &1756128966
@@ -20788,6 +22008,14 @@ PrefabInstance:
     - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
       propertyPath: m_Name
       value: Tiles_+Cross (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
@@ -20856,6 +22084,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Halls_01_B (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7215668370463329880, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
 --- !u!4 &1769737005 stripped
@@ -20873,6 +22105,10 @@ PrefabInstance:
     - target: {fileID: 2611862036590456993, guid: 278e9bcfd6a9f3244bb5f194fa518d50, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicCorner_02_D
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611862036590456993, guid: 278e9bcfd6a9f3244bb5f194fa518d50, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 4533907623697156525, guid: 278e9bcfd6a9f3244bb5f194fa518d50, type: 3}
       propertyPath: m_RootOrder
@@ -20935,6 +22171,10 @@ PrefabInstance:
     - target: {fileID: 1576863837626924101, guid: 25c12ab16ba5d404192d32c7ff026a1f, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_01_C
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576863837626924101, guid: 25c12ab16ba5d404192d32c7ff026a1f, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 3095204289068681342, guid: 25c12ab16ba5d404192d32c7ff026a1f, type: 3}
       propertyPath: m_RootOrder
@@ -21042,6 +22282,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+RoomEnd_01_D (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8533345014617622417, guid: 6bb77e66e4dc9a840bb4b7be7bf7c039, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bb77e66e4dc9a840bb4b7be7bf7c039, type: 3}
 --- !u!4 &1775179346 stripped
@@ -21132,7 +22376,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 183704246762007467, guid: 4c5e2ed93e1657e48987e24141fce4d9, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 183704246762007467, guid: 4c5e2ed93e1657e48987e24141fce4d9, type: 3}
       propertyPath: m_LocalScale.x
@@ -21455,6 +22699,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_BasicSide_02_A
       objectReference: {fileID: 0}
+    - target: {fileID: 2324065046096941204, guid: 72bbd19fca6ed534495fbd9fe0c0ec08, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72bbd19fca6ed534495fbd9fe0c0ec08, type: 3}
 --- !u!4 &1778763302 stripped
@@ -21472,6 +22720,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -21584,6 +22836,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_01_C (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3825253392015743747, guid: 763497c78e4320841a962b213d133e7c, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 763497c78e4320841a962b213d133e7c, type: 3}
 --- !u!4 &1801406970 stripped
@@ -21645,6 +22901,10 @@ PrefabInstance:
     - target: {fileID: 5696469081921127099, guid: 194433cb7c10c944f8826fa04f42a9a7, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicCorner_01_B (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696469081921127099, guid: 194433cb7c10c944f8826fa04f42a9a7, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 194433cb7c10c944f8826fa04f42a9a7, type: 3}
@@ -21775,6 +23035,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &1822445439 stripped
@@ -21815,7 +23079,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6970137111617633132, guid: 385aff8a0cfab61479f946de511fd592, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6970137111617633132, guid: 385aff8a0cfab61479f946de511fd592, type: 3}
       propertyPath: m_LocalScale.x
@@ -21960,6 +23224,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &1828644171 stripped
@@ -21977,6 +23249,10 @@ PrefabInstance:
     - target: {fileID: 3432221960977212034, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_01_A (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432221960977212034, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 4285619879872649237, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
       propertyPath: m_RootOrder
@@ -22180,6 +23456,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Halls_01_B (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7215668370463329880, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
 --- !u!4 &1832603976 stripped
@@ -22197,6 +23477,10 @@ PrefabInstance:
     - target: {fileID: 5661006924635116994, guid: 8115b72153b9bd545a1deeb93c8b3afb, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicCorner_01_D (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661006924635116994, guid: 8115b72153b9bd545a1deeb93c8b3afb, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 8074558722124912977, guid: 8115b72153b9bd545a1deeb93c8b3afb, type: 3}
       propertyPath: m_RootOrder
@@ -22287,7 +23571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6970137111617633132, guid: 385aff8a0cfab61479f946de511fd592, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6970137111617633132, guid: 385aff8a0cfab61479f946de511fd592, type: 3}
       propertyPath: m_LocalScale.x
@@ -22406,6 +23690,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Halls_01_B
       objectReference: {fileID: 0}
+    - target: {fileID: 7215668370463329880, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
 --- !u!1001 &1863789303
@@ -22463,6 +23751,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &1863789304 stripped
@@ -22493,7 +23785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
-      value: 58
+      value: 59
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_LocalScale.x
@@ -22595,6 +23887,10 @@ PrefabInstance:
     - target: {fileID: 5719218672445270108, guid: d8dacebeb29609c4db6ba7425113a1ec, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_01_B
+      objectReference: {fileID: 0}
+    - target: {fileID: 5719218672445270108, guid: d8dacebeb29609c4db6ba7425113a1ec, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8dacebeb29609c4db6ba7425113a1ec, type: 3}
@@ -22780,6 +24076,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_BasicCorner_01_A (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1022461356690816187, guid: a9d17aa2e1c8d684db0d8b211e846b11, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     - target: {fileID: 7662511761995036546, guid: a9d17aa2e1c8d684db0d8b211e846b11, type: 3}
       propertyPath: m_RootOrder
       value: 175
@@ -22848,7 +24148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8726842391954533938, guid: d98c793a3c8517144a0477b447235ad8, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8726842391954533938, guid: d98c793a3c8517144a0477b447235ad8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23021,6 +24321,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!1001 &1923809855
@@ -23033,6 +24341,10 @@ PrefabInstance:
     - target: {fileID: 1301734923160800248, guid: 6ee634e2590933e47bcc961877b7427b, type: 3}
       propertyPath: m_Name
       value: Tiles_TCorner_04_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301734923160800248, guid: 6ee634e2590933e47bcc961877b7427b, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 4858847835706388123, guid: 6ee634e2590933e47bcc961877b7427b, type: 3}
       propertyPath: m_RootOrder
@@ -23114,7 +24426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_RootOrder
-      value: 59
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23191,7 +24503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6970137111617633132, guid: 385aff8a0cfab61479f946de511fd592, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 6970137111617633132, guid: 385aff8a0cfab61479f946de511fd592, type: 3}
       propertyPath: m_LocalScale.x
@@ -23406,6 +24718,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Halls_01_B (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7215668370463329880, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
 --- !u!4 &1934455802 stripped
@@ -23473,6 +24789,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Corner_01_C (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3825253392015743747, guid: 763497c78e4320841a962b213d133e7c, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 763497c78e4320841a962b213d133e7c, type: 3}
 --- !u!4 &1940179198 stripped
@@ -23535,8 +24855,102 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Halls_01_A (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5582715524507360538, guid: b47ad29467ca091478d6e3d903e9a1d3, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b47ad29467ca091478d6e3d903e9a1d3, type: 3}
+--- !u!1 &1941233570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1941233573}
+  - component: {fileID: 1941233572}
+  - component: {fileID: 1941233571}
+  m_Layer: 0
+  m_Name: AI_Chaser
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1941233571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941233570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b17dfdfb4bef5845b11e91818dfe69f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveMode: 0
+  animator: {fileID: 501828726}
+  patrolSpeed: 2
+  chaseSpeed: 3.5
+  maxTimeChasing: 5
+  maxTimeWaiting: 2
+  radiusHit: 15
+  viewRadius: 7
+  viewAngle: 60
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 8
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 64
+  patrolPoint:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  agent: {fileID: 1941233572}
+  currentTarget: {fileID: 0}
+--- !u!195 &1941233572
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941233570}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: -0.1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!4 &1941233573
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941233570}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 59.862946, y: 4.124999, z: 19.906618}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 501828725}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1943106242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23592,6 +25006,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &1943106243 stripped
@@ -23609,6 +25027,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -23711,6 +25133,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Halls_01_B (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7215668370463329880, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
 --- !u!4 &1947437761 stripped
@@ -23733,6 +25159,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -23835,6 +25265,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &1952330452 stripped
@@ -23936,6 +25370,10 @@ PrefabInstance:
     - target: {fileID: 1576863837626924101, guid: 25c12ab16ba5d404192d32c7ff026a1f, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_01_C (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576863837626924101, guid: 25c12ab16ba5d404192d32c7ff026a1f, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 3095204289068681342, guid: 25c12ab16ba5d404192d32c7ff026a1f, type: 3}
       propertyPath: m_RootOrder
@@ -24043,6 +25481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Halls_01_B (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7215668370463329880, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
 --- !u!4 &1960551815 stripped
@@ -24105,6 +25547,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &1961271183 stripped
@@ -24122,6 +25568,10 @@ PrefabInstance:
     - target: {fileID: 5661006924635116994, guid: 8115b72153b9bd545a1deeb93c8b3afb, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicCorner_01_D (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5661006924635116994, guid: 8115b72153b9bd545a1deeb93c8b3afb, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 8074558722124912977, guid: 8115b72153b9bd545a1deeb93c8b3afb, type: 3}
       propertyPath: m_RootOrder
@@ -24184,6 +25634,10 @@ PrefabInstance:
     - target: {fileID: 3090398171231153560, guid: 47ed96f758df88b40a1e44a8b4b5809d, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_01_D (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090398171231153560, guid: 47ed96f758df88b40a1e44a8b4b5809d, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9023073754691082354, guid: 47ed96f758df88b40a1e44a8b4b5809d, type: 3}
       propertyPath: m_RootOrder
@@ -24318,7 +25772,7 @@ Transform:
   m_Children:
   - {fileID: 1988300318}
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1971433387
 PrefabInstance:
@@ -24374,6 +25828,10 @@ PrefabInstance:
     - target: {fileID: 5582715524507360538, guid: b47ad29467ca091478d6e3d903e9a1d3, type: 3}
       propertyPath: m_Name
       value: Tiles_+Halls_01_A (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5582715524507360538, guid: b47ad29467ca091478d6e3d903e9a1d3, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b47ad29467ca091478d6e3d903e9a1d3, type: 3}
@@ -24431,6 +25889,10 @@ PrefabInstance:
     - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
       propertyPath: m_Name
       value: Tiles_01_Fill (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
@@ -24646,6 +26108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+RoomEnd_01_D (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8533345014617622417, guid: 6bb77e66e4dc9a840bb4b7be7bf7c039, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bb77e66e4dc9a840bb4b7be7bf7c039, type: 3}
 --- !u!4 &1993627033 stripped
@@ -24707,6 +26173,10 @@ PrefabInstance:
     - target: {fileID: 3825253392015743747, guid: 763497c78e4320841a962b213d133e7c, type: 3}
       propertyPath: m_Name
       value: Tiles_+Corner_01_C (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3825253392015743747, guid: 763497c78e4320841a962b213d133e7c, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 763497c78e4320841a962b213d133e7c, type: 3}
@@ -24770,6 +26240,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Halls_01_B (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7215668370463329880, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbe3a8ebb33464d48b5897783158ce7f, type: 3}
 --- !u!4 &2001265580 stripped
@@ -24832,6 +26306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_2m_Door_A (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3170249309077905503, guid: 872e675da07ca6d4c9a552e9dc531f82, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 872e675da07ca6d4c9a552e9dc531f82, type: 3}
 --- !u!4 &2001983988 stripped
@@ -24848,7 +26326,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 183704246762007467, guid: 4c5e2ed93e1657e48987e24141fce4d9, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 183704246762007467, guid: 4c5e2ed93e1657e48987e24141fce4d9, type: 3}
       propertyPath: m_LocalScale.x
@@ -24992,6 +26470,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &2013954615 stripped
@@ -25012,7 +26498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_LocalScale.x
@@ -25141,6 +26627,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_2m (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
       value: 145
@@ -25242,6 +26732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!4 &2028478756 stripped
@@ -25258,7 +26752,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 289932133147362299, guid: 248ab3f988ea00e4c8ae716c86563034, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 289932133147362299, guid: 248ab3f988ea00e4c8ae716c86563034, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25319,7 +26813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
-      value: 45
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_LocalScale.x
@@ -25377,6 +26871,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -25489,6 +26987,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallDoor_B
       objectReference: {fileID: 0}
+    - target: {fileID: 8141954545842876586, guid: 2945ee05d21776c4ea20337d39044807, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2945ee05d21776c4ea20337d39044807, type: 3}
 --- !u!4 &2039869502 stripped
@@ -25551,6 +27053,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &2054997051 stripped
@@ -25568,6 +27078,10 @@ PrefabInstance:
     - target: {fileID: 1576863837626924101, guid: 25c12ab16ba5d404192d32c7ff026a1f, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_01_C (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576863837626924101, guid: 25c12ab16ba5d404192d32c7ff026a1f, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 3095204289068681342, guid: 25c12ab16ba5d404192d32c7ff026a1f, type: 3}
       propertyPath: m_RootOrder
@@ -25675,6 +27189,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &2066272665 stripped
@@ -25692,6 +27214,10 @@ PrefabInstance:
     - target: {fileID: 185821883814675544, guid: 323dc1b99292a4d4c8fa1d97493f15be, type: 3}
       propertyPath: m_Name
       value: Tiles_TCorner_04_C (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 185821883814675544, guid: 323dc1b99292a4d4c8fa1d97493f15be, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 6557398162799758095, guid: 323dc1b99292a4d4c8fa1d97493f15be, type: 3}
       propertyPath: m_RootOrder
@@ -25759,6 +27285,10 @@ PrefabInstance:
     - target: {fileID: 3432221960977212034, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
       propertyPath: m_Name
       value: Tiles_BasicSide_01_A (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432221960977212034, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 4285619879872649237, guid: bbe2bb717665bb44c9b2e69de520c6c3, type: 3}
       propertyPath: m_RootOrder
@@ -25847,6 +27377,10 @@ PrefabInstance:
     - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_Name
       value: Wall_2m (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
       objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
@@ -25975,6 +27509,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_2m
       objectReference: {fileID: 0}
+    - target: {fileID: 5421749167282920918, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     - target: {fileID: 9046048299164732246, guid: 5ffaa43e5fc714343940d5e26450d885, type: 3}
       propertyPath: m_RootOrder
       value: 146
@@ -26081,6 +27619,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_+Cross (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452948253103280832, guid: d6b76243756e705469385a118f8504cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b76243756e705469385a118f8504cd, type: 3}
 --- !u!4 &2108405296 stripped
@@ -26101,7 +27647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3500114019131177854, guid: 16d3b976106d561488ee6fef0113cc77, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 3500114019131177854, guid: 16d3b976106d561488ee6fef0113cc77, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26211,7 +27757,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 624184494288774073, guid: 2556c8342dac94449b20266bdbee2c82, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 624184494288774073, guid: 2556c8342dac94449b20266bdbee2c82, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26314,6 +27860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiles_01_Fill (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6358126604110195563, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
+      propertyPath: m_TagString
+      value: Room
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
 --- !u!1001 &2165688436196322692
@@ -26329,7 +27879,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 2165688437585148690, guid: cb7cf1dde9b433e4390f6136a64cfd1d, type: 3}
       propertyPath: m_LocalPosition.x
