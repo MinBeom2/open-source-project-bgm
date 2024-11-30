@@ -8,13 +8,12 @@ public class MainManager : MonoBehaviour
 {
     public void QuitGame()
     {
-        // 게임을 종료
         Debug.Log("게임 종료");
         Application.Quit();
 
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#endif
+    #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+    #endif
     }
 
     public void LoadGame()

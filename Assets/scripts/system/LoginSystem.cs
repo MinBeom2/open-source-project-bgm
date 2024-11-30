@@ -40,7 +40,6 @@ public class LoginSystem : MonoBehaviour
 
             if (task.IsCompleted)
             {
-                // 비동기 작업이 완료된 경우
                 Debug.Log("Firebase 데이터 가져오기 완료");
                 DataSnapshot snapshot = task.Result;
 
@@ -49,7 +48,7 @@ public class LoginSystem : MonoBehaviour
                     string savedUserId = snapshot.Value.ToString();
                     Debug.Log($"Firebase에서 저장된 userId: {savedUserId}");
                     DataManager.instance.id = savedUserId;
-
+                    PlayerSync();
                     UnityMainThreadDispatcher.Instance().Enqueue(() => SceneManager.LoadScene("MAIN"));
                 }
                 else
@@ -83,6 +82,7 @@ public class LoginSystem : MonoBehaviour
             SaveDeviceUserMapping(user.UserId);
             DataManager.instance.id = user.UserId;
             Debug.Log("datamanager id" + DataManager.instance.id);
+            PlayerSync();
             UnityMainThreadDispatcher.Instance().Enqueue(() => SceneManager.LoadScene("MAIN"));
         });
     }
@@ -105,5 +105,30 @@ public class LoginSystem : MonoBehaviour
                 Debug.LogError("deviceId와 userId 매핑 저장 실패: " + task.Exception?.Message);
             }
         });
+    }
+
+    public void PlayerSync()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            int slotIndex = i + 1; 
+            DataManager.instance.LoadSlotData(slotIndex, (playerData) =>
+            {
+                UnityMainThreadDispatcher.Instance().Enqueue(() =>
+                {
+                    if (playerData != null)
+                    {
+                        DataManager.instance.playerSlots.Slots[slotIndex - 1].Stage = playerData.stage;
+                        DataManager.instance.playerSlots.Slots[slotIndex - 1].Time = playerData.time;
+                        Debug.Log($"슬롯 {slotIndex}: 스테이지 {playerData.stage}, 시간 {playerData.time}");
+                    }
+                    else
+                    {
+                        DataManager.instance.playerSlots.Slots[slotIndex - 1].Stage = null;
+                        DataManager.instance.playerSlots.Slots[slotIndex - 1].Time = "";
+                    }
+                });
+            });
+        }
     }
 }

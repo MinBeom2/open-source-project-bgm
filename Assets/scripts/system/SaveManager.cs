@@ -1,29 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.IO;
 using System;
+using PimDeWitte.UnityMainThreadDispatcher;
 
 public class SaveManager : MonoBehaviour
 {
-    public Text[] slotTime;
-    public int slotStage;
+    public TextMeshProUGUI[] slotTime;
+    public TextMeshProUGUI[] slotStage;
 
-    bool[] savefile = new bool[3];
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+
         for (int i = 0; i < 3; i++)
         {
-            //TODO: 로컬에서 파이어베이스로 바꾸기
-            if (File.Exists(DataManager.instance.path + $"{i + 1}"))
+            if (!string.IsNullOrEmpty(DataManager.instance.playerSlots.Slots[i].Time))
             {
-                savefile[i] = true;
-                DataManager.instance.nowSlot = i + 1;
-                //DataManager.instance.Load();
+                slotTime[i].text = DataManager.instance.playerSlots.Slots[i].Time;
+                if (DataManager.instance.playerSlots.Slots[i].Stage == "AISLE1")
+                    slotStage[i].text = "ENDLESS PASSAGE";
+
+                if (DataManager.instance.playerSlots.Slots[i].Stage == "AISLE2")
+                    slotStage[i].text = "PLAYGROUND";
+
+                if (DataManager.instance.playerSlots.Slots[i].Stage == "AISLE3")
+                    slotStage[i].text = "ABRUPTIVE ATTACK";
             }
         }
     }
@@ -35,16 +43,25 @@ public class SaveManager : MonoBehaviour
 
         DataManager.instance.nowPlayer.stage = DataManager.instance.previousScene;
         DataManager.instance.nowPlayer.time = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+        DataManager.instance.playerSlots.Slots[number - 1].Time = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+        DataManager.instance.playerSlots.Slots[number - 1].Stage = DataManager.instance.previousScene;
 
-        PlayerPos savedPosition = DataManager.instance.nowPos;
-        Debug.Log($"슬롯 {number}에 데이터 저장: 스테이지 {DataManager.instance.nowPlayer.stage}, 시간 {DataManager.instance.nowPlayer.time}, 위치 ({savedPosition.positionX}, {savedPosition.positionY}, {savedPosition.positionZ}), 회전 Y: {savedPosition.rotationY}");
+        slotTime[number - 1].text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+        if (DataManager.instance.playerSlots.Slots[number - 1].Stage == "AISLE1")
+            slotStage[number - 1].text = "ENDLESS PASSAGE";
+
+        if (DataManager.instance.playerSlots.Slots[number - 1].Stage == "AISLE2")
+            slotStage[number - 1].text = "PLAYGROUND";
+
+        if (DataManager.instance.playerSlots.Slots[number - 1].Stage == "AISLE3")
+            slotStage[number - 1].text = "ABRUPTIVE ATTACK";
 
         DataManager.instance.Save();
     }
 
+
     public void BackToPreviousScene()
     {
-        Debug.Log("1");
         SceneManager.LoadScene(DataManager.instance.previousScene);
     }
 }

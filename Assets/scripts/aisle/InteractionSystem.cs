@@ -1,11 +1,12 @@
 using UnityEngine;
-using TMPro; // TextMeshPro 네임스페이스 추가
+using TMPro; 
+
 
 public class InteractionSystem : MonoBehaviour
 {
     public float interactionDistance = 5f;
     public LayerMask interactableLayer;
-    public TextMeshProUGUI interactionText; // TextMeshProUGUI로 변경
+    public TextMeshProUGUI interactionText; 
 
     private GameObject currentTarget;
 

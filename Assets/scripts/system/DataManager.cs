@@ -31,14 +31,33 @@ public class PlayerData
     public string time;
 }
 
+public class PlayerSlot
+{
+    public string Stage { get; set; }
+    public string Time { get; set; }
+}
+
+public class PlayerSlots
+{
+    public List<PlayerSlot> Slots { get; set; } = new List<PlayerSlot>();
+
+    public PlayerSlots()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            Slots.Add(new PlayerSlot());
+        }
+    }
+}
+
 public class DataManager : MonoBehaviour
 {
     public static DataManager instance;
     public string previousScene;
     public PlayerData nowPlayer = new PlayerData();
     public PlayerPos nowPos = new PlayerPos(1.1f, 0f, 11.13f, 0f);
+    public PlayerSlots playerSlots = new PlayerSlots();
 
-    public string path;
     public int nowSlot;
     private DatabaseReference reference;
     public string id;
@@ -126,7 +145,6 @@ public class DataManager : MonoBehaviour
 
                 }
 
-                // 메인 스레드에서 바로 처리
                 UnityMainThreadDispatcher.Instance().Enqueue(() =>
                 {
                     if (nowPlayer?.stage != null)
@@ -142,11 +160,37 @@ public class DataManager : MonoBehaviour
         });
     }
 
-
-
-    public void DataClear()
+    public void LoadSlotData(int slotNumber, System.Action<PlayerData> onComplete)
     {
-        nowSlot = -1;
-        nowPlayer = new PlayerData();
+        reference.Child("users").Child(id).Child("slots").Child(slotNumber.ToString()).GetValueAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsFaulted)
+            {
+                Debug.LogError($"슬롯 {slotNumber} 데이터를 불러오는데 실패했습니다.");
+                onComplete?.Invoke(null);
+                return;
+            }
+
+            if (task.IsCompleted)
+            {
+                DataSnapshot snapshot = task.Result;
+                if (snapshot.Exists)
+                {
+                    PlayerData playerData = null;
+
+                    string playerDataJson = snapshot.Child("PlayerData").GetRawJsonValue();
+
+                    if (!string.IsNullOrEmpty(playerDataJson))
+                        playerData = JsonUtility.FromJson<PlayerData>(playerDataJson);
+
+                    onComplete?.Invoke(playerData);
+                }
+                else
+                {
+                    Debug.Log($"슬롯 {slotNumber}에 데이터가 없습니다.");
+                    onComplete?.Invoke(null);
+                }
+            }
+        });
     }
 }
