@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 using PimDeWitte.UnityMainThreadDispatcher;
 using Firebase.Database;
 using Firebase.Extensions;
-
+using Firebase;
 
 public class LoginSystem : MonoBehaviour
 {
@@ -17,6 +17,7 @@ public class LoginSystem : MonoBehaviour
     public TMP_InputField password;
     private DatabaseReference reference;
     private string deviceId;
+    public TMP_Text errorMessageText;
 
     void Start()
     {
@@ -67,14 +68,12 @@ public class LoginSystem : MonoBehaviour
     {
         auth.SignInWithEmailAndPasswordAsync(email.text, password.text).ContinueWith(task =>
         {
-            if (task.IsCanceled)
-            {
-                Debug.LogError("로그인 취소");
-                return;
-            }
             if (task.IsFaulted)
             {
-                Debug.LogError("로그인 실패");
+                FirebaseException firebaseEx = task.Exception.GetBaseException() as FirebaseException;
+                AuthError errorCode = (AuthError)firebaseEx.ErrorCode;
+                string errorMessage = GetErrorMessage(errorCode);
+                DisplayErrorMessage(errorMessage);
                 return;
             }
 
@@ -111,7 +110,7 @@ public class LoginSystem : MonoBehaviour
     {
         for (int i = 0; i < 3; i++)
         {
-            int slotIndex = i + 1; 
+            int slotIndex = i + 1;
             DataManager.instance.LoadSlotData(slotIndex, (playerData) =>
             {
                 UnityMainThreadDispatcher.Instance().Enqueue(() =>
@@ -129,6 +128,29 @@ public class LoginSystem : MonoBehaviour
                     }
                 });
             });
+        }
+    }
+
+    private void DisplayErrorMessage(string message)
+    {
+        UnityMainThreadDispatcher.Instance().Enqueue(() =>
+        {
+            errorMessageText.text = message;
+        });
+    }
+
+    private string GetErrorMessage(AuthError errorCode)
+    {
+        switch (errorCode)
+        {
+            case AuthError.MissingEmail:
+                return "Email is required.";
+            case AuthError.MissingPassword:
+                return "Password is required.";
+            case AuthError.InvalidEmail:
+                return "Invalid email address.";
+            default:
+                return "Login failed. Please try again.";
         }
     }
 }
