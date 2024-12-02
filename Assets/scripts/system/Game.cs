@@ -31,8 +31,6 @@ public class Game : MonoBehaviour
 
             Debug.Log($"플레이어 위치 {currentPosition} 회전 Y: {currentRotationY}");
         }
-
-        SceneManager.LoadScene("SAVE_SCENE");
     }
 
 

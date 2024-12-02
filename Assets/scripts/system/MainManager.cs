@@ -6,14 +6,37 @@ using Firebase.Extensions;
 
 public class MainManager : MonoBehaviour
 {
+    [SerializeField] private GameObject confirmPanel;
+    [SerializeField] private GameObject MainPanel;
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (confirmPanel.activeSelf)
+            {
+                Cancel();
+            }
+            else
+            {
+                ShowConfirm();
+            }
+        }
+    }
+
     public void QuitGame()
+    {
+        ShowConfirm();
+    }
+
+    public void RealQuit()
     {
         Debug.Log("게임 종료");
         Application.Quit();
 
-    #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-    #endif
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 
     public void LoadGame()
@@ -43,5 +66,17 @@ public class MainManager : MonoBehaviour
             });
 
         UnityMainThreadDispatcher.Instance().Enqueue(() => SceneManager.LoadScene("Login_scene"));
+    }
+
+    public void ShowConfirm()
+    {
+        confirmPanel.SetActive(true);
+        MainPanel.SetActive(false);
+    }
+
+    public void Cancel()
+    {
+        confirmPanel.SetActive(false);
+        MainPanel.SetActive(true);
     }
 }

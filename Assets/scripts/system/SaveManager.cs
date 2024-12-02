@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 using System.IO;
 using System;
 using PimDeWitte.UnityMainThreadDispatcher;
+using UnityEngine.EventSystems;
+
 
 public class SaveManager : MonoBehaviour
 {
@@ -18,6 +20,7 @@ public class SaveManager : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        EventSystem.current.SetSelectedGameObject(null);
 
         for (int i = 0; i < 3; i++)
         {
@@ -32,6 +35,11 @@ public class SaveManager : MonoBehaviour
 
                 if (DataManager.instance.playerSlots.Slots[i].Stage == "AISLE3")
                     slotStage[i].text = "ABRUPTIVE ATTACK";
+            }
+            else
+            {
+                slotStage[i].text = "NEW GAME";
+                slotTime[i].text = "????-??-?? ??:??:??";
             }
         }
     }

@@ -1,15 +1,16 @@
 using UnityEngine;
-using TMPro; 
+using TMPro;
+using UnityEngine.EventSystems;
 
 
 public class InteractionSystem : MonoBehaviour
 {
     public float interactionDistance = 5f;
     public LayerMask interactableLayer;
-    public TextMeshProUGUI interactionText; 
+    public TextMeshProUGUI interactionText;
 
     private GameObject currentTarget;
-
+    public GameObject SavePanel;
     void Update()
     {
         CheckForInteractable();
@@ -46,12 +47,16 @@ public class InteractionSystem : MonoBehaviour
                 {
                     if (currentTarget.CompareTag("Book"))
                     {
-                        Debug.Log("1");
                         gameScript.SceneToSave();
+                        Time.timeScale = 0f;
+                        AudioListener.pause = true;
+                        Cursor.lockState = CursorLockMode.None;
+                        Cursor.visible = true;
+                        EventSystem.current.SetSelectedGameObject(null);
+                        SavePanel.SetActive(true);
                     }
                     else if (currentTarget.CompareTag("Door"))
                     {
-                        Debug.Log("1");
                         gameScript.SceneToNext();
                     }
                 }

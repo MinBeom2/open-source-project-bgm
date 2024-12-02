@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.IO;
+using UnityEngine.EventSystems;
 
 public class LoadSave : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class LoadSave : MonoBehaviour
 
     void Start()
     {
+        EventSystem.current.SetSelectedGameObject(null);
+
         for (int i = 0; i < 3; i++)
         {
             if (!string.IsNullOrEmpty(DataManager.instance.playerSlots.Slots[i].Time))
@@ -27,6 +30,11 @@ public class LoadSave : MonoBehaviour
 
                 if (DataManager.instance.playerSlots.Slots[i].Stage == "AISLE3")
                     slotStage[i].text = "ABRUPTIVE ATTACK";
+            }
+            else
+            {
+                slotStage[i].text = "NEW GAME";
+                slotTime[i].text = "????-??-?? ??:??:??";
             }
         }
     }
