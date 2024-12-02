@@ -92,26 +92,54 @@ namespace WCP
 
         public void AddChat(bool isLeft, string info, int photoId = -1)
         {
-            m_chatElementInfoList.Add(new ChatElementInfo()
+            if (isLeft)
             {
-                left = isLeft,
-                text = info,
-                bornTime = Time.time,
-                photoId = photoId,
-                configFile = this.configFile
-            });
+                m_chatElementInfoList.Add(new ChatElementInfo()
+                {
+                    left = isLeft,
+                    text = info,
+                    bornTime = Time.time,
+                    photoId = photoId,
+                    configFile = this.configFile
+                });
+            }
+            else if (!isLeft)
+            {
+                m_chatElementInfoList.Add(new ChatElementInfo()
+                {
+                    left = !isLeft,
+                    text = info,
+                    bornTime = Time.time,
+                    photoId = photoId,
+                    configFile = this.configFile
+                });
+            }
         }
 
         public void AddChatAndUpdate(bool isLeft, string info, int photoId = -1)
         {
-            m_chatElementInfoList.Add(new ChatElementInfo()
+            if (isLeft)
             {
-                left = isLeft,
-                text = info,
-                bornTime = Time.time,
-                photoId = photoId,
-                configFile = this.configFile
-            });
+                m_chatElementInfoList.Add(new ChatElementInfo()
+                {
+                    left = isLeft,
+                    text = info,
+                    bornTime = Time.time,
+                    photoId = photoId,
+                    configFile = this.configFile
+                });
+            }
+            else if (!isLeft)
+            {
+                m_chatElementInfoList.Add(new ChatElementInfo()
+                {
+                    left = !isLeft,
+                    text = info,
+                    bornTime = Time.time,
+                    photoId = photoId,
+                    configFile = this.configFile
+                });
+            }
 
             Rebuild();
         }

@@ -60,10 +60,10 @@ namespace WCP
             }
             else
             {
-                /*m_horizontalLayoutGroup.childAlignment = TextAnchor.UpperRight;
+                m_horizontalLayoutGroup.childAlignment = TextAnchor.UpperRight;
                 backGround.transform.SetSiblingIndex(0);
                 backGround.sprite = m_configFile.iBallon;
-                text.rectTransform.anchoredPosition = new Vector2(-25, -10);*/
+                text.rectTransform.anchoredPosition = new Vector2(-25, -10);
             }
 
             UpdateLayout();

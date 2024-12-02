@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
-    float minDist = 2f;
+    float minDist = 20f;
 
     Interaction DO;
 
@@ -23,12 +23,13 @@ public class PickUp : MonoBehaviour
 
         if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, minDist))
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (hit.transform.gameObject.tag == "Key")
             {
-                if(hit.transform.gameObject.tag == "Key")
+                if (Input.GetKeyDown(KeyCode.E))
                 {
+                    
                     hit.transform.gameObject.SetActive(false);
-                    DO.hasKey = true;
+                    DO.hasKey1 = true;
                 }
             }
         }

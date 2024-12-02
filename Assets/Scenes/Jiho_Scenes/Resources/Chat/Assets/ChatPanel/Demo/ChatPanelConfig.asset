@@ -21,7 +21,7 @@ MonoBehaviour:
   animateTime: 0.8
   backgroundColor: {r: 0.9019608, g: 0.9019608, b: 0.9019608, a: 1}
   photoSpriteList:
-  - {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 21300000, guid: 2e5218fdbd691fa498975c5908684733, type: 3}
+  - {fileID: 21300000, guid: b4a3315ce5f9b274abc95e39349f2a09, type: 3}
   - {fileID: 0}
   - {fileID: 0}
