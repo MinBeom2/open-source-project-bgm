@@ -42,7 +42,19 @@ public class Game : MonoBehaviour
         DataManager.instance.nowPos.positionZ = 11.13f;
         DataManager.instance.nowPos.rotationY = 0;
 
-        SceneManager.LoadScene("AISLE2");
+        string nowAisle = SceneManager.GetActiveScene().name;
+        if (nowAisle == "AISLE1")
+        {
+            SceneManager.LoadScene("AISLE2");
+        }
+        if (nowAisle == "AISLE2")
+        {
+            SceneManager.LoadScene("AISLE3");
+        }
+        if (nowAisle == "AISLE3")
+        {
+            SceneManager.LoadScene("AISLE4");
+        }
     }
 }
 

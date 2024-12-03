@@ -12,12 +12,30 @@ using Firebase;
 
 public class LoginSystem : MonoBehaviour
 {
+    [SerializeField] private GameObject confirmPanel;
+    [SerializeField] private GameObject MainPanel;
+
     private FirebaseAuth auth;
     public TMP_InputField email;
     public TMP_InputField password;
     private DatabaseReference reference;
     private string deviceId;
     public TMP_Text errorMessageText;
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (confirmPanel.activeSelf)
+            {
+                Cancel();
+            }
+            else
+            {
+                ShowConfirm();
+            }
+        }
+    }
 
     void Start()
     {
@@ -152,5 +170,32 @@ public class LoginSystem : MonoBehaviour
             default:
                 return "Login failed. Please try again.";
         }
+    }
+
+    public void ShowConfirm()
+    {
+        confirmPanel.SetActive(true);
+        MainPanel.SetActive(false);
+    }
+
+    public void Cancel()
+    {
+        confirmPanel.SetActive(false);
+        MainPanel.SetActive(true);
+    }
+
+    public void QuitGame()
+    {
+        ShowConfirm();
+    }
+
+    public void RealQuit()
+    {
+        Debug.Log("게임 종료");
+        Application.Quit();
+
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 }

@@ -8,7 +8,7 @@ public class TabManager : MonoBehaviour
 {
     EventSystem system;
     public Selectable firstInput;
-    public Button submitButton;
+    public Button submitButton1;
 
 
     void Start()
@@ -38,7 +38,7 @@ public class TabManager : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Return))
         {
-            submitButton.onClick.Invoke();
+            submitButton1.onClick.Invoke();
         }
     }
 }
