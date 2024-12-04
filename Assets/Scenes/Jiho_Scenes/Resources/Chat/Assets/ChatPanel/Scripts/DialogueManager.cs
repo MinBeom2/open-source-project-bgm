@@ -13,8 +13,14 @@ public class DialogueManager : MonoBehaviour
     private int startDialogueIndex=0;
     public GameObject Canvas;
     public GameObject Player;
+
     private bool boolval = false;
+    private bool Dark = false;
     private float albedo = 0;
+
+    public GameObject Doll;
+    public GameObject Doll_eye;
+    public GameObject[] Item;
 
     private void Start()
     {
@@ -25,6 +31,22 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    void Set_eye()
+    {
+        Doll_eye.gameObject.SetActive(true);
+    }
+    void giveitem()
+    {
+        Item[0].gameObject.SetActive(true);
+        Item[1].gameObject.SetActive(true);
+    }
+    void offitem()
+    {
+        Item[0].gameObject.SetActive(false);
+        Item[1].gameObject.SetActive(false);
+    }
+
+
     private void Update()
     {
         // 특정 키 입력으로 다음 대화로 넘어가기
@@ -33,9 +55,12 @@ public class DialogueManager : MonoBehaviour
             ShowNextDialogue();
         }
         if (boolval == true) 
-        {     
-            if (albedo < 1) albedo += Time.deltaTime; 
-            Canvas.transform.Find("close_eye").GetComponent<Image>().color = new Color(0, 0, 0, albedo); 
+        {
+            Debug.Log("Calculating");
+            if (albedo < 1 && Dark) albedo += Time.deltaTime; 
+            else if(albedo >= 0 && !Dark) albedo -= Time.deltaTime;
+            Canvas.transform.Find("close_eye").GetComponent<Image>().color = new Color(0, 0, 0, albedo);
+            if (albedo <= 0 && !Dark) boolval = false;
         }
     }
 
@@ -47,26 +72,56 @@ public class DialogueManager : MonoBehaviour
 
             startDialogueIndex = 28;
             if (currentDialogueIndex == 0) currentDialogueIndex = startDialogueIndex;
-            end_count = 47;
+            end_count = 59;
         }
         if (currentDialogueIndex <= end_count)
         {
-            // 대화창에 다음 대화 내용을 추가
+            // 다이얼로그 중의 트리거들
 
+            if(currentDialogueIndex == 32)
+            {
+                Doll.GetComponent<Animator>().SetTrigger("Set_eye");
+                Invoke("Set_eye", 2.0f);
+            }
+
+            else if(currentDialogueIndex == 42)
+            {
+                Doll.GetComponent<Animator>().SetTrigger("give");
+                Invoke("giveitem", 0.7f);
+
+            }
+
+            else if (currentDialogueIndex == 43)
+            {
+                Doll.GetComponent<Animator>().SetTrigger("idle");
+                Invoke("offitem", 0.7f);
+            }
+
+            else if (currentDialogueIndex == 48)
+            {
+                Canvas.transform.Find("close_eye").gameObject.SetActive(true);
+                boolval = true;
+                Dark = true;
+            }
+
+            else if (currentDialogueIndex == 55)
+            {
+                Doll.gameObject.SetActive(false);
+            }
+
+            else if (currentDialogueIndex == 58)
+            {
+                Dark = false;
+                Player.GetComponent<Interaction>().hascardkey = true;
+            }
             chatPanel.AddChatAndUpdate(isplayer[currentDialogueIndex], dialogues[currentDialogueIndex], isplayer[currentDialogueIndex] ? 1 : 0);
             currentDialogueIndex++;
         }
         else
         {
-            if (Player.GetComponent<Interaction>().hasEye == true)
-            {
-                
-                Canvas.transform.Find("close_eye").gameObject.SetActive(true);
-                boolval = true;                
-            }
             currentDialogueIndex = startDialogueIndex;
             Player.GetComponent<Movement>().enabled = true;
-            //Canvas.gameObject.SetActive(false);
+            Canvas.gameObject.SetActive(false);
         }
     }
 }

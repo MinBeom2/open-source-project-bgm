@@ -21,7 +21,7 @@ public class PickUp : MonoBehaviour
     {
         RaycastHit hit;
 
-        if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, minDist))
+        if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, minDist))
         {
             if (hit.transform.gameObject.tag == "Key")
             {

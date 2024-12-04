@@ -1035,7 +1035,6 @@ GameObject:
   - component: {fileID: 3335798330500248132}
   - component: {fileID: 6249083120068685690}
   - component: {fileID: 3324145168155105454}
-  - component: {fileID: 2342352359946898641}
   m_Layer: 0
   m_Name: Maze
   m_TagString: Perdit
@@ -1108,20 +1107,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2342352359946898641
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7600548193437431729}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3783285123212724043, guid: 27b435c425243e6498330f6cb42b7a89, type: 3}
 --- !u!1 &7717778460709731696
 GameObject:
   m_ObjectHideFlags: 0

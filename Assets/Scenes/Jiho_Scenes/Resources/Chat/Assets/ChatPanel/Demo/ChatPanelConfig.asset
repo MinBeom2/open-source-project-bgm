@@ -19,7 +19,7 @@ MonoBehaviour:
   iBallon: {fileID: 21300000, guid: 019512613dcc8b14d8467d30daa3d1e2, type: 3}
   youBallon: {fileID: 21300000, guid: f90012496b9c4bc4ebfc31ea5d31219d, type: 3}
   animateTime: 0.8
-  backgroundColor: {r: 0.9019608, g: 0.9019608, b: 0.9019608, a: 1}
+  backgroundColor: {r: 0.9019608, g: 0.9019608, b: 0.9019608, a: 0.3019608}
   photoSpriteList:
   - {fileID: 21300000, guid: 2e5218fdbd691fa498975c5908684733, type: 3}
   - {fileID: 21300000, guid: b4a3315ce5f9b274abc95e39349f2a09, type: 3}

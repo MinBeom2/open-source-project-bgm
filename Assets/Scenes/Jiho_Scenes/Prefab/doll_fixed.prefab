@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1117225938000242188}
   m_Layer: 0
   m_Name: HandIK_R_end
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -486,7 +486,7 @@ GameObject:
   - component: {fileID: 4433029587546847449}
   m_Layer: 0
   m_Name: Hair
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -504,7 +504,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2981913205215429245}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &4433029587546847449
 SkinnedMeshRenderer:
@@ -843,7 +843,7 @@ GameObject:
   - component: {fileID: 7034002041245380091}
   m_Layer: 0
   m_Name: ShoeTies
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -861,7 +861,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2981913205215429245}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &7034002041245380091
 SkinnedMeshRenderer:
@@ -1040,7 +1040,7 @@ GameObject:
   - component: {fileID: 3972628656810234062}
   m_Layer: 0
   m_Name: Apple
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1301,7 +1301,7 @@ GameObject:
   - component: {fileID: 8757197826453819558}
   m_Layer: 0
   m_Name: Leaf
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1319,7 +1319,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2981913205215429245}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &8757197826453819558
 SkinnedMeshRenderer:
@@ -1581,203 +1581,6 @@ Transform:
   m_Father: {fileID: 1899797868062231450}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1253436548256386478
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7959123937715057782}
-  - component: {fileID: 862124567287780929}
-  m_Layer: 0
-  m_Name: Eye_R
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7959123937715057782
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1253436548256386478}
-  m_LocalRotation: {x: -0.70698476, y: 0, z: -0, w: 0.7072288}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2981913205215429245}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!137 &862124567287780929
-SkinnedMeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1253436548256386478}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 3
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: d442740094fbdf34cbe9c9f9cfea5980, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  serializedVersion: 2
-  m_Quality: 0
-  m_UpdateWhenOffscreen: 0
-  m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 7378947710722030645, guid: 3901e136319cdc847830625afe11aa1c, type: 3}
-  m_Bones:
-  - {fileID: 4482001263591770036}
-  - {fileID: 8333645367121639161}
-  - {fileID: 1738985473503691976}
-  - {fileID: 1334118006803767222}
-  - {fileID: 2615001417900244791}
-  - {fileID: 3614900910770125017}
-  - {fileID: 5872986252526661251}
-  - {fileID: 5704260602771389943}
-  - {fileID: 1902017029421605429}
-  - {fileID: 5487757544242804900}
-  - {fileID: 421644198793413116}
-  - {fileID: 4247651317156558088}
-  - {fileID: 6073240152981246140}
-  - {fileID: 820473965457286996}
-  - {fileID: 4844653195453919481}
-  - {fileID: 6193654642263505531}
-  - {fileID: 3651794743707815063}
-  - {fileID: 7823164178982624404}
-  - {fileID: 1319977045487130554}
-  - {fileID: 2429485217827891308}
-  - {fileID: 1242966301457233261}
-  - {fileID: 2408705710125493061}
-  - {fileID: 4178715520287670952}
-  - {fileID: 843097018264168293}
-  - {fileID: 4207103658228266922}
-  - {fileID: 7884610234014298504}
-  - {fileID: 7702724117811144210}
-  - {fileID: 3702615273456187467}
-  - {fileID: 2424159257156554897}
-  - {fileID: 7316011987422990131}
-  - {fileID: 721877669638818570}
-  - {fileID: 8597644140831854014}
-  - {fileID: 5762569175148308960}
-  - {fileID: 9083970309086950460}
-  - {fileID: 2142978301453723696}
-  - {fileID: 6260898964427059251}
-  - {fileID: 2282045447424043061}
-  - {fileID: 2003578041365172026}
-  - {fileID: 3950166262057665305}
-  - {fileID: 2476250146446076340}
-  - {fileID: 1202284477363301097}
-  - {fileID: 6371617452249044597}
-  - {fileID: 7295546841849912574}
-  - {fileID: 1506910092782075168}
-  - {fileID: 8149846561076764277}
-  - {fileID: 4511614513720957202}
-  - {fileID: 7794913439073209693}
-  - {fileID: 237363097242447598}
-  - {fileID: 4415693604322735210}
-  - {fileID: 7367998368761462691}
-  - {fileID: 6911891773596899686}
-  - {fileID: 8457631875347080918}
-  - {fileID: 1985979669068032476}
-  - {fileID: 3820388757580339375}
-  - {fileID: 1200352240648098213}
-  - {fileID: 210213774178235789}
-  - {fileID: 287879175826696789}
-  - {fileID: 1433492344774432124}
-  - {fileID: 2349928271565842938}
-  - {fileID: 3950247210594790585}
-  - {fileID: 5192814293970175738}
-  - {fileID: 3358054261938933530}
-  - {fileID: 103347504938964088}
-  - {fileID: 8107546436387960151}
-  - {fileID: 4918274859789369606}
-  - {fileID: 6535864325900617488}
-  - {fileID: 5069188351433006276}
-  - {fileID: 5675727352178362698}
-  - {fileID: 6637572896795275734}
-  - {fileID: 6631418035574429503}
-  - {fileID: 8332991650649774619}
-  - {fileID: 4431864956939214289}
-  - {fileID: 2102081668405240553}
-  - {fileID: 1485595966540694349}
-  - {fileID: 4899114231831195598}
-  - {fileID: 3631918326728294721}
-  - {fileID: 2877864646905970908}
-  - {fileID: 569005658937679156}
-  - {fileID: 8271479475135590904}
-  - {fileID: 4254059922352198448}
-  - {fileID: 2526798900637248408}
-  - {fileID: 1368723242216478134}
-  - {fileID: 890040798194609364}
-  - {fileID: 1749586371511914262}
-  - {fileID: 2615472243762683032}
-  - {fileID: 950093992096319650}
-  - {fileID: 3930806308067753130}
-  - {fileID: 4248221652373825847}
-  - {fileID: 3763727779493445077}
-  - {fileID: 3309291894348525200}
-  - {fileID: 8733845985530142022}
-  - {fileID: 6140743747686942055}
-  - {fileID: 8263876152532299733}
-  - {fileID: 6745293443686776562}
-  - {fileID: 8607585513709836052}
-  - {fileID: 5631428022798979069}
-  - {fileID: 8338892132840846536}
-  - {fileID: 384118895052163363}
-  - {fileID: 7368243902162002355}
-  - {fileID: 1530537484960539451}
-  - {fileID: 4578824336013886949}
-  - {fileID: 1899797868062231450}
-  - {fileID: 5492862697968369983}
-  - {fileID: 3482341991143499321}
-  - {fileID: 6122926140190967156}
-  - {fileID: 2597790075315891222}
-  - {fileID: 4037737751859130665}
-  - {fileID: 1341755175202329940}
-  - {fileID: 2282436517588467742}
-  - {fileID: 2758571391758041567}
-  - {fileID: 515684096340163581}
-  - {fileID: 6142140526692702270}
-  m_BlendShapeWeights: []
-  m_RootBone: {fileID: 4482001263591770036}
-  m_AABB:
-    m_Center: {x: -0.0010642346, y: -0.014605334, z: -0.0014688795}
-    m_Extent: {x: 0.0007151349, y: 0.0007370142, z: 0.00041391596}
-  m_DirtyAABB: 0
 --- !u!1 &1298571206273963978
 GameObject:
   m_ObjectHideFlags: 0
@@ -1790,7 +1593,7 @@ GameObject:
   - component: {fileID: 2180415008430128292}
   m_Layer: 0
   m_Name: Pupils
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1803,12 +1606,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1298571206273963978}
   m_LocalRotation: {x: -0.70698476, y: 0, z: -0, w: 0.7072288}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0.083, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2981913205215429245}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &2180415008430128292
 SkinnedMeshRenderer:
@@ -2080,7 +1883,7 @@ GameObject:
   - component: {fileID: 4482001263591770036}
   m_Layer: 0
   m_Name: Root
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2149,7 +1952,7 @@ GameObject:
   - component: {fileID: 5704260602771389943}
   m_Layer: 0
   m_Name: ElbowIK_R
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2214,7 +2017,7 @@ GameObject:
   - component: {fileID: 4452399346157509554}
   m_Layer: 0
   m_Name: Ribbon_Base
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2227,12 +2030,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1669751947171493020}
   m_LocalRotation: {x: -0.70698476, y: 0, z: -0, w: 0.7072288}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.327, y: 0, z: -0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2981913205215429245}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &4452399346157509554
 SkinnedMeshRenderer:
@@ -2443,7 +2246,7 @@ GameObject:
   - component: {fileID: 4275078066242818506}
   m_Layer: 0
   m_Name: Neck
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2461,7 +2264,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2981913205215429245}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &4275078066242818506
 SkinnedMeshRenderer:
@@ -2930,7 +2733,7 @@ GameObject:
   - component: {fileID: 2484810813296619125}
   m_Layer: 0
   m_Name: Hair_Strings
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2948,7 +2751,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2981913205215429245}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &2484810813296619125
 SkinnedMeshRenderer:
@@ -3192,7 +2995,7 @@ GameObject:
   - component: {fileID: 9187851860173936647}
   m_Layer: 0
   m_Name: doll_fixed
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3215,7 +3018,6 @@ Transform:
   - {fileID: 7826386414545911258}
   - {fileID: 7012033066563993582}
   - {fileID: 365031304400155619}
-  - {fileID: 7959123937715057782}
   - {fileID: 6785893230710242538}
   - {fileID: 2504705918960468198}
   - {fileID: 360402110971928212}
@@ -3270,7 +3072,7 @@ GameObject:
   - component: {fileID: 1674913543269085100}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3458,7 +3260,7 @@ GameObject:
   - component: {fileID: 3614900910770125017}
   m_Layer: 0
   m_Name: ElbowIK_L
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3649,7 +3451,7 @@ GameObject:
   - component: {fileID: 2211374170857003433}
   m_Layer: 0
   m_Name: Eyelashes
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3667,7 +3469,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2981913205215429245}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &2211374170857003433
 SkinnedMeshRenderer:
@@ -3941,7 +3743,7 @@ GameObject:
   - component: {fileID: 1902017029421605429}
   m_Layer: 0
   m_Name: KneeIK_R
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4069,7 +3871,7 @@ GameObject:
   - component: {fileID: 934153983587528254}
   m_Layer: 0
   m_Name: Tongue
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4087,7 +3889,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2981913205215429245}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &934153983587528254
 SkinnedMeshRenderer:
@@ -4847,7 +4649,7 @@ GameObject:
   - component: {fileID: 7653991340969384336}
   m_Layer: 0
   m_Name: Mouth_Basis
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4865,7 +4667,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2981913205215429245}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &7653991340969384336
 SkinnedMeshRenderer:
@@ -5266,7 +5068,7 @@ GameObject:
   - component: {fileID: 5440716889968363987}
   m_Layer: 0
   m_Name: Checks
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5495,7 +5297,7 @@ GameObject:
   - component: {fileID: 950124612300085727}
   m_Layer: 0
   m_Name: Face_No_Mouth
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5513,7 +5315,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2981913205215429245}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &950124612300085727
 SkinnedMeshRenderer:
@@ -5823,7 +5625,7 @@ GameObject:
   - component: {fileID: 412739443742196997}
   m_Layer: 0
   m_Name: Skirt_2
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5841,7 +5643,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2981913205215429245}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &412739443742196997
 SkinnedMeshRenderer:
@@ -6754,7 +6556,7 @@ GameObject:
   - component: {fileID: 2802014249431075874}
   m_Layer: 0
   m_Name: Eye_L
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6767,7 +6569,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6634739363146141188}
   m_LocalRotation: {x: -0.70698476, y: 0, z: -0, w: 0.7072288}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.384, y: 0.115, z: -0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6982,7 +6784,7 @@ GameObject:
   - component: {fileID: 8466625722395518672}
   m_Layer: 0
   m_Name: Ribbon
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7000,7 +6802,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2981913205215429245}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &8466625722395518672
 SkinnedMeshRenderer:
@@ -7178,7 +6980,7 @@ GameObject:
   - component: {fileID: 820473965457286996}
   m_Layer: 0
   m_Name: Pelvis
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7531,7 +7333,7 @@ GameObject:
   - component: {fileID: 7815343923519091883}
   m_Layer: 0
   m_Name: Shirt
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7549,7 +7351,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2981913205215429245}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &7815343923519091883
 SkinnedMeshRenderer:
@@ -7729,7 +7531,7 @@ GameObject:
   - component: {fileID: 5872986252526661251}
   m_Layer: 0
   m_Name: HandIK_L
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7762,7 +7564,7 @@ GameObject:
   - component: {fileID: 9124056810229331968}
   m_Layer: 0
   m_Name: Arms
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7958,7 +7760,7 @@ GameObject:
   - component: {fileID: 8333645367121639161}
   m_Layer: 0
   m_Name: KneeIK_L
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8086,7 +7888,7 @@ GameObject:
   - component: {fileID: 4936258339240942941}
   m_Layer: 0
   m_Name: Skirt_1
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8104,7 +7906,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2981913205215429245}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &4936258339240942941
 SkinnedMeshRenderer:
@@ -8603,7 +8405,7 @@ GameObject:
   - component: {fileID: 6073240152981246140}
   m_Layer: 0
   m_Name: HandIK_R
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8636,7 +8438,7 @@ GameObject:
   - component: {fileID: 2172288713333104370}
   m_Layer: 0
   m_Name: Shoulders
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8654,7 +8456,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2981913205215429245}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &2172288713333104370
 SkinnedMeshRenderer:
@@ -9093,7 +8895,7 @@ GameObject:
   - component: {fileID: 7620600988616048407}
   m_Layer: 0
   m_Name: Shoes
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9111,7 +8913,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2981913205215429245}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &7620600988616048407
 SkinnedMeshRenderer:
@@ -9293,7 +9095,7 @@ GameObject:
   - component: {fileID: 849153308818678096}
   m_Layer: 0
   m_Name: Legs
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9311,7 +9113,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2981913205215429245}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &849153308818678096
 SkinnedMeshRenderer:
@@ -9522,7 +9324,7 @@ GameObject:
   - component: {fileID: 7509278259297671477}
   m_Layer: 0
   m_Name: Overal_Strings
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9540,7 +9342,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2981913205215429245}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &7509278259297671477
 SkinnedMeshRenderer:
@@ -9783,7 +9585,7 @@ GameObject:
   - component: {fileID: 8791209576349440034}
   m_Layer: 0
   m_Name: Buttons
-  m_TagString: Untagged
+  m_TagString: Doll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
