@@ -7,6 +7,7 @@ public class PauseManager : MonoBehaviour
     [SerializeField] private GameObject confirmPanel; // 확인창 Panel
     [SerializeField] private GameObject pauseMenu;  // 기본 Pause 메뉴 Panel
     [SerializeField] private GameObject SavePanel;
+    [SerializeField] private GameObject OptionPanel;
 
     private bool isPaused = false;
 
@@ -16,37 +17,44 @@ public class PauseManager : MonoBehaviour
         {
             if (SavePanel.activeSelf)
             {
-                CloseSavePanel(); 
-                ResumeGame();  
+                CloseSavePanel();
+                ResumeGame();
             }
             else if (confirmPanel.activeSelf)
             {
-                Cancel();    
-                ResumeGame();  
+                Cancel();
+                ResumeGame();
             }
+
+            else if (OptionPanel.activeSelf)
+            {
+                OptionPanel.SetActive(false);
+                pauseMenu.SetActive(true);
+            }
+
             else
             {
                 if (isPaused)
                 {
-                    ResumeGame(); 
+                    ResumeGame();
                 }
                 else
                 {
-                    PauseGame();  
+                    PauseGame();
                 }
             }
         }
     }
     public void ShowConfirm()
     {
-        confirmPanel.SetActive(true); 
+        confirmPanel.SetActive(true);
         pauseMenu.SetActive(false);
         EventSystem.current.SetSelectedGameObject(null);
     }
     public void Cancel()
     {
-        confirmPanel.SetActive(false); 
-        pauseMenu.SetActive(true); 
+        confirmPanel.SetActive(false);
+        pauseMenu.SetActive(true);
     }
 
     public void PauseGame()
@@ -72,13 +80,25 @@ public class PauseManager : MonoBehaviour
     }
     public void CloseSavePanel()
     {
-        SavePanel.SetActive(false);     
-        ResumeGame();                    
+        SavePanel.SetActive(false);
+        ResumeGame();
     }
     public void QuitGame()
     {
         Time.timeScale = 1f;
         AudioListener.pause = false;
         SceneManager.LoadScene("MAIN");
+    }
+
+    public void GoOption()
+    {
+        OptionPanel.SetActive(true);
+        pauseMenu.SetActive(false);
+    }
+
+    public void OptionToPause()
+    {
+        OptionPanel.SetActive(false);
+        pauseMenu.SetActive(true);
     }
 }

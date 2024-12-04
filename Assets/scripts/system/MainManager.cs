@@ -8,6 +8,8 @@ public class MainManager : MonoBehaviour
 {
     [SerializeField] private GameObject confirmPanel;
     [SerializeField] private GameObject MainPanel;
+    [SerializeField] private GameObject OptionPanel;
+
 
     void Update()
     {
@@ -17,6 +19,12 @@ public class MainManager : MonoBehaviour
             {
                 Cancel();
             }
+
+            else if (OptionPanel.activeSelf)
+            {
+                OptionToMain();
+            }
+
             else
             {
                 ShowConfirm();
@@ -77,6 +85,18 @@ public class MainManager : MonoBehaviour
     public void Cancel()
     {
         confirmPanel.SetActive(false);
+        MainPanel.SetActive(true);
+    }
+
+    public void GoOption()
+    {
+        OptionPanel.SetActive(true);
+        MainPanel.SetActive(false);
+    }
+
+    public void OptionToMain()
+    {
+        OptionPanel.SetActive(false);
         MainPanel.SetActive(true);
     }
 }

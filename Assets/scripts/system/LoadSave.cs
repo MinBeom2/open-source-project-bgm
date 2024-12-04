@@ -25,11 +25,15 @@ public class LoadSave : MonoBehaviour
                 if (DataManager.instance.playerSlots.Slots[i].Stage == "AISLE1")
                     slotStage[i].text = "ENDLESS PASSAGE";
 
-                if (DataManager.instance.playerSlots.Slots[i].Stage == "AISLE2")
+                else if (DataManager.instance.playerSlots.Slots[i].Stage == "AISLE2")
                     slotStage[i].text = "PLAYGROUND";
 
-                if (DataManager.instance.playerSlots.Slots[i].Stage == "AISLE3")
+                else if (DataManager.instance.playerSlots.Slots[i].Stage == "AISLE3")
                     slotStage[i].text = "ABRUPTIVE ATTACK";
+
+                else
+                    slotStage[i].text = "???";
+
             }
             else
             {

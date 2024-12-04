@@ -30,15 +30,18 @@ public class SaveManager : MonoBehaviour
                 if (DataManager.instance.playerSlots.Slots[i].Stage == "AISLE1")
                     slotStage[i].text = "ENDLESS PASSAGE";
 
-                if (DataManager.instance.playerSlots.Slots[i].Stage == "AISLE2")
+                else if (DataManager.instance.playerSlots.Slots[i].Stage == "AISLE2")
                     slotStage[i].text = "PLAYGROUND";
 
-                if (DataManager.instance.playerSlots.Slots[i].Stage == "AISLE3")
+                else if (DataManager.instance.playerSlots.Slots[i].Stage == "AISLE3")
                     slotStage[i].text = "ABRUPTIVE ATTACK";
+
+                else
+                    slotStage[i].text = "???";
             }
             else
             {
-                slotStage[i].text = "NEW GAME";
+                slotStage[i].text = "EMPTY SLOT";
                 slotTime[i].text = "????-??-?? ??:??:??";
             }
         }
@@ -58,12 +61,14 @@ public class SaveManager : MonoBehaviour
         if (DataManager.instance.playerSlots.Slots[number - 1].Stage == "AISLE1")
             slotStage[number - 1].text = "ENDLESS PASSAGE";
 
-        if (DataManager.instance.playerSlots.Slots[number - 1].Stage == "AISLE2")
+        else if (DataManager.instance.playerSlots.Slots[number - 1].Stage == "AISLE2")
             slotStage[number - 1].text = "PLAYGROUND";
 
-        if (DataManager.instance.playerSlots.Slots[number - 1].Stage == "AISLE3")
+        else if (DataManager.instance.playerSlots.Slots[number - 1].Stage == "AISLE3")
             slotStage[number - 1].text = "ABRUPTIVE ATTACK";
 
+        else
+            slotStage[number - 1].text = "???";
         DataManager.instance.Save();
     }
 
