@@ -141,7 +141,6 @@ public class DataManager : MonoBehaviour
                     }
 
                     Debug.Log("Firebase에서 데이터 불러오기 완료");
-                    Debug.Log("1");
 
                 }
 

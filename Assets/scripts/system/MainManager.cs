@@ -54,6 +54,11 @@ public class MainManager : MonoBehaviour
 
     public void NewGame()
     {
+        DataManager.instance.nowPlayer.stage = "AISLE1";
+        DataManager.instance.nowPos.positionX = 1.1f;
+        DataManager.instance.nowPos.positionY = 0;
+        DataManager.instance.nowPos.positionZ = 11.13f;
+        DataManager.instance.nowPos.rotationY = 0;
         SceneManager.LoadScene("AISLE1");
     }
 

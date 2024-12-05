@@ -9,6 +9,8 @@ public class Game : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log(DataManager.instance.nowPos.positionX);
+
         if (player == null)
         {
             player = GameObject.FindGameObjectWithTag("Player");
@@ -37,6 +39,7 @@ public class Game : MonoBehaviour
 
     public void SceneToNext()
     {
+        //TODO 통합할때 정리 스테이지에서 통로할때로 변경하고 스테이지도 
         DataManager.instance.nowPos.positionX = 1.1f;
         DataManager.instance.nowPos.positionY = 0;
         DataManager.instance.nowPos.positionZ = 11.13f;
@@ -47,13 +50,17 @@ public class Game : MonoBehaviour
         {
             SceneManager.LoadScene("AISLE2");
         }
-        if (nowAisle == "AISLE2")
+        else if (nowAisle == "AISLE2")
         {
             SceneManager.LoadScene("AISLE3");
         }
-        if (nowAisle == "AISLE3")
+        else if (nowAisle == "AISLE3")
         {
             SceneManager.LoadScene("AISLE4");
+        }
+        else
+        {
+            SceneManager.LoadScene("GAMEOVER");
         }
     }
 }

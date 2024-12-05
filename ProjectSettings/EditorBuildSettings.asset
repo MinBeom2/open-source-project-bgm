@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/aisle/AISLE4.unity
     guid: d07ca1d1b36f78b419353e1d09a02d83
+  - enabled: 1
+    path: Assets/Scenes/system/GAMEOVER.unity
+    guid: c0fca1645300c9e4c947eaaafc5b8e97
   m_configObjects: {}
