@@ -334,6 +334,7 @@ MonoBehaviour:
   confirmPanel: {fileID: 1848401792}
   pauseMenu: {fileID: 1960930725}
   SavePanel: {fileID: 1567580582}
+  OptionPanel: {fileID: 0}
 --- !u!4 &32066573
 Transform:
   m_ObjectHideFlags: 0
@@ -3205,7 +3206,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 0.6261432, b: 0, a: 1}
   m_Intensity: 1
-  m_Range: 13
+  m_Range: 15
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
