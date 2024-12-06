@@ -149,7 +149,6 @@ public class AI : MonoBehaviour
 
                 if(lastindex == newindex) {
                     newindex = Random.Range(0, patrolPoint.Length);
-                    Debug.Log("recalculate index");
                     return;
                 }
 
@@ -162,7 +161,6 @@ public class AI : MonoBehaviour
 
                 agent.destination = destination;
 
-                Debug.Log("change patrol to " + index_patrolpoint.ToString());
             break;
             case MoveMode.chase:
                 isHearingSound = false;

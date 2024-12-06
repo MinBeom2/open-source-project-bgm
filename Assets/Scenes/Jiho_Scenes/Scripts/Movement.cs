@@ -36,9 +36,12 @@ public class Movement : MonoBehaviour
 
     private float currentWeightCrouch, speed, requirementMoveZRun;
 
-    private void Start () {
+    private void Awake()
+    {
         charcc = GetComponent<CharacterController>();
+    }
 
+    private void Start () {
         Cursor.visible = false; //menghilangkan cursor atau menyembunyikannya
         Cursor.lockState = CursorLockMode.Locked; //mengkunci cursor agar tidak keluar dari game
     }
@@ -172,5 +175,6 @@ public class Movement : MonoBehaviour
         return velocity; 
     }
 
+    public CharacterController CharacterController { get { return charcc; } } 
 
 }

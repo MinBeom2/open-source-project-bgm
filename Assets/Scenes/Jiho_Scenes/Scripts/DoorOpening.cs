@@ -8,21 +8,24 @@ public class DoorOpening : MonoBehaviour
 {
     public GameObject moveTarget;
 
-    Quaternion startingPosition;
+    Quaternion startingRotation;
+    Vector3 startingPosition;
 
     public bool isOpen;
     public bool isClose;
 
     private void Awake()
     {
-        startingPosition = transform.rotation;
+        startingRotation = transform.rotation;
+        startingPosition = transform.position;
         isClose = true;
     }
 
     public void Close()
     {
         Debug.Log("Close()");
-        transform.rotation = startingPosition;
+        transform.rotation = startingRotation;
+        transform.position = startingPosition;
         isClose = true;
         isOpen = false;
     }
@@ -30,6 +33,7 @@ public class DoorOpening : MonoBehaviour
     public void Open()
     {
         transform.rotation = moveTarget.transform.rotation;
+        transform.position = moveTarget.transform.position;
         Debug.Log("Open()");
         isClose = false;
         isOpen = true;

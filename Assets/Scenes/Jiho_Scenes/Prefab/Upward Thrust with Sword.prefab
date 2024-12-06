@@ -1028,37 +1028,6 @@ Transform:
   m_Father: {fileID: 8920707899213789759}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4424475069463650912
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7072376428581747393}
-  m_Layer: 3
-  m_Name: Player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7072376428581747393
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4424475069463650912}
-  m_LocalRotation: {x: -5.813277e-17, y: 0.9987791, z: 5.813277e-17, w: -0.04939897}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6070777874970233724}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4455075257611368806
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,7 +1698,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -4565884009001823619, guid: a7c69ca103191d74291fd644600408e3, type: 3}
+  - {fileID: 2100000, guid: a3a9d83d7212cc0418259b4fc1d47679, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1855,7 +1824,6 @@ Transform:
   - {fileID: 8200035210240313427}
   - {fileID: 1603654905927321370}
   - {fileID: 1760888335794482152}
-  - {fileID: 7072376428581747393}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1954,9 +1922,12 @@ MonoBehaviour:
   hasKey1: 1
   hasEye: 1
   hascardkey: 1
+  has2heart: 0
+  haslastkey: 0
   Soundmanager: {fileID: 0}
   Canvas: {fileID: 0}
   Doll: {fileID: 0}
+  Sword: {fileID: 0}
   Triggerzone:
   - {fileID: 0}
 --- !u!114 &6031732968053604498

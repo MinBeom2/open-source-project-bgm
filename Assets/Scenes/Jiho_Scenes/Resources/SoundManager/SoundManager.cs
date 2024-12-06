@@ -309,7 +309,7 @@ public class SoundManager : MonoBehaviour
 
         if (string.IsNullOrEmpty(soundName)) {
             Debug.Log("Sound null or empty");
-            sound.IsValid = false;
+            sound.IsValid = true;
             return sound;
         }
 
@@ -319,18 +319,8 @@ public class SoundManager : MonoBehaviour
             if (smSound.Name == soundName)
                 sameCountGuard++;
         }
-
-        if (sameCountGuard > 8)
-        {
-            Debug.Log("Too much duplicates for sound: " + soundName);
-            sound.IsValid = false;
-            return sound;
-        }
-
         if (_sounds.Count > 16) {
-            Debug.Log("Too much sounds");
-            sound.IsValid = false;
-            return sound;
+            
         }
 
 
@@ -370,14 +360,6 @@ public class SoundManager : MonoBehaviour
         SMSound sound = new SMSound();
         sound.Name = clip.name;
         sound.SelfVolume = 1;
-
-        if (_sounds.Count > 16)
-        {
-            Debug.Log("Too much sounds");
-            sound.IsValid = false;
-            return sound;
-        }
-
 
         GameObject soundGameObject = new GameObject("Sound: " + sound.Name);
         AudioSource soundSource = soundGameObject.AddComponent<AudioSource>();
