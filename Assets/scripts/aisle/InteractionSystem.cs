@@ -11,6 +11,14 @@ public class InteractionSystem : MonoBehaviour
 
     private GameObject currentTarget;
     public GameObject SavePanel;
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
+
     void Update()
     {
         CheckForInteractable();
@@ -42,14 +50,15 @@ public class InteractionSystem : MonoBehaviour
         {
             if (currentTarget != null && Input.GetKeyDown(KeyCode.E))
             {
-                Game gameScript = currentTarget.GetComponent<Game>();
+                aisleManager gameScript = currentTarget.GetComponent<aisleManager>();
                 if (gameScript != null)
                 {
                     if (currentTarget.CompareTag("Book"))
                     {
+                        audioManager.PlaySFX(audioManager.Book);
                         gameScript.SceneToSave();
                         Time.timeScale = 0f;
-                        AudioListener.pause = true;
+                        audioManager.SetVolume(audioManager.pauseVolume);
                         Cursor.lockState = CursorLockMode.None;
                         Cursor.visible = true;
                         EventSystem.current.SetSelectedGameObject(null);
@@ -57,6 +66,7 @@ public class InteractionSystem : MonoBehaviour
                     }
                     else if (currentTarget.CompareTag("Door"))
                     {
+                        audioManager.PlaySFX(audioManager.DoorOpen);
                         gameScript.SceneToNext();
                     }
                 }

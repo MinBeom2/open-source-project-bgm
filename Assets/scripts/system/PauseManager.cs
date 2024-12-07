@@ -10,6 +10,12 @@ public class PauseManager : MonoBehaviour
     [SerializeField] private GameObject OptionPanel;
 
     private bool isPaused = false;
+    AudioManager audioManager;
+
+    void Start()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     void Update()
     {
@@ -61,7 +67,7 @@ public class PauseManager : MonoBehaviour
     {
         isPaused = true;
         Time.timeScale = 0f;
-        AudioListener.pause = true;
+        audioManager.SetVolume(audioManager.pauseVolume);
         pauseMenu.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -72,7 +78,7 @@ public class PauseManager : MonoBehaviour
     {
         isPaused = false;
         Time.timeScale = 1f;
-        AudioListener.pause = false;
+        audioManager.SetVolume(audioManager.normalVolume);
         pauseMenu.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -86,7 +92,7 @@ public class PauseManager : MonoBehaviour
     public void QuitGame()
     {
         Time.timeScale = 1f;
-        AudioListener.pause = false;
+        audioManager.SetVolume(audioManager.normalVolume);
         SceneManager.LoadScene("MAIN");
     }
 
@@ -98,7 +104,13 @@ public class PauseManager : MonoBehaviour
 
     public void OptionToPause()
     {
+        audioManager.PlaySFX(audioManager.buttonClick);
         OptionPanel.SetActive(false);
         pauseMenu.SetActive(true);
+    }
+
+    public void click()
+    {
+        audioManager.PlaySFX(audioManager.buttonClick);
     }
 }

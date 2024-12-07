@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 using PimDeWitte.UnityMainThreadDispatcher;
 using Firebase.Database;
 using Firebase.Extensions;
+using Unity.VisualScripting;
 
 public class MainManager : MonoBehaviour
 {
@@ -10,7 +11,19 @@ public class MainManager : MonoBehaviour
     [SerializeField] private GameObject MainPanel;
     [SerializeField] private GameObject OptionPanel;
 
+    AudioManager audioManager;
 
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
+    private void Start()
+    {
+        audioManager.musicSource.clip = audioManager.mainBackground;
+        audioManager.musicSource.Play();
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -103,5 +116,10 @@ public class MainManager : MonoBehaviour
     {
         OptionPanel.SetActive(false);
         MainPanel.SetActive(true);
+    }
+
+    public void click()
+    {
+        audioManager.PlaySFX(audioManager.buttonClick);
     }
 }

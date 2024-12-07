@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Game : MonoBehaviour
+public class aisleManager : MonoBehaviour
 {
     public GameObject player;
+    AudioManager audioManager;
 
     private void Start()
     {
-        Debug.Log(DataManager.instance.nowPos.positionX);
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        audioManager.musicSource.clip = audioManager.DefaultBackground;
+        audioManager.musicSource.Play();
 
         if (player == null)
         {

@@ -11,10 +11,11 @@ public class LoadSave : MonoBehaviour
 {
     public TextMeshProUGUI[] slotTime;
     public TextMeshProUGUI[] slotStage;
-
+    AudioManager audioManager;
 
     void Start()
     {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         EventSystem.current.SetSelectedGameObject(null);
 
         for (int i = 0; i < 3; i++)
@@ -62,5 +63,10 @@ public class LoadSave : MonoBehaviour
     public void BackToMain()
     {
         SceneManager.LoadScene("MAIN");
+    }
+
+    public void click()
+    {
+        audioManager.PlaySFX(audioManager.buttonClick);
     }
 }
