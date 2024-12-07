@@ -9,6 +9,9 @@ TagManager:
   - Key
   - Locker
   - Room
+  - Scroll
+  - Enemy
+  - ClearDoor
   layers:
   - Default
   - TransparentFX

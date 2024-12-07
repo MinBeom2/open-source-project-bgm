@@ -9,6 +9,9 @@ public class ChestAction : MonoBehaviour
     public GameObject chestCloseText;
     public string chestOpenAnimName, chestCloseAnimName;
 
+    public AudioClip chestOpenSound;
+    public AudioClip chestCloseSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +33,7 @@ public class ChestAction : MonoBehaviour
             {
                 GameObject Chest = hit.collider.transform.root.gameObject;
                 Animator chestAnim = Chest.GetComponent<Animator>();
+                AudioSource chestAudio = Chest.GetComponent<AudioSource>(); // 상자에서 AudioSource 가져오기
 
                 if (chestAnim.GetCurrentAnimatorStateInfo(0).IsName(chestCloseAnimName))
                 {
@@ -39,6 +43,8 @@ public class ChestAction : MonoBehaviour
                     {
                         chestAnim.ResetTrigger("Close");
                         chestAnim.SetTrigger("Open");
+                        // 상자 열림 소리 재생
+                        PlaySound(chestAudio, chestOpenSound);
                     }
                 }
 
@@ -50,6 +56,8 @@ public class ChestAction : MonoBehaviour
                     {
                         chestAnim.ResetTrigger("Open");
                         chestAnim.SetTrigger("Close");
+                        // 상자 닫힘 소리 재생
+                        PlaySound(chestAudio, chestCloseSound);
                     }
                 }
             }
@@ -58,6 +66,13 @@ public class ChestAction : MonoBehaviour
                 chestOpenText.SetActive(false);
                 chestCloseText.SetActive(false);
             }
+        }
+    }
+    void PlaySound(AudioSource audioSource, AudioClip clip)
+    {
+        if (audioSource != null && clip != null)
+        {
+            audioSource.PlayOneShot(clip); // 지정된 AudioClip 재생
         }
     }
 }

@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.AI;
 using UnityEngine;
+using UnityEngine.AI;
 
-public enum MoveMode {
+public enum MoveMode
+{
     patrol, chase, wait
 }
 
 [RequireComponent(typeof(NavMeshAgent))]
-
+[RequireComponent(typeof(AudioSource))] // AudioSource 컴포넌트를 필요로 함
 public class AI : MonoBehaviour
 {
     public MoveMode moveMode;
     public Animator animator;
+
+    private float footstepInterval = 0.4f; // 소리 간격 (초 단위)
+    private float footstepTimer = 0f;
 
     [Header("Steering")]
     public float patrolSpeed;
@@ -32,6 +36,11 @@ public class AI : MonoBehaviour
     public NavMeshAgent agent;
     public Transform currentTarget;
 
+    [Header("Footstep Audio")]
+    public AudioClip[] footstepClips; // 걸음 소리 배열
+    private AudioSource audioSource; // AudioSource 참조
+    private int currentFootstepIndex = 0;
+
     Vector3 destination, SoundPositionHeared;
     int index_patrolpoint;
     float currentTimeChasing, currentTimeWaiting;
@@ -40,114 +49,154 @@ public class AI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(agent == null)
+        if (agent == null)
             agent = GetComponent<NavMeshAgent>();
 
-        if(agent.stoppingDistance < 0.5f)
+        if (agent.stoppingDistance < 0.5f)
             agent.stoppingDistance = 0.5f;
+
+        audioSource = GetComponent<AudioSource>();
+        if (footstepClips.Length == 0)
+        {
+            Debug.LogWarning("No footstep sounds assigned!");
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        switch(moveMode) {
-            case MoveMode.patrol : 
+        switch (moveMode)
+        {
+            case MoveMode.patrol:
                 Patroling();
-            break;
-            case MoveMode.chase : 
+                break;
+            case MoveMode.chase:
                 Chasing();
-            break;
-            case MoveMode.wait : 
+                break;
+            case MoveMode.wait:
                 Waiting();
-            break;
+                break;
         }
 
         FieldOfView();
         Animations();
     }
 
-    void Animations () {
-        if(animator == null) return;
+    void Animations()
+    {
+        if (animator == null) return;
 
         animator.SetBool("chase", moveMode == MoveMode.chase);
     }
 
-    void FieldOfView () {
+    void FieldOfView()
+    {
         Collider[] range = Physics.OverlapSphere(transform.position, viewRadius, targetMask, QueryTriggerInteraction.Ignore);
 
-        if(range.Length > 0) {
-
+        if (range.Length > 0)
+        {
             currentTarget = range[0].transform;
-           
+
             Vector3 direction = (currentTarget.position - transform.position).normalized;
 
-            if(Vector3.Angle(transform.forward, direction) < viewAngle / 2) {
+            if (Vector3.Angle(transform.forward, direction) < viewAngle / 2)
+            {
                 float m_distance = Vector3.Distance(transform.position, currentTarget.position);
 
-                if(!Physics.Raycast(transform.position, direction, m_distance, obstacleMask, QueryTriggerInteraction.Ignore)) {
+                if (!Physics.Raycast(transform.position, direction, m_distance, obstacleMask, QueryTriggerInteraction.Ignore))
+                {
                     isDetectTarget = true;
 
-                    if(moveMode != MoveMode.chase) {
+                    if (moveMode != MoveMode.chase)
+                    {
                         SwitchMoveMode(MoveMode.chase);
                     }
-                } else {
+                }
+                else
+                {
                     isDetectTarget = false;
                 }
-            } else {
+            }
+            else
+            {
                 isDetectTarget = false;
             }
-        } else {
+        }
+        else
+        {
             isDetectTarget = false;
         }
     }
 
-    void Waiting () {
-        if(currentTimeWaiting > maxTimeWaiting) {
+    void Waiting()
+    {
+        if (currentTimeWaiting > maxTimeWaiting)
+        {
             SwitchMoveMode(MoveMode.patrol);
-        } else {
+        }
+        else
+        {
             currentTimeWaiting += Time.deltaTime;
         }
     }
 
-    void Patroling () {
+    void Patroling()
+    {
         agent.speed = patrolSpeed;
 
-        if(agent.remainingDistance < agent.stoppingDistance) {
+        if (agent.remainingDistance < agent.stoppingDistance)
+        {
             SwitchMoveMode(MoveMode.wait);
             isHearingSound = false;
+        }
+        else
+        {
+            PlayFootstepSound();
         }
     }
 
     bool isHit;
 
-    void Chasing () {
+    void Chasing()
+    {
         agent.speed = chaseSpeed;
         agent.destination = currentTarget.position;
 
         Collider[] col = Physics.OverlapSphere(transform.position, radiusHit, targetMask, QueryTriggerInteraction.Ignore);
 
-        if(col.Length > 0 && !isHit) {
+        if (col.Length > 0 && !isHit)
+        {
             Debug.Log("permainan berakhir");
             isHit = true;
         }
 
-        if(currentTimeChasing > maxTimeChasing) {
+        if (currentTimeChasing > maxTimeChasing)
+        {
             SwitchMoveMode(MoveMode.wait);
-        } else if(!isDetectTarget) {
+        }
+        else if (!isDetectTarget)
+        {
             currentTimeChasing += Time.deltaTime;
-        } else if(isDetectTarget){
+        }
+        else if (isDetectTarget)
+        {
             currentTimeChasing = 0;
         }
+
+        PlayFootstepSound();
     }
 
-    void SwitchMoveMode (MoveMode m_moveMode) {
-        switch(m_moveMode) {
+    void SwitchMoveMode(MoveMode m_moveMode)
+    {
+        switch (m_moveMode)
+        {
             case MoveMode.patrol:
 
                 int lastindex = index_patrolpoint;
                 int newindex = Random.Range(0, patrolPoint.Length);
 
-                if(lastindex == newindex) {
+                if (lastindex == newindex)
+                {
                     newindex = Random.Range(0, patrolPoint.Length);
                     Debug.Log("recalculate index");
                     return;
@@ -155,7 +204,7 @@ public class AI : MonoBehaviour
 
                 index_patrolpoint = newindex;
 
-                if(isHearingSound)
+                if (isHearingSound)
                     destination = SoundPositionHeared;
                 else
                     destination = patrolPoint[index_patrolpoint].position;
@@ -163,27 +212,29 @@ public class AI : MonoBehaviour
                 agent.destination = destination;
 
                 Debug.Log("change patrol to " + index_patrolpoint.ToString());
-            break;
+                break;
             case MoveMode.chase:
                 isHearingSound = false;
                 currentTimeChasing = 0;
-            break;
-            case MoveMode.wait: 
+                break;
+            case MoveMode.wait:
                 agent.destination = transform.position;
                 currentTimeWaiting = 0;
-            break;
+                break;
         }
 
         moveMode = m_moveMode;
         Debug.Log("change move mode to " + moveMode.ToString());
     }
 
-    public void HearingSound (Vector3 m_destination) {
-        if(moveMode == MoveMode.chase) return;
+    public void HearingSound(Vector3 m_destination)
+    {
+        if (moveMode == MoveMode.chase) return;
 
         NavMeshPath path = new NavMeshPath();
         agent.CalculatePath(m_destination, path);
-        if(path.status == NavMeshPathStatus.PathComplete) {
+        if (path.status == NavMeshPathStatus.PathComplete)
+        {
 
             SoundPositionHeared = m_destination;
             isHearingSound = true;
@@ -194,13 +245,30 @@ public class AI : MonoBehaviour
         }
     }
 
-    void OnDrawGizmos () {
-        if(agent == null) return;
+    void PlayFootstepSound()
+    {
+        if (footstepClips.Length == 0 || !agent.hasPath || agent.velocity.magnitude < 0.1f) return;
+
+        footstepTimer += Time.deltaTime;
+
+        if (footstepTimer >= footstepInterval)
+        {
+            audioSource.clip = footstepClips[currentFootstepIndex];
+            audioSource.Play();
+
+            currentFootstepIndex = (currentFootstepIndex + 1) % footstepClips.Length; // 다음 소리로 순환
+            footstepTimer = 0f; // 타이머 초기화
+        }
+    }
+
+    void OnDrawGizmos()
+    {
+        if (agent == null) return;
 
         Gizmos.DrawWireSphere(transform.position, agent.stoppingDistance);
         Gizmos.DrawWireSphere(transform.position, viewRadius);
 
-        if(currentTarget != null && isDetectTarget)
+        if (currentTarget != null && isDetectTarget)
             Gizmos.DrawLine(transform.position, currentTarget.position);
 
         float halfFov = viewAngle / 2f;

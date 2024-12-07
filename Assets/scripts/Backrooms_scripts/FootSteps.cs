@@ -7,7 +7,7 @@ public class FootSteps : MonoBehaviour
 {
     [SerializeField] private AudioSource source; // 발소리를 재생할 AudioSource
     [SerializeField] private AudioClip[] DefaultSounds; // 기본 발소리
-    [SerializeField] private AudioClip[] RunSounds; // 돌 발소리
+    [SerializeField] private AudioClip[] RunSounds; // 돌 발소리1
     [SerializeField] private AudioClip[] DirtSounds; // 흙 발소리
     [SerializeField] private float pitchMin = 0.9f; // 피치 최소값
     [SerializeField] private float pitchMax = 1.1f; // 피치 최대값
