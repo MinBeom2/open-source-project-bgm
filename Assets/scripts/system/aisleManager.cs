@@ -42,7 +42,6 @@ public class aisleManager : MonoBehaviour
 
     public void SceneToNext()
     {
-        //TODO 통합할때 정리 스테이지에서 통로할때로 변경하고 스테이지도 
         DataManager.instance.nowPos.positionX = 1.1f;
         DataManager.instance.nowPos.positionY = 0;
         DataManager.instance.nowPos.positionZ = 11.13f;
@@ -51,7 +50,7 @@ public class aisleManager : MonoBehaviour
         string nowAisle = SceneManager.GetActiveScene().name;
         if (nowAisle == "AISLE1")
         {
-            SceneManager.LoadScene("AISLE2");
+            SceneManager.LoadScene("PSW_MainMap");
         }
         else if (nowAisle == "AISLE2")
         {

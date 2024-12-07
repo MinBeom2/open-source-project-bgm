@@ -5,15 +5,17 @@ using TMPro; // TextMeshPro 네임스페이스 추가
 
 public class EnemyJumpScareHandler : MonoBehaviour
 {
+    [SerializeField] private GameObject GameoverPanel;
+
     [Header("Shake Settings")]
     public float shakeDuration = 0.5f; // 카메라 흔들림 지속 시간
     public float shakeMagnitude = 0.3f; // 카메라 흔들림 강도
 
     [Header("UI Elements")]
     public Image endingImage; // Ending Image (UI)
-    public TextMeshProUGUI gameOverText; // GameOver 텍스트 (TextMeshPro)
 
     private CameraShake cameraShake; // CameraShake 컴포넌트
+    AudioManager audioManager;
 
     private void OnEnable()
     {
@@ -39,13 +41,10 @@ public class EnemyJumpScareHandler : MonoBehaviour
         {
             yield return StartCoroutine(FadeInEndingImage());
         }
-
-        // GameOver 텍스트 활성화
-        if (gameOverText != null)
-        {
-            gameOverText.gameObject.SetActive(true);
-        }
-        //김민범
+        
+        GameoverPanel.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     private IEnumerator FadeInEndingImage()

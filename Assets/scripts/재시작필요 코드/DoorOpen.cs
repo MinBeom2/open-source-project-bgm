@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro; // TextMeshPro 사용을 위한 네임스페이스 추가
 using UnityEngine.UI; // UI 관련 네임스페이스 추가
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class DoorOpen : MonoBehaviour
 {
@@ -17,8 +18,7 @@ public class DoorOpen : MonoBehaviour
     public float warningDisplayTime = 2f; // 경고 메시지 표시 시간
 
     [Header("Ending UI Settings")]
-    public Image endingImage; // Ending 이미지의 Image 컴포넌트
-    public TextMeshProUGUI finishText; // Finish 텍스트
+
     public float fadeDuration = 2f; // Ending 이미지가 서서히 나타나는 시간
 
     [Header("Audio Settings")]
@@ -38,19 +38,7 @@ public class DoorOpen : MonoBehaviour
             warningText.gameObject.SetActive(false);
         }
 
-        // Finish 텍스트 초기 비활성화
-        if (finishText != null)
-        {
-            finishText.gameObject.SetActive(false);
-        }
 
-        // Ending 이미지 초기 설정
-        if (endingImage != null)
-        {
-            Color tempColor = endingImage.color;
-            tempColor.a = 0f; // 투명하게 설정
-            endingImage.color = tempColor;
-        }
 
         // 열쇠 수집 상태 초기화
         if (keys != null)
@@ -95,17 +83,20 @@ public class DoorOpen : MonoBehaviour
     private void OpenDoor()
     {
         Debug.Log("The door has been opened.");
+        DisableEnemies();
 
         // AudioSource 재생
         if (audioSource != null)
         {
             audioSource.Play();
         }
+        DataManager.instance.nowPos.positionX = 1.1f;
+        DataManager.instance.nowPos.positionY = 0;
+        DataManager.instance.nowPos.positionZ = 11.13f;
+        DataManager.instance.nowPos.rotationY = 0;
+        DataManager.instance.nowPlayer.stage = "AISLE4";
+        SceneManager.LoadScene("AISLE4");
 
-        // 모든 적 비활성화
-        DisableEnemies();
-
-        StartCoroutine(FadeInEnding()); // Ending UI 효과 실행
     }
 
     private void ShowWarningMessage()
@@ -160,29 +151,6 @@ public class DoorOpen : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerNearby = false;
-        }
-    }
-
-    private IEnumerator FadeInEnding()
-    {
-        if (endingImage != null)
-        {
-            float elapsedTime = 0f;
-            Color tempColor = endingImage.color;
-
-            while (elapsedTime < fadeDuration)
-            {
-                elapsedTime += Time.deltaTime;
-                tempColor.a = Mathf.Clamp01(elapsedTime / fadeDuration); // 투명도 증가
-                endingImage.color = tempColor;
-                yield return null;
-            }
-        }
-
-        // Finish 텍스트 활성화
-        if (finishText != null)
-        {
-            finishText.gameObject.SetActive(true);
         }
     }
 

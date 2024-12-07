@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/system/GAMEOVER.unity
     guid: c0fca1645300c9e4c947eaaafc5b8e97
+  - enabled: 1
+    path: Assets/PSW_MainMap.unity
+    guid: b6ca1756db6b14945b4116ce8880ae82
   m_configObjects: {}

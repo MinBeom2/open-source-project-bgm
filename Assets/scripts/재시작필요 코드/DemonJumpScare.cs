@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class DemonJumpScare : MonoBehaviour
 {
+    [SerializeField] private GameObject GameoverPanel;
     public Transform door; // Door 오브젝트의 Transform을 받음
     private DoorOpen doorOpenScript; // DoorOpen 스크립트 참조
 
@@ -139,12 +140,9 @@ public class DemonJumpScare : MonoBehaviour
             yield return StartCoroutine(FadeInEndingImage());
         }
 
-        // GameOver 텍스트 활성화
-        if (gameOverText != null)
-        {
-            gameOverText.gameObject.SetActive(true);
-        }
-        //김민범
+        GameoverPanel.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     private IEnumerator FadeInEndingImage()

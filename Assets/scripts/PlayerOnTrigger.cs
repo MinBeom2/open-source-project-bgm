@@ -33,10 +33,7 @@ public class PlayerOnTrigger : MonoBehaviour
         {
             jumpScareImage.SetActive(false);
         }
-        else
-        {
-            Debug.LogError("JumpScareImage object is not assigned!");
-        }
+
 
         // PlayerController 스크립트 가져오기
         if (playerObject != null)
