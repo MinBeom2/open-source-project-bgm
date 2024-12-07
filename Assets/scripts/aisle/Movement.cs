@@ -37,6 +37,7 @@ public class Movement : MonoBehaviour
 
     private float currentWeightCrouch, speed, requirementMoveZRun;
 
+
     private void Start()
     {
         charcc = GetComponent<CharacterController>();
@@ -212,5 +213,9 @@ public class Movement : MonoBehaviour
         return velocity;
     }
 
+    public CharacterController CharacterController
+    {
+        get { return charcc; }
+    }
 
 }
