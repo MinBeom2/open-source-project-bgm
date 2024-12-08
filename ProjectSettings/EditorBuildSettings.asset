@@ -21,21 +21,24 @@ EditorBuildSettings:
     path: Assets/Scenes/aisle/AISLE1.unity
     guid: dff6057008288544cbbef6b768f1f615
   - enabled: 1
+    path: Assets/Scenes/Backrooms_Scenes/Backrooms_Scene.unity
+    guid: 078211d02be65f04c91e230c5e4b8a14
+  - enabled: 1
     path: Assets/Scenes/aisle/AISLE2.unity
-    guid: ee8a7dae85d16d645823aa9c0368967d
+    guid: 7f86b68cecd711a4caa73070eed14c56
   - enabled: 1
     path: Assets/Scenes/playground/MyScene.unity
     guid: 616de0e8e2f572e4a9fd7aa0260f70b7
   - enabled: 1
     path: Assets/Scenes/aisle/AISLE3.unity
-    guid: d0b97fcf10b208d47ae1310c445bf3f9
-  - enabled: 1
-    path: Assets/Scenes/aisle/AISLE4.unity
-    guid: d07ca1d1b36f78b419353e1d09a02d83
-  - enabled: 1
-    path: Assets/Scenes/system/GAMEOVER.unity
-    guid: c0fca1645300c9e4c947eaaafc5b8e97
+    guid: e7d4c27d7d36e864fa0c4b8aad370fff
   - enabled: 1
     path: Assets/Scenes/abruptiveAttack/PSW_MainMap.unity
     guid: b6ca1756db6b14945b4116ce8880ae82
+  - enabled: 1
+    path: Assets/Scenes/aisle/AISLE4.unity
+    guid: e48493ea98e0aad488dcec1c289557ac
+  - enabled: 1
+    path: Assets/Scenes/system/GAMEOVER.unity
+    guid: c0fca1645300c9e4c947eaaafc5b8e97
   m_configObjects: {}

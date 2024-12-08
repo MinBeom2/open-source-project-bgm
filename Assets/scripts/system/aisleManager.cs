@@ -45,7 +45,7 @@ public class aisleManager : MonoBehaviour
         string nowAisle = SceneManager.GetActiveScene().name;
         if (nowAisle == "AISLE1")
         {
-            SceneManager.LoadScene("MyScene");
+            SceneManager.LoadScene("Backrooms_Scene");
         }
         else if (nowAisle == "AISLE2")
         {

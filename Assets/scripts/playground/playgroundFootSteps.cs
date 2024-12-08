@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
-public class FootSteps : MonoBehaviour
+public class playgroundFootSteps : MonoBehaviour
 {
     [SerializeField] private AudioSource source; // �߼Ҹ��� ����� AudioSource
     [SerializeField] private AudioClip[] DefaultSounds; // �⺻ �߼Ҹ�

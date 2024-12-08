@@ -35,7 +35,6 @@ public class GameOver : MonoBehaviour
     public void Start()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
-
     }
 
     public void Update()

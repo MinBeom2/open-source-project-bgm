@@ -178,10 +178,9 @@ public class DialogueManager : MonoBehaviour
         {
             if (currentDialogueIndex == 76)
             {
-                sound.GetComponent<Sound>().changebgm();
-                Doll.GetComponent<AI>().enabled = true;
-                Perdit[0].GetComponent<AI>().enabled = true;
-                Perdit[1].GetComponent<AI>().enabled = true;
+                Doll.GetComponent<playgrounAI>().enabled = true;
+                Perdit[0].GetComponent<playgrounAI>().enabled = true;
+                Perdit[1].GetComponent<playgrounAI>().enabled = true;
                 Perdit[1].GetComponent<NavMeshAgent>().enabled = true;
                 Canvas.transform.parent.Find("Image").gameObject.SetActive(true);
                 Player.GetComponent<GameOver>().enabled = true;
