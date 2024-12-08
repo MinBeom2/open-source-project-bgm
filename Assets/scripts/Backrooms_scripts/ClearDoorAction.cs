@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class ClearDoorAction : MonoBehaviour
 {
@@ -19,12 +20,19 @@ public class ClearDoorAction : MonoBehaviour
     public AudioClip clearDoorOpenSound;
     public AudioClip clearDoorCloseSound;
 
-    private NavMeshObstacle navMeshObstacle;
+    [SerializeField] AudioSource footStepSource;
+    [SerializeField] Movement movement;
+    public Image clearPanel;
 
     // Start is called before the first frame update
     void Start()
     {
-        navMeshObstacle = GetComponent<NavMeshObstacle>();
+        if (clearPanel != null)
+        {
+            Color color = clearPanel.color;
+            color.a = 0f;
+            clearPanel.color = color;
+        }
 
     }
 
@@ -56,11 +64,7 @@ public class ClearDoorAction : MonoBehaviour
                         haskeyImage.SetActive(false);
 
                         // 문 열림 소리 재생
-                        PlaySound(clearDoorAudio, clearDoorOpenSound);
-
-                        navMeshObstacle.carving = false; // NavMesh 장애물 제거
-
-                        
+                        PlaySound(clearDoorAudio, clearDoorOpenSound);                        
                     }
                     else if (Input.GetKeyDown(KeyCode.E) && (!haskey || door.isLocked))
                     {
@@ -83,8 +87,6 @@ public class ClearDoorAction : MonoBehaviour
 
                         // 문 닫힘 소리 재생
                         PlaySound(clearDoorAudio, clearDoorCloseSound);
-
-                        navMeshObstacle.carving = true; // NavMesh에 장애물 추가
                     }
                 }
             }
@@ -95,6 +97,7 @@ public class ClearDoorAction : MonoBehaviour
                 Animator doorAnim = ClearDoor.GetComponent<Animator>();
                 Door door = ClearDoor.GetComponent<Door>(); // Door 스크립트 참조
                 AudioSource clearDoorAudio = ClearDoor.GetComponent<AudioSource>(); // 문에서 AudioSource 가져오기
+                Debug.Log("클리어 도어 레이캐스트 인식");
 
                 if (doorAnim.GetCurrentAnimatorStateInfo(0).IsName(doorCloseAnimName))
                 {
@@ -111,9 +114,11 @@ public class ClearDoorAction : MonoBehaviour
                         // 문 열림 소리 재생
                         PlaySound(clearDoorAudio, clearDoorOpenSound);
 
-                        Debug.Log("민범씨 여기서 다음 스테이지로 가면 됩니다!");
+                        SetPanelVisibility(1f);
+                        movement.enabled = false;
+                        footStepSource.enabled = false;
 
-                        navMeshObstacle.carving = false; // NavMesh 장애물 제거
+                        Debug.Log("민범씨 여기가 클리어지점이에요");
                     }
                     else if (Input.GetKeyDown(KeyCode.E) && (!haskey || door.isLocked))
                     {
@@ -135,9 +140,7 @@ public class ClearDoorAction : MonoBehaviour
                         doorAnim.SetTrigger("Close");
 
                         // 문 닫힘 소리 재생
-                        PlaySound(clearDoorAudio, clearDoorCloseSound);
-
-                        navMeshObstacle.carving = true; // NavMesh에 장애물 추가                        
+                        PlaySound(clearDoorAudio, clearDoorCloseSound);                     
                     }
                 }
             }
@@ -163,4 +166,22 @@ public class ClearDoorAction : MonoBehaviour
             Debug.Log("오디오가 재생중입니다.");
         }
     }
+    void SetPanelVisibility(float alpha)
+    {
+        Debug.Log("불투명도 함수 호출");
+        if (clearPanel == null)
+        {
+            Debug.LogError("clearPanel이 설정되지 않았습니다!");
+            return;
+        }
+
+        Color color = clearPanel.color;
+        color.a = alpha; // 알파값 설정
+        clearPanel.color = color;
+
+        // 디버깅용 로그
+        Debug.Log($"SetPanelVisibility 호출됨 - 설정된 알파값: {alpha}, 현재 알파값: {clearPanel.color.a}");
+    }
+
+
 }
