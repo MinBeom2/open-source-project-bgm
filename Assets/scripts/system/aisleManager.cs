@@ -42,23 +42,18 @@ public class aisleManager : MonoBehaviour
 
     public void SceneToNext()
     {
-        DataManager.instance.nowPos.positionX = 1.1f;
-        DataManager.instance.nowPos.positionY = 0;
-        DataManager.instance.nowPos.positionZ = 11.13f;
-        DataManager.instance.nowPos.rotationY = 0;
-
         string nowAisle = SceneManager.GetActiveScene().name;
         if (nowAisle == "AISLE1")
         {
-            SceneManager.LoadScene("PSW_MainMap");
+            SceneManager.LoadScene("MyScene");
         }
         else if (nowAisle == "AISLE2")
         {
-            SceneManager.LoadScene("AISLE3");
+            SceneManager.LoadScene("MyScene");
         }
         else if (nowAisle == "AISLE3")
         {
-            SceneManager.LoadScene("AISLE4");
+            SceneManager.LoadScene("PSW_MainMap");
         }
         else
         {

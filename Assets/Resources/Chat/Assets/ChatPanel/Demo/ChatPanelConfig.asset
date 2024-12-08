@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eae67ca42b0df3f42bb29b2c6938d92a, type: 3}
+  m_Name: ChatPanelConfig
+  m_EditorClassIdentifier: 
+  photoSize: 56
+  width: 1536
+  height: 500
+  scrollBarWidth: 17
+  iBallon: {fileID: 21300000, guid: 019512613dcc8b14d8467d30daa3d1e2, type: 3}
+  youBallon: {fileID: 21300000, guid: f90012496b9c4bc4ebfc31ea5d31219d, type: 3}
+  animateTime: 0.8
+  backgroundColor: {r: 0.9019608, g: 0.9019608, b: 0.9019608, a: 0.3019608}
+  photoSpriteList:
+  - {fileID: 21300000, guid: 2e5218fdbd691fa498975c5908684733, type: 3}
+  - {fileID: 21300000, guid: b4a3315ce5f9b274abc95e39349f2a09, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}

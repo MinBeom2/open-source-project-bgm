@@ -10,13 +10,18 @@ public class AudioManager : MonoBehaviour
     [SerializeField] public AudioSource sfxSource;
 
     [Header("-----------Audio clip-------------")]
+    public AudioClip Book;
     public AudioClip buttonClick;
     public AudioClip DoorOpen;
-    public AudioClip Book;
-
+    public AudioClip normaldoor;
+    public AudioClip gameover;
+    public AudioClip creature;
+    public AudioClip lockeddoor;
+    public AudioClip piercing;
     [Header("-----------Background Music-------------")]
     public AudioClip mainBackground;
     public AudioClip DefaultBackground;
+
 
     [Header("-----------Volume Levels-------------")]
     [Range(0f, 1f)] public float normalVolume = 1f;
