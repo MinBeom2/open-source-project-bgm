@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 using WCP;
 public class Interaction : MonoBehaviour
 {
-    float minDist = 7f;
+    float minDist = 5f;
 
     public bool hasKey;
     public bool hasKey1;

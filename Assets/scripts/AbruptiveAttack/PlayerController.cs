@@ -3,11 +3,12 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("Door Settings")]
-    public DoorOpen doorOpenScript; // DoorOpen 스크립트를 직접 참조
+    public DoorOpen doorOpenScript;
 
     [Header("Player Movement Settings")]
-    public float movementSpeed = 5f;
-    public float mouseSensitivity = 100f;
+    public float movementSpeed = 4f;
+    public float mouseSensitivityX = 200f; // X축 감도
+    public float mouseSensitivityY = 200f; // Y축 감도
     public float jumpForce = 5f;
 
     [Header("Camera Settings")]
@@ -19,11 +20,11 @@ public class PlayerController : MonoBehaviour
     public float footStepInterval = 0.5f;
 
     [Header("Interaction Settings")]
-    public float interactionDistance = 3f; // Raycast 거리
+    public float interactionDistance = 3f;
 
     [Header("Wall Detection Settings")]
-    public float wallDetectionDistance = 1f; // 벽 감지 거리
-    public LayerMask wallLayer; // 벽이 포함된 레이어 지정
+    public float wallDetectionDistance = 1f;
+    public LayerMask wallLayer;
 
     private Rigidbody rb;
     private float xRotation = 0f;
@@ -52,12 +53,24 @@ public class PlayerController : MonoBehaviour
         HandleMouseLook();
         HandleJump();
         HandleFootSteps();
-        HandleInteraction(); // E 키로 상호작용 처리
+        HandleInteraction();
     }
 
     void FixedUpdate()
     {
         HandleMovement();
+    }
+
+    private void HandleMouseLook()
+    {
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivityX * Time.deltaTime;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivityY * Time.deltaTime;
+
+        xRotation -= mouseY;
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+
+        cameraTransform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        transform.Rotate(Vector3.up * mouseX);
     }
 
     private void HandleMovement()
@@ -66,10 +79,8 @@ public class PlayerController : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
         Vector3 direction = transform.right * horizontal + transform.forward * vertical;
 
-        // 벽 감지
         if (!IsWallInFront(direction))
         {
-            // 벽이 없을 때만 이동
             rb.MovePosition(rb.position + direction * movementSpeed * Time.fixedDeltaTime);
         }
         else
@@ -80,30 +91,17 @@ public class PlayerController : MonoBehaviour
 
     private bool IsWallInFront(Vector3 direction)
     {
-        // 플레이어 앞 방향으로 Raycast 발사
         Ray ray = new Ray(transform.position, direction.normalized);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, wallDetectionDistance, wallLayer))
         {
-            Debug.DrawRay(transform.position, direction.normalized * wallDetectionDistance, Color.red); // Debug 용도
-            return true; // 벽이 있음
+            Debug.DrawRay(transform.position, direction.normalized * wallDetectionDistance, Color.red);
+            return true;
         }
 
-        Debug.DrawRay(transform.position, direction.normalized * wallDetectionDistance, Color.green); // Debug 용도
-        return false; // 벽이 없음
-    }
-
-    private void HandleMouseLook()
-    {
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
-
-        xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-
-        cameraTransform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        transform.Rotate(Vector3.up * mouseX);
+        Debug.DrawRay(transform.position, direction.normalized * wallDetectionDistance, Color.green);
+        return false;
     }
 
     private void HandleJump()
@@ -174,7 +172,6 @@ public class PlayerController : MonoBehaviour
                     Destroy(hit.collider.gameObject);
                     Debug.Log("Key object destroyed.");
                 }
-
             }
         }
     }

@@ -26373,6 +26373,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4162443817402979483, guid: af6f0dd985c4f694eb989eb58bb1bc93, type: 3}
   m_PrefabInstance: {fileID: 1188991089}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1202049228 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 527245027347899848, guid: 787d0bcf58be53a4ebde93a0068903dc, type: 3}
+  m_PrefabInstance: {fileID: 415715834}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1204495816
 GameObject:
   m_ObjectHideFlags: 0
@@ -33248,7 +33253,7 @@ MonoBehaviour:
   maxVerticalLook: 45
   sensitivty: 5
   CameraHolder: {fileID: 278535799}
-  animator: {fileID: 0}
+  animator: {fileID: 1202049228}
 --- !u!1001 &1468477738
 PrefabInstance:
   m_ObjectHideFlags: 0
