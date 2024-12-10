@@ -71,3 +71,12 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 Assets/BOKI/LowPolyNature/Terrain/data/TerrainData_f3b311aa-fb5e-44f1-9205-35ded49ebf8e.asset
+
+.pytest_cache
+.vscode
+
+/Assets/Firebase/Plugins/x86_64/FirebaseCppApp-12_4_0.bundle
+/Assets/Firebase/Plugins/x86_64/FirebaseCppApp-12_4_0.so
+/Assets/Firebase/Plugins/x86_64/FirebaseCppApp-12_4_0.bundle.meta
+/Assets/Firebase/Plugins/x86_64/FirebaseCppApp-12_4_0.so.meta
+Assets/Firebase/Plugins/x86_64/x86_64.zip.meta
