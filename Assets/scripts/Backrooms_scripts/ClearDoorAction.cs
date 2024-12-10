@@ -24,16 +24,18 @@ public class ClearDoorAction : MonoBehaviour
     [SerializeField] Movement movement;
     public Image clearPanel;
 
+    public DoorAction doorAction;
+
     // Start is called before the first frame update
     void Start()
     {
+        doorAction = GetComponent<DoorAction>();
         if (clearPanel != null)
         {
             Color color = clearPanel.color;
             color.a = 0f;
             clearPanel.color = color;
         }
-
     }
 
     // Update is called once per frame
@@ -61,6 +63,7 @@ public class ClearDoorAction : MonoBehaviour
                         doorAnim.SetTrigger("Open");
                         door.isLocked = false;
                         haskey = false;
+                        doorAction.haskey = false;
                         haskeyImage.SetActive(false);
 
                         // 문 열림 소리 재생

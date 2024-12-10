@@ -18,10 +18,12 @@ public class DoorAction : MonoBehaviour
     public AudioClip doorOpenSound;
     public AudioClip doorCloseSound;
 
+    public ClearDoorAction clearDoorAction;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        clearDoorAction = GetComponent<ClearDoorAction>();
     }
 
     // Update is called once per frame
@@ -52,6 +54,7 @@ public class DoorAction : MonoBehaviour
                         doorAnim.SetTrigger("Open");
                         door.isLocked = false;
                         haskey = false;
+                        clearDoorAction.haskey = false;
                         haskeyImage.SetActive(false);
 
                         // 문 열림 소리 재생

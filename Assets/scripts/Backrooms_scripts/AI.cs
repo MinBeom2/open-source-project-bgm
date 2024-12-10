@@ -109,6 +109,8 @@ public class AI : MonoBehaviour
 
                     if (moveMode != MoveMode.chase)
                     {
+                        Debug.Log("targetMask: " + targetMask.value);
+
                         SwitchMoveMode(MoveMode.chase);
                     }
                 }
