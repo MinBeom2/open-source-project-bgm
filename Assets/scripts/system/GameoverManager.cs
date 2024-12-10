@@ -9,9 +9,7 @@ public class GameoverManager : MonoBehaviour
     public void Start()
     {
 
-        //TODO 패널로 바꾸면 어떻게 수정하지?
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+
     }
 
     public void Restart()

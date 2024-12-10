@@ -2572,6 +2572,7 @@ MonoBehaviour:
   haskey: 0
   doorOpenSound: {fileID: 8300000, guid: 41e94abbb9f40ad4f9a3ee9616e633a9, type: 3}
   doorCloseSound: {fileID: 8300000, guid: 478902cbedc0c814f8f6af2392036ba6, type: 3}
+  cleardoorAction: {fileID: 0}
 --- !u!114 &140371665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2608,7 +2609,6 @@ MonoBehaviour:
   clearDoorAction: {fileID: 0}
   haskeyImage: {fileID: 1278387391}
   keyPickupText: {fileID: 654044256}
-  keyPickUpSound: {fileID: 8300000, guid: a99afb9e2f98ae947a802d4871c96116, type: 3}
 --- !u!114 &140371673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2634,6 +2634,7 @@ MonoBehaviour:
   footStepSource: {fileID: 1467486926}
   movement: {fileID: 0}
   clearPanel: {fileID: 414811745}
+  doorAction: {fileID: 0}
 --- !u!114 &140371677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7854,7 +7855,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &414811744
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33729,6 +33730,7 @@ MonoBehaviour:
   creature: {fileID: 8300000, guid: cffaae10e35ba6e4cbcfcbe291bed30f, type: 3}
   lockeddoor: {fileID: 8300000, guid: 41649718f1c73d94f894b92ebe920035, type: 3}
   piercing: {fileID: 8300000, guid: 18da25e203cc8234eb29bc16ea680cd7, type: 3}
+  pickupkey: {fileID: 0}
   mainBackground: {fileID: 8300000, guid: 4b8770c15923cd047bf534010e889f1f, type: 3}
   DefaultBackground: {fileID: 8300000, guid: 7f5873b935a75e94d8cf7a9304af8f30, type: 3}
   normalVolume: 1
