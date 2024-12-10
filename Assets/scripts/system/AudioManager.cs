@@ -18,6 +18,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip creature;
     public AudioClip lockeddoor;
     public AudioClip piercing;
+    public AudioClip pickupkey;
     [Header("-----------Background Music-------------")]
     public AudioClip mainBackground;
     public AudioClip DefaultBackground;

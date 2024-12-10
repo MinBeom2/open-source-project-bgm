@@ -4,54 +4,48 @@ using UnityEngine;
 
 public class KeyPickUp : MonoBehaviour
 {
-    public float interactionDistance; // »óÈ£ÀÛ¿ë °Å¸®
-    public DoorAction doorAction;    // DoorAction ½ºÅ©¸³Æ® ÂüÁ¶
+    AudioManager audioManager;
+    public float interactionDistance; // ï¿½ï¿½È£ï¿½Û¿ï¿½ ï¿½Å¸ï¿½
+    public DoorAction doorAction;    // DoorAction ï¿½ï¿½Å©ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½
     public ClearDoorAction clearDoorAction;
     public GameObject haskeyImage;
 
     public GameObject keyPickupText;
 
-    public AudioClip keyPickUpSound; // ¿­¼è ÁÝ´Â ¼Ò¸® Å¬¸³
 
     void Start()
     {
-        // DoorAction ½ºÅ©¸³Æ®¸¦ Ä«¸Þ¶ó¿¡ ºÙ¿©¼­ ÂüÁ¶ÇÏ±â
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        // DoorAction ï¿½ï¿½Å©ï¿½ï¿½Æ®ï¿½ï¿½ Ä«ï¿½Þ¶ï¿½ ï¿½Ù¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½
         doorAction = GetComponent<DoorAction>();
         clearDoorAction = GetComponent<ClearDoorAction>();
     }
 
     void Update()
     {
-        keyPickupText.SetActive(false); // ÅØ½ºÆ® ¼û±â±â
+        keyPickupText.SetActive(false); // ï¿½Ø½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½
 
-        Ray ray = new Ray(transform.position, transform.forward); // ·¹ÀÌÄ³½ºÆ® »ý¼º
+        Ray ray = new Ray(transform.position, transform.forward); // ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, interactionDistance)) // ·¹ÀÌÄ³½ºÆ®°¡ ´ê¾Ò´ÂÁö È®ÀÎ
+        if (Physics.Raycast(ray, out hit, interactionDistance)) // ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½Ò´ï¿½ï¿½ï¿½ È®ï¿½ï¿½
         {
-            if (hit.collider.gameObject.tag == "Key") // ÅÂ±×°¡ "Key"ÀÎÁö È®ÀÎ
+            if (hit.collider.gameObject.tag == "Key") // ï¿½Â±×°ï¿½ "Key"ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½
             {
-                keyPickupText.SetActive(true); // ÅØ½ºÆ® È°¼ºÈ­
+                keyPickupText.SetActive(true); // ï¿½Ø½ï¿½Æ® È°ï¿½ï¿½È­
                 GameObject key = hit.collider.transform.root.gameObject;
 
-                if (Input.GetKeyDown(KeyCode.E)) // E Å° ÀÔ·Â È®ÀÎ
+                if (Input.GetKeyDown(KeyCode.E)) // E Å° ï¿½Ô·ï¿½ È®ï¿½ï¿½
                 {
-                    PlaySound(keyPickUpSound);   // ¿­¼è ÁÝ´Â ¼Ò¸® Àç»ý
-                    key.SetActive(false);       // ¿­¼è ¿ÀºêÁ§Æ® ¼û±â±â
-                    doorAction.haskey = true;   // DoorActionÀÇ hasKey ¼³Á¤
+                    audioManager.PlaySFX(audioManager.pickupkey);
+                    key.SetActive(false);       // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½
+                    doorAction.haskey = true;   // DoorActionï¿½ï¿½ hasKey ï¿½ï¿½ï¿½ï¿½
                     clearDoorAction.haskey = true;
-                    haskeyImage.SetActive(true); // ¿­¼è ÀÌ¹ÌÁö È°¼ºÈ­
+                    haskeyImage.SetActive(true); // ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½ È°ï¿½ï¿½È­
                 }
             }
         }
     }
 
-    // PlayClipAtPoint¸¦ »ç¿ëÇÏ¿© ¼Ò¸® Àç»ý
-    void PlaySound(AudioClip clip)
-    {
-        if (clip != null)
-        {
-            AudioSource.PlayClipAtPoint(clip, transform.position); // ÇöÀç À§Ä¡¿¡¼­ ¼Ò¸® Àç»ý
-        }
-    }
+    // PlayClipAtPointï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½Ò¸ï¿½ ï¿½ï¿½ï¿½
 }
