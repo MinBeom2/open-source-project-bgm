@@ -17,11 +17,11 @@ public class DoorAction : MonoBehaviour
 
     public AudioClip doorOpenSound;
     public AudioClip doorCloseSound;
-
+    public ClearDoorAction cleardoorAction;
     // Start is called before the first frame update
     void Start()
     {
-
+        cleardoorAction = GetComponent<ClearDoorAction>();
     }
 
     // Update is called once per frame
@@ -30,17 +30,17 @@ public class DoorAction : MonoBehaviour
         doorOpenText.SetActive(false);
         doorCloseText.SetActive(false);
 
-    Ray ray = new Ray(transform.position, transform.forward);
+        Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
 
-        if(Physics.Raycast(ray, out hit, interactionDistance))
+        if (Physics.Raycast(ray, out hit, interactionDistance))
         {
-            if(hit.collider.gameObject.tag == "Door")
+            if (hit.collider.gameObject.tag == "Door")
             {
                 GameObject DoorPivot = hit.collider.transform.root.gameObject;
                 Animator doorAnim = DoorPivot.GetComponent<Animator>();
-                Door door = DoorPivot.GetComponent<Door>(); // DoorOpening ½ºÅ©¸³Æ® ÂüÁ¶
-                AudioSource doorAudio = DoorPivot.GetComponent<AudioSource>(); // ¹®¿¡¼­ AudioSource °¡Á®¿À±â
+                Door door = DoorPivot.GetComponent<Door>(); // DoorOpening ï¿½ï¿½Å©ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½
+                AudioSource doorAudio = DoorPivot.GetComponent<AudioSource>(); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ AudioSource ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
                 if (doorAnim.GetCurrentAnimatorStateInfo(0).IsName(doorCloseAnimName))
                 {
@@ -52,14 +52,15 @@ public class DoorAction : MonoBehaviour
                         doorAnim.SetTrigger("Open");
                         door.isLocked = false;
                         haskey = false;
+                        cleardoorAction.haskey = false;
                         haskeyImage.SetActive(false);
 
-                        // ¹® ¿­¸² ¼Ò¸® Àç»ý
+                        // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ò¸ï¿½ ï¿½ï¿½ï¿½
                         PlaySound(doorAudio, doorOpenSound);
                     }
                     else if (Input.GetKeyDown(KeyCode.E) && (!haskey || door.isLocked))
                     {
-                        if (!isCoroutineRunning) // Áßº¹ È£Ãâ ¹æÁö
+                        if (!isCoroutineRunning) // ï¿½ßºï¿½ È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
                         {
                             doorLockedText.SetActive(true);
                             StartCoroutine(HideLockedTextAfterDelay(1f));
@@ -76,7 +77,7 @@ public class DoorAction : MonoBehaviour
                         doorAnim.ResetTrigger("Open");
                         doorAnim.SetTrigger("Close");
 
-                        // ¹® ´ÝÈû ¼Ò¸® Àç»ý
+                        // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ò¸ï¿½ ï¿½ï¿½ï¿½
                         PlaySound(doorAudio, doorCloseSound);
                     }
                 }
@@ -99,7 +100,7 @@ public class DoorAction : MonoBehaviour
     {
         if (audioSource != null && clip != null)
         {
-            audioSource.PlayOneShot(clip); // ÁöÁ¤µÈ AudioClip Àç»ý
+            audioSource.PlayOneShot(clip); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ AudioClip ï¿½ï¿½ï¿½
         }
     }
 }

@@ -25,11 +25,12 @@ public class ClearDoorAction : MonoBehaviour
     [SerializeField] AudioSource footStepSource;
     [SerializeField] Movement movement;
     public Image clearPanel;
-
+    public DoorAction doorAction;
     // Start is called before the first frame update
     void Start()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        doorAction = GetComponent<DoorAction>();
         if (clearPanel != null)
         {
             Color color = clearPanel.color;
@@ -64,6 +65,7 @@ public class ClearDoorAction : MonoBehaviour
                         doorAnim.SetTrigger("Open");
                         door.isLocked = false;
                         haskey = false;
+                        doorAction.haskey = false;
                         haskeyImage.SetActive(false);
 
                         // 문 열림 소리 재생
