@@ -19226,7 +19226,7 @@ MonoBehaviour:
   maxVerticalLook: 90
   sensitivty: 5
   CameraHolder: {fileID: 5040749054848214455}
-  animator: {fileID: 3954317341461891292}
+  animator: {fileID: 0}
 --- !u!1 &919132147582512413 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4145373303582275434, guid: b34e589b431672940a82c2889cc9bf51, type: 3}
