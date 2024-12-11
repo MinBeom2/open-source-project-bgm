@@ -882,8 +882,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameoverManager, Assembly-CSharp
+      - m_Target: {fileID: 391128875}
+        m_TargetAssemblyTypeName: ending, Assembly-CSharp
         m_MethodName: QuitToMain
         m_Mode: 1
         m_Arguments:
